@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.zhy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhy.view.GestureLockViewGroup
+        android:id="@+id/id_gestureLockViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F2F7"
+        android:gravity="center_vertical"
+        zhy:count="4"
+        zhy:tryTimes="5" />
+
+</RelativeLayout>

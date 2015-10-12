@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_HandRuntimeChange"
+        style="@style/btn_style"
+        android:text="HandRuntimeChange" />
+
+    <Button
+        android:id="@+id/btn_ScaleGestureDetector"
+        style="@style/btn_style"
+        android:text="ScaleGestureDetector" />
+
+    <Button
+        android:id="@+id/btn_ClipPic"
+        style="@style/btn_style"
+        android:text="ClipPic" />
+
+    <Button
+        android:id="@+id/btn_StickyNavLayout"
+        style="@style/btn_style"
+        android:text="StickyNavLayout" />
+
+    <Button
+        android:id="@+id/btn_MyHorizontalScrollView"
+        style="@style/btn_style"
+        android:text="MyHorizontalScrollView" />
+    <Button
+        android:id="@+id/btn_JazzyViewPager"
+        style="@style/btn_style"
+        android:text="JazzyViewPager" />
+    <Button
+        android:id="@+id/btn_FlowLayout"
+        style="@style/btn_style"
+        android:text="FlowLayout" />
+
+</LinearLayout>
