@@ -29,8 +29,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 
 	private ViewPager mViewPager;
 	private List<Fragment> mTabs = new ArrayList<Fragment>();
-	private String[] mTitles = new String[] { "First Fragment !",
-			"Second Fragment !", "Third Fragment !", "Fourth Fragment !" };
+//	private String[] mTitles = new String[] { "First Fragment !",
+//			"Second Fragment !", "Third Fragment !", "Fourth Fragment !" };
 	private FragmentPagerAdapter mAdapter;
 
 	private List<ChangeColorIconWithText> mTabIndicators = new ArrayList<ChangeColorIconWithText>();
