@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/attr.xml -->
+    <eat-comment/>
+    <attr format="reference" name="bg"/>
+    <attr format="dimension" name="borderRadius"/>
+    <attr format="dimension" name="circleWidth"/>
+    <attr format="color" name="color"/>
+    <attr format="color" name="color_finger_on"/>
+    <attr format="color" name="color_finger_up"/>
+    <attr format="color" name="color_no_finger_inner_circle"/>
+    <attr format="color" name="color_no_finger_outer_circle"/>
+    <attr format="integer" name="count"/>
+    <attr format="integer" name="dotCount"/>
+    <attr format="color" name="firstColor"/>
+    <attr format="reference" name="icon"/>
+    <attr format="reference" name="image"/>
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0"/>
+        <enum name="center" value="1"/>
+    </attr>
+    <attr format="dimension" name="rightPadding"/>
+    <attr format="color" name="secondColor"/>
+    <attr format="integer" name="speed"/>
+    <attr format="integer" name="splitSize"/>
+    <attr format="reference" name="src"/>
+    <attr format="string" name="text"/>
+    <attr format="dimension" name="text_size"/>
+    <attr format="string" name="titleText"/>
+    <attr format="color" name="titleTextColor"/>
+    <attr format="dimension" name="titleTextSize"/>
+    <attr format="integer" name="tryTimes"/>
+    <attr name="type">
+        <enum name="circle" value="0"/>
+        <enum name="round" value="1"/>
+    </attr>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/color.xml -->
+    <eat-comment/>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="BinarySlidingMenu"><attr name="rightPadding"/></declare-styleable>
+    <declare-styleable name="ChangeColorIconWithText"><attr name="icon"/><attr name="color"/><attr name="text"/><attr name="text_size"/></declare-styleable>
+    <declare-styleable name="CustomImageView"><attr name="titleText"/><attr name="titleTextSize"/><attr name="titleTextColor"/><attr name="image"/><attr name="imageScaleType"/><attr name="borderRadius"/><attr name="type"/><attr name="src"/></declare-styleable>
+    <declare-styleable name="CustomProgressBar"><attr name="firstColor"/><attr name="secondColor"/><attr name="circleWidth"/><attr name="speed"/></declare-styleable>
+    <declare-styleable name="CustomTitleView"><attr name="titleText"/><attr name="titleTextColor"/><attr name="titleTextSize"/></declare-styleable>
+    <declare-styleable name="CustomVolumControlBar"><attr name="firstColor"/><attr name="secondColor"/><attr name="circleWidth"/><attr name="dotCount"/><attr name="splitSize"/><attr name="bg"/></declare-styleable>
+    <declare-styleable name="GestureLockViewGroup"><attr name="color_no_finger_inner_circle"/><attr name="color_no_finger_outer_circle"/><attr name="color_finger_on"/><attr name="color_finger_up"/><attr name="count"/><attr name="tryTimes"/></declare-styleable>
+    <declare-styleable name="HorizontalProgressBarWithNumber"><attr format="color" name="progress_unreached_color"/><attr format="color" name="progress_reached_color"/><attr format="dimension" name="progress_reached_bar_height"/><attr format="dimension" name="progress_unreached_bar_height"/><attr format="dimension" name="progress_text_size"/><attr format="color" name="progress_text_color"/><attr format="dimension" name="progress_text_offset"/><attr format="enum" name="progress_text_visibility"><enum name="visible" value="0"/><enum name="invisible" value="1"/></attr></declare-styleable>
+    <declare-styleable name="JazzyViewPager"><attr name="style"><enum name="standard" value="0"/><enum name="tablet" value="1"/><enum name="cubein" value="2"/><enum name="cubeout" value="3"/><enum name="flipvertical" value="4"/><enum name="fliphorizontal" value="5"/><enum name="stack" value="6"/><enum name="zoomin" value="7"/><enum name="zoomout" value="8"/><enum name="rotateup" value="9"/><enum name="rotatedown" value="10"/><enum name="accordion" value="11"/></attr><attr format="boolean" name="fadeEnabled"/><attr format="boolean" name="outlineEnabled"/><attr format="color|reference" name="outlineColor"/></declare-styleable>
+    <declare-styleable name="RoundImageView"><attr name="borderRadius"/><attr name="type"/></declare-styleable>
+    <declare-styleable name="RoundImageViewByXfermode"><attr name="borderRadius"/><attr name="type"/></declare-styleable>
+    <declare-styleable name="RoundProgressBarWidthNumber"><attr format="dimension" name="radius"/></declare-styleable>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="id_circle_menu_item_center" type="id"/>
+    <item name="id_circle_menu_item_image" type="id"/>
+    <item name="id_circle_menu_item_text" type="id"/>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/ids_sticky_nav_layout.xml -->
+    <eat-comment/>
+    <item name="id_stickynavlayout_indicator" type="id"/>
+    <item name="id_stickynavlayout_innerscrollview" type="id"/>
+    <item name="id_stickynavlayout_topview" type="id"/>
+    <item name="id_stickynavlayout_viewpager" type="id"/>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="jazzy_key" type="id"/>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_add">添加</string>
+    <string name="action_search">查找</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">张鸿洋</string>
+    <string name="menu_addfriend">添加朋友</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_group_chat">发起群聊</string>
+    <string name="menu_scan">扫一扫</string>
+    <string name="tab_contact">通讯录</string>
+    <string name="tab_found">发现</string>
+    <string name="tab_me">我</string>
+    <string name="title_activity_rolate_anim">RolateAnimActivity</string>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="MMAnimation.Activity" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+    <style name="MMTheme.Basic" parent="@android:style/Theme">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/MMAnimation.Activity</item>
+    </style>
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+    <style name="btn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+
+    </style>
+    <style name="popwindow_delete_btn_anim_style">
+        <item name="android:windowEnterAnimation">@anim/delete_btn_show</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/delete_btn_hide</item>
+        <!-- 指定消失的动画xml -->
+
+    </style>
+    <style name="text_flag_01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/flag_01</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+</resources>

@@ -29,13 +29,7 @@
         <enum name="center" value="1" />
     </attr>
 
-    <declare-styleable name="CustomImageView">
-        <attr name="titleText" />
-        <attr name="titleTextSize" />
-        <attr name="titleTextColor" />
-        <attr name="image" />
-        <attr name="imageScaleType" />
-    </declare-styleable>
+
 
     <attr name="firstColor" format="color" />
     <attr name="secondColor" format="color" />
@@ -70,10 +64,16 @@
     <attr name="src" format="reference"></attr>
 
     <declare-styleable name="CustomImageView">
+        <attr name="titleText" />
+        <attr name="titleTextSize" />
+        <attr name="titleTextColor" />
+        <attr name="image" />
+        <attr name="imageScaleType" />
         <attr name="borderRadius" />
         <attr name="type" />
         <attr name="src" />
     </declare-styleable>
+
     <declare-styleable name="RoundImageView">
         <attr name="borderRadius" />
         <attr name="type" />

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffcc99"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_VerticalLinearLayout"
+        style="@style/btn_style"
+        android:text="VerticalLinearLayout" />
+
+    <Button
+        android:id="@+id/btn_ListViewItemSlideDelete"
+        style="@style/btn_style"
+        android:text="ListViewItemSlideDelete" />
+
+    <Button
+        android:id="@+id/btn_eventbus"
+        style="@style/btn_style"
+        android:text="EventBus" />
+
+    <Button
+        android:id="@+id/btn_SwipeRefresh"
+        style="@style/btn_style"
+        android:text="SwipeRefresh" />
+
+    <Button
+        android:id="@+id/btn_imageloader"
+        style="@style/btn_style"
+        android:text="ImageLoader" />
+
+    <Button
+        android:id="@+id/btn_networkingimageloader"
+        style="@style/btn_style"
+        android:text="NetworkingImageLoader" />
+
+    <Button
+        android:id="@+id/btn_BounceScrollView"
+        style="@style/btn_style"
+        android:text="BounceScrollView" />
+
+    <Button
+        android:id="@+id/btn_GamePintu"
+        style="@style/btn_style"
+        android:text="GamePintu" />
+
+    <Button
+        android:id="@+id/btn_Game2048"
+        style="@style/btn_style"
+        android:text="Game2048" />
+
+</LinearLayout><!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/layout/fragment_second.xml -->

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/zhy"
+        android:label="@string/app_name"
+        android:theme="@style/MMTheme.Basic" >
+        <activity
+            android:name="com.zhy.MainActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhy.RolateAnimActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.CustomViewActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.CustomImageActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.ChouJiangActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.CircleMenuActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.SlidingMenuActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.CustomPargressBarActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.GestureLockActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.SlidingPanelLayoutActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.VerticalLinearLayoutActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.ListViewItemSlideDeleteActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.EventBusActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.SwipeRefreshActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.ImageLoaderActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.NetworkingImageLoaderActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.zhy.SecondActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity android:name="com.zhy.BounceScrollViewActivity" >
+        </activity>
+        <activity android:name="com.zhy.GamePintuActivity" >
+        </activity>
+        <activity android:name="com.zhy.Game2048Activity" >
+        </activity>
+        <activity
+            android:name="com.zhy.handle_runtime_change.HandRuntimeChangeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.zhy.handle_runtime_change.SavedInstanceStateUsingActivity" >
+        </activity>
+        <activity android:name="com.zhy.handle_runtime_change.FragmentRetainDataActivity" >
+        </activity>
+        <activity
+            android:name="com.zhy.handle_runtime_change.ConfigChangesTestActivity"
+            android:configChanges="screenSize|orientation" >
+        </activity>
+        <activity android:name="com.zhy.handle_runtime_change.FixProblemsActivity" >
+        </activity>
+        <activity android:name="com.zhy.ScaleGestureDetectorActivity" >
+        </activity>
+        <activity
+            android:name="com.zhy.clippic.ClipPicActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.zhy.clippic.ShowImageActivity" >
+        </activity>
+        <activity android:name="com.zhy.StickyNavLayoutActivity" >
+        </activity>
+        <activity android:name="com.zhy.MyHorizontalScrollViewActivity" >
+        </activity>
+        <activity
+            android:name="com.zhy.JazzyVewPagerActivity"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity android:name="com.zhy.FlowLayoutActivity" >
+        </activity>
+    </application>
+
+</manifest>

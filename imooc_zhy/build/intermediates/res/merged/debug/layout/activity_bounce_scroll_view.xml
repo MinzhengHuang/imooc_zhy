@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhy.view.BounceScrollView
+        android:id="@+id/id_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/shakehideimg_man" >
+
+        <com.zhy.view.MyListView
+            android:id="@+id/id_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#66ff66" >
+        </com.zhy.view.MyListView>
+    </com.zhy.view.BounceScrollView>
+
+</RelativeLayout><!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/layout/activity_bounce_scroll_view.xml -->

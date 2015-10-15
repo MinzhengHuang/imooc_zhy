@@ -1,16 +1,12 @@
 package com.zhy;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,9 +16,13 @@ import android.view.Window;
 import com.zhy.fragment.FirstFragment;
 import com.zhy.fragment.FourFragment;
 import com.zhy.fragment.SecondFragment;
-import com.zhy.fragment.TabFragment;
 import com.zhy.fragment.ThirdFragment;
 import com.zhy.view.ChangeColorIconWithText;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends FragmentActivity implements OnClickListener,
 		OnPageChangeListener {
@@ -46,6 +46,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		initDatas();
 		mViewPager.setAdapter(mAdapter);
 		initEvent();
+		Log.i("main","这是android studio 编写的");
 
 	}
 
