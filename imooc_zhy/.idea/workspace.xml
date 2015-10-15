@@ -57,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/zhy/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.58441556">
-              <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
+              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -1217,7 +1217,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/zhy/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.58441556">
-          <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
+          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
           <folding />
         </state>
       </provider>
