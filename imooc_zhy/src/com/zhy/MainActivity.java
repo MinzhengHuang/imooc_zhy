@@ -46,8 +46,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		initDatas();
 		mViewPager.setAdapter(mAdapter);
 		initEvent();
-		Log.i("main","这是android studio 编写的");
-
+		Log.i("main", "将项目导入到android studio ");
+		Log.i("main","在android studio 里做修改 ");
+		Log.i("main","在android studio 里再做修改，主要是为了忽略掉一些提交的文件 ");
 	}
 
 	/**
