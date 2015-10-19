@@ -1,8 +1,5 @@
 package com.zhy.fragment;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -14,11 +11,13 @@ import android.widget.ListView;
 
 import com.zhy.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StickyNavTabFragment extends Fragment {
 	public static final String TITLE = "title";
 	private String mTitle = "Defaut Value";
 	private ListView mListView;
-	// private TextView mTextView;
 	private List<String> mDatas = new ArrayList<String>();
 
 	@Override
@@ -35,8 +34,6 @@ public class StickyNavTabFragment extends Fragment {
 		View view = inflater.inflate(R.layout.fragment_stickynav, container, false);
 		mListView = (ListView) view
 				.findViewById(R.id.id_stickynavlayout_innerscrollview);
-		// mTextView = (TextView) view.findViewById(R.id.id_info);
-		// mTextView.setText(mTitle);
 		for (int i = 0; i < 50; i++) {
 			mDatas.add(mTitle + " -> " + i);
 		}

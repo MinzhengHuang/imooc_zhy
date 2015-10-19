@@ -1,12 +1,5 @@
 package com.zhy;
 
-import java.io.File;
-import java.io.FilenameFilter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
@@ -34,6 +27,13 @@ import com.zhy.imageloader.ListImageDirPopupWindow;
 import com.zhy.imageloader.ListImageDirPopupWindow.OnImageDirSelected;
 import com.zhy.imageloader.MyAdapter;
 
+import java.io.File;
+import java.io.FilenameFilter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+
 public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 
 	private ProgressDialog mProgressDialog;
@@ -56,12 +56,12 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 	/**
 	 * 临时的辅助类，用于防止同一个文件夹的多次扫描
 	 */
-	private HashSet<String> mDirPaths = new HashSet<String>();
+	private HashSet<String> mDirPaths = new HashSet<>();
 
 	/**
 	 * 扫描拿到所有的图片文件夹
 	 */
-	private List<ImageFloder> mImageFloders = new ArrayList<ImageFloder>();
+	private List<ImageFloder> mImageFloders = new ArrayList<>();
 
 	private RelativeLayout mBottomLy;
 
