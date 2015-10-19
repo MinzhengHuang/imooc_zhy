@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class TabFragment extends Fragment {
 	private String mTitle = "Default";
@@ -31,9 +32,7 @@ public class TabFragment extends Fragment {
 			
 			@Override
 			public void onClick(View v) {
-//				Intent intent=new Intent(getActivity(), CustomViewActivity.class);
-				
-//				startActivity(intent);
+				Toast.makeText(getActivity(), "hmz", Toast.LENGTH_SHORT).show();
 			}
 		});
 		return tv;
