@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <attr name="icon" format="reference"></attr>
-    <attr name="color" format="color"></attr>
     <attr name="text" format="string"></attr>
     <attr name="text_size" format="dimension"></attr>
 
     <declare-styleable name="ChangeColorIconWithText">
-        <attr name="icon"></attr>
-        <attr name="color"></attr>
+        <attr name="changeicon" format="reference"></attr>
+        <attr name="changecolor" format="color"></attr>
         <attr name="text"></attr>
         <attr name="text_size"></attr>
     </declare-styleable>
@@ -124,4 +121,8 @@
         <attr name="outlineColor" format="color|reference" />
     </declare-styleable>
 
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+    </declare-styleable>
 </resources>

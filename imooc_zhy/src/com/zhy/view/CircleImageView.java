@@ -1,7 +1,5 @@
 package com.zhy.view;
 
-import com.zhy.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -15,6 +13,8 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
+
+import com.zhy.R;
 
 
 /**

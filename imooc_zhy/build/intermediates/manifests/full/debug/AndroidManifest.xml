@@ -161,6 +161,10 @@
         </activity>
         <activity android:name="com.zhy.FlowLayoutActivity" >
         </activity>
+        <activity android:name="com.zhy.LargeImageViewActivity" >
+        </activity>
+        <activity android:name="com.zhy.flowlayout.CategoryActivity" >
+        </activity>
     </application>
 
 </manifest>

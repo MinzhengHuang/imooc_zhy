@@ -1,7 +1,5 @@
 package com.zhy.view;
 
-import com.zhy.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -19,6 +17,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
 import android.widget.ImageView;
+
+import com.zhy.R;
 
 /**
  * http://blog.csdn.net/lmj623565791/article/details/41967509
@@ -162,8 +162,9 @@ public class RoundImageView extends ImageView {
 		super.onSizeChanged(w, h, oldw, oldh);
 
 		// 圆角图片的范围
-		if (type == TYPE_ROUND)
+		if (type == TYPE_ROUND){
 			mRoundRect = new RectF(0, 0, w, h);
+		}
 	}
 
 	/**

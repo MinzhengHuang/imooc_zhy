@@ -1,7 +1,5 @@
 package com.zhy.view;
 
-import com.zhy.R;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -19,6 +17,8 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
+
+import com.zhy.R;
 
 public class ChangeColorIconWithText extends View {
 
@@ -65,11 +65,11 @@ public class ChangeColorIconWithText extends View {
 		for (int i = 0; i < n; i++) {
 			int attr = a.getIndex(i);
 			switch (attr) {
-			case R.styleable.ChangeColorIconWithText_icon:
+			case R.styleable.ChangeColorIconWithText_changeicon:
 				BitmapDrawable drawable = (BitmapDrawable) a.getDrawable(attr);
 				mIconBitmap = drawable.getBitmap();
 				break;
-			case R.styleable.ChangeColorIconWithText_color:
+			case R.styleable.ChangeColorIconWithText_changecolor:
 				mColor = a.getColor(attr, 0xFF45C01A);
 				break;
 			case R.styleable.ChangeColorIconWithText_text:

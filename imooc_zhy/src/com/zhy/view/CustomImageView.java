@@ -1,7 +1,5 @@
 package com.zhy.view;
 
-import com.zhy.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -17,6 +15,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
+
+import com.zhy.R;
 
 public class CustomImageView extends View {
 	/**
@@ -185,6 +185,7 @@ public class CustomImageView extends View {
 		mPaint.setStyle(Style.FILL);
 		/**
 		 * 当前设置的宽度小于字体需要的宽度，将字体改为xxx...
+		 * ellipsize：当文字长度超过textview宽度时的显示方式
 		 */
 		if (mTextBound.width() > mWidth) {
 			TextPaint paint = new TextPaint(mPaint);

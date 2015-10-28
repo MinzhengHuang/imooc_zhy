@@ -1,11 +1,5 @@
 package com.zhy.view;
 
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
-
-import com.zhy.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -16,6 +10,19 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 
+import com.zhy.R;
+
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+
+/**
+ * 步骤:
+ * 1、自定义View的属性
+ * 2、在View的构造方法中获得我们自定义的属性
+ * [ 3、重写onMesure ]
+ * 4、重写onDraw
+ */
 public class CustomTitleView extends View {
 	/**
 	 * 文本
@@ -95,7 +102,7 @@ public class CustomTitleView extends View {
 			@Override
 			public void onClick(View v) {
 				mTitleText = randomText();//获得随机数
-				postInvalidate();
+				postInvalidate();//非UI线程中刷新界面
 			}
 
 		});
@@ -116,6 +123,15 @@ public class CustomTitleView extends View {
 
 		return sb.toString();
 	}
+
+
+	/**
+	 * EXACTLY：一般是设置了明确的值或者是MATCH_PARENT
+	 * AT_MOST：表示子布局限制在一个最大值内，一般为WARP_CONTENT
+	 * UNSPECIFIED：表示子布局想要多大就多大，很少使用
+	 * @param widthMeasureSpec
+	 * @param heightMeasureSpec
+	 */
 
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {

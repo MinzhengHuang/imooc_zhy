@@ -37,5 +37,13 @@
         android:id="@+id/btn_FlowLayout"
         style="@style/btn_style"
         android:text="FlowLayout" />
+    <Button
+        android:id="@+id/btn_LargeImageView"
+        style="@style/btn_style"
+        android:text="LargeImageView" />
+    <Button
+        android:id="@+id/btn_FlowLayout2"
+        style="@style/btn_style"
+        android:text="FlowLayout2" />
 
 </LinearLayout><!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/layout/fragment_third.xml -->

@@ -3,5 +3,7 @@
 
     <color name="white">#ffffff</color>
     <color name="holo_blue">#FF33E5B5</color>
+    <color name="tag_select_textcolor">#cccccc</color>
+    <color name="black">#FF000000</color>
 
 </resources>

@@ -81,8 +81,9 @@ public class OutlineContainer extends FrameLayout implements Animatable {
 
 	@Override
 	public void start() {
-		if (mIsRunning)
+		if (mIsRunning){
 			return;
+		}
 		mIsRunning = true;
 		mStartTime = AnimationUtils.currentAnimationTimeMillis();
 		post(mUpdater);
@@ -90,8 +91,9 @@ public class OutlineContainer extends FrameLayout implements Animatable {
 
 	@Override
 	public void stop() {
-		if (!mIsRunning)
+		if (!mIsRunning){
 			return;
+		}
 		mIsRunning = false;
 	}
 

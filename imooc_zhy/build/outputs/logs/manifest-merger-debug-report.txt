@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:2:1-172:12
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:2:1-178:12
 	xmlns:android
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:2:11-69
 	package
@@ -13,6 +13,10 @@ ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/An
 		INJECTED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml
 uses-sdk
 ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/design/22.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:9:9-38
 	android:minSdkVersion
@@ -26,7 +30,11 @@ ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/An
 	android:name
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:12:22-64
 application
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:14:5-170:19
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:14:5-176:19
+MERGED from [com.android.support:design:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/design/22.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:17:9-41
 	android:allowBackup
@@ -283,3 +291,11 @@ activity#com.zhy.FlowLayoutActivity
 ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:167:9-169:20
 	android:name
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:168:13-54
+activity#com.zhy.LargeImageViewActivity
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:170:9-172:20
+	android:name
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:171:13-58
+activity#com.zhy.flowlayout.CategoryActivity
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:173:9-175:20
+	android:name
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:174:13-63
