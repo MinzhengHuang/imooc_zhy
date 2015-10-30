@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/libs/android-support-v4.jar"
+        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/libs/eventbus.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="ded9acc6a9792b8f1afc470f0c9cd36d178914cd">
-        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/android-support-v4-88b2a8699e4db81ecfc7ec56801ecfe1b2b31e9e.jar" />
-    </item>
-    <item
-        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/classes-03a7467f8c93bb174490290a110fed6fa83fcf47.jar" />
+        sha1="9a179701fef5778920c0471563bc1642e5df8217">
+        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/eventbus-3b78e70347a430aa4c6c3464df9d725af7c8c284.jar" />
     </item>
     <item
         jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/libs/volley.jar"
@@ -23,11 +16,11 @@
         <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/volley-54e6ca46d629b896b320a870c02657f8dbbd449e.jar" />
     </item>
     <item
-        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/libs/eventbus.jar"
+        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="9a179701fef5778920c0471563bc1642e5df8217">
-        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/eventbus-3b78e70347a430aa4c6c3464df9d725af7c8c284.jar" />
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/classes-4c75557e358329cb48b3f8cfe40d9b0c99fa9e0d.jar" />
     </item>
     <item
         jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
@@ -37,11 +30,18 @@
         <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-53f354be8464aa4158871863dad8e05673eb2b0c.jar" />
     </item>
     <item
-        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/libs/nineoldandroids-2.4.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/classes-4c75557e358329cb48b3f8cfe40d9b0c99fa9e0d.jar" />
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-573e8b50f25f09c84edc1656d22a50211624f315.jar" />
+    </item>
+    <item
+        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/libs/android-support-v7-recyclerview.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7c0018e9838fc8c654c6fa83a110c4600b46febd">
+        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/android-support-v7-recyclerview-7022dffa91b2d4be960146f047cd0d01be70c23b.jar" />
     </item>
     <item
         jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
@@ -58,11 +58,11 @@
         <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-d5a856873e7670f8dca28a6eace80dfe37259c8b.jar" />
     </item>
     <item
-        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/libs/nineoldandroids-2.4.0.jar"
+        jar="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
-        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-573e8b50f25f09c84edc1656d22a50211624f315.jar" />
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/pre-dexed/debug/classes-03a7467f8c93bb174490290a110fed6fa83fcf47.jar" />
     </item>
 
 </items>

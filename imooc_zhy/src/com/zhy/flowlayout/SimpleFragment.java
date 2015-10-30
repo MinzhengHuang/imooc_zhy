@@ -1,7 +1,6 @@
 package com.zhy.flowlayout;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,14 +23,13 @@ public class SimpleFragment extends Fragment {
 
     private TagFlowLayout mFlowLayout;
 
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.activity_main_flowlayout, container, false);
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         final LayoutInflater mInflater = LayoutInflater.from(getActivity());
         mFlowLayout = (TagFlowLayout) view.findViewById(R.id.id_flowlayout);
 

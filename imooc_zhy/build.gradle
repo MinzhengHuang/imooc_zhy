@@ -12,6 +12,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: 'eventbus.jar')
     compile fileTree(dir: 'libs', include: 'volley.jar')
     compile fileTree(dir: 'libs', include: 'nineoldandroids-2.4.0.jar')
+    compile fileTree(dir: 'libs', include: 'android-support-v7-recyclerview.jar')
     compile 'com.android.support:design:22.2.0'
 }
 

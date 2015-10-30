@@ -1,7 +1,8 @@
 package com.zhy.flowlayout;
 
+import java.util.Set;
+
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,8 +15,6 @@ import com.zhy.flowlayout.lib.FlowLayout;
 import com.zhy.flowlayout.lib.TagAdapter;
 import com.zhy.flowlayout.lib.TagFlowLayout;
 
-import java.util.Set;
-
 /**
  * Created by zhy on 15/9/10.
  */
@@ -27,14 +26,13 @@ public class EventTestFragment extends Fragment {
 
     private TagFlowLayout mFlowLayout;
 
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.activity_main_flowlayout, container, false);
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(View view,  Bundle savedInstanceState) {
         final LayoutInflater mInflater = LayoutInflater.from(getActivity());
         mFlowLayout = (TagFlowLayout) view.findViewById(R.id.id_flowlayout);
         //mFlowLayout.setMaxSelectCount(3);

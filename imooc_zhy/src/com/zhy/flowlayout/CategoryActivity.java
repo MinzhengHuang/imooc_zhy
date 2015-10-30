@@ -1,11 +1,13 @@
 package com.zhy.flowlayout;
 
+import android.graphics.PorterDuff.Mode;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.Gravity;
 
 import com.zhy.R;
 
@@ -26,6 +28,13 @@ public class CategoryActivity extends FragmentActivity {
         setContentView(R.layout.activity_category);
 
         mTabLayout = (TabLayout) findViewById(R.id.id_tablayout);
+        /**
+         * zhy:tabGravity="fill"
+        zhy:tabIndicatorColor="#0ddcff"
+        zhy:tabMode="fixed"
+        zhy:tabSelectedTextColor="#0ddcff"
+        zhy:tabTextColor="#000000"
+         */
         mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
 
         mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {

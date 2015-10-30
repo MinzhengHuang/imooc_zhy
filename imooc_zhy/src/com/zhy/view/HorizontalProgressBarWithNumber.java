@@ -5,10 +5,10 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.util.TypedValue;
 import android.widget.ProgressBar;
 
 import com.zhy.R;
+import com.zhy.utils.Util;
 
 public class HorizontalProgressBarWithNumber extends ProgressBar {
 
@@ -30,17 +30,17 @@ public class HorizontalProgressBarWithNumber extends ProgressBar {
 	/**
 	 * size of text (sp)
 	 */
-	protected int mTextSize = sp2px(DEFAULT_TEXT_SIZE);
+	protected int mTextSize = Util.sp2px(getResources(), DEFAULT_TEXT_SIZE);
 
 	/**
 	 * offset of draw progress
 	 */
-	protected int mTextOffset = dp2px(DEFAULT_SIZE_TEXT_OFFSET);
+	protected int mTextOffset = Util.dp2px(getResources(), DEFAULT_SIZE_TEXT_OFFSET);
 
 	/**
 	 * height of reached progress bar
 	 */
-	protected int mReachedProgressBarHeight = dp2px(DEFAULT_HEIGHT_REACHED_PROGRESS_BAR);
+	protected int mReachedProgressBarHeight = Util.dp2px(getResources(), DEFAULT_HEIGHT_REACHED_PROGRESS_BAR);
 
 	/**
 	 * color of reached bar
@@ -53,7 +53,7 @@ public class HorizontalProgressBarWithNumber extends ProgressBar {
 	/**
 	 * height of unreached progress bar
 	 */
-	protected int mUnReachedProgressBarHeight = dp2px(DEFAULT_HEIGHT_UNREACHED_PROGRESS_BAR);
+	protected int mUnReachedProgressBarHeight = Util.dp2px(getResources(),DEFAULT_HEIGHT_UNREACHED_PROGRESS_BAR);
 	/**
 	 * view width except padding
 	 */
@@ -198,26 +198,6 @@ public class HorizontalProgressBarWithNumber extends ProgressBar {
 
 	}
 
-	/**
-	 * dp 2 px
-	 * 
-	 * @param dpVal
-	 */
-	protected int dp2px(int dpVal) {
-		return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
-				dpVal, getResources().getDisplayMetrics());
-	}
 
-	/**
-	 * sp 2 px
-	 * 
-	 * @param spVal
-	 * @return
-	 */
-	protected int sp2px(int spVal) {
-		return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
-				spVal, getResources().getDisplayMetrics());
-
-	}
 
 }

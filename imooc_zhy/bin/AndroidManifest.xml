@@ -167,6 +167,16 @@
         <activity
             android:name="com.zhy.FlowLayoutActivity" >
         </activity>
+        <activity
+            android:name="com.zhy.LargeImageViewActivity" >
+        </activity>
+        <activity
+            android:name="com.zhy.flowlayout.CategoryActivity" >
+        </activity>
+        <activity android:name="com.zhy.recyclerview.StaggeredGridLayoutActivity"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name="com.zhy.recyclerview.RecyclerViewActivity"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

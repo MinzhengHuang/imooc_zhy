@@ -1,6 +1,7 @@
 package com.zhy.view;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint.Cap;
@@ -9,13 +10,14 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 
 import com.zhy.R;
+import com.zhy.utils.Util;
 
 public class RoundProgressBarWidthNumber extends
 		HorizontalProgressBarWithNumber {
 	/**
 	 * mRadius of view
 	 */
-	private int mRadius = dp2px(30);
+	private int mRadius = Util.dp2px(getResources(),30);
 	private int mMaxPaintWidth;
 
 	public RoundProgressBarWidthNumber(Context context) {

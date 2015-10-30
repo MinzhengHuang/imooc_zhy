@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zhy.sample.demo_recyclerview.MainActivity" >
+
+    <item
+        android:id="@+id/id_action_add"
+        android:icon="@drawable/actionbar_add_icon"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="add">
+    </item>
+    <item
+        android:id="@+id/id_action_delete"
+        android:icon="@drawable/ic_menu_delete"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="delete"/>
+
+</menu>

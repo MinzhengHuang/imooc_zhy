@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:2:1-178:12
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:2:1-182:12
 	xmlns:android
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:2:11-69
 	package
@@ -30,7 +30,7 @@ ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/An
 	android:name
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:12:22-64
 application
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:14:5-176:19
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:14:5-180:19
 MERGED from [com.android.support:design:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/design/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
@@ -299,3 +299,15 @@ activity#com.zhy.flowlayout.CategoryActivity
 ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:173:9-175:20
 	android:name
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:174:13-63
+activity#com.zhy.recyclerview.StaggeredGridLayoutActivity
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:176:9-177:56
+	android:theme
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:177:13-44
+	android:name
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:176:19-82
+activity#com.zhy.recyclerview.RecyclerViewActivity
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:178:9-179:56
+	android:theme
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:179:13-44
+	android:name
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:178:19-75

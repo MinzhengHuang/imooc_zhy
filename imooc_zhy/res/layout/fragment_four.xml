@@ -5,5 +5,9 @@
     android:orientation="vertical" 
     android:background="#99ffcc">
     
+    <Button
+        android:id="@+id/btn_RecyclerView"
+        style="@style/btn_style"
+        android:text="RecyclerView" />
 
 </LinearLayout>

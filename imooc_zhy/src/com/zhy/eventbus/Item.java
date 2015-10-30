@@ -1,13 +1,12 @@
 package com.zhy.eventbus;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Item {
 	public String id;
 	public String content;
 
-	public static List<Item> ITEMS = new ArrayList<>();
+	public static ArrayList<Item> ITEMS = new ArrayList<Item>();
 	static {
 		// Add 6 sample items.
 		addItem(new Item("1", "Item 1"));

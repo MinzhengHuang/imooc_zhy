@@ -100,6 +100,12 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/values/color.xml -->
+    <eat-comment/>
+    <color name="color_item_normal">#44ff0000</color>
+    <color name="color_item_press">#ffff0000</color>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>

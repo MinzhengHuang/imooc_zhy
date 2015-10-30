@@ -5,6 +5,10 @@
     android:orientation="vertical" 
     android:background="#99ffcc">
     
+    <Button
+        android:id="@+id/btn_RecyclerView"
+        style="@style/btn_style"
+        android:text="RecyclerView" />
 
 </LinearLayout>
 <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/res/layout/fragment_four.xml -->

@@ -56,12 +56,12 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 	/**
 	 * 临时的辅助类，用于防止同一个文件夹的多次扫描
 	 */
-	private HashSet<String> mDirPaths = new HashSet<>();
+	private HashSet<String> mDirPaths = new HashSet<String>();
 
 	/**
 	 * 扫描拿到所有的图片文件夹
 	 */
-	private List<ImageFloder> mImageFloders = new ArrayList<>();
+	private List<ImageFloder> mImageFloders = new ArrayList<ImageFloder>();
 
 	private RelativeLayout mBottomLy;
 
