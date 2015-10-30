@@ -7,177 +7,19 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="main" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6fceba4f-eeca-44ea-aeb2-e076caf30d5d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/networkimageloader/AbsSingleFragmentActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/networkimageloader/AbsSingleFragmentActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/ChangeColorIconWithText.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/ChangeColorIconWithText.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/ChouJiangActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/ChouJiangActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/ChouJiangActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/ChouJiangActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/ChouJiangActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/ChouJiangActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/CircleMenuActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/CircleMenuActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/CircleMenuLayout.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/CircleMenuLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/CircleMenuLayout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/CircleMenuLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/clippic/ClipPicActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/clippic/ClipPicActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/clippic/ClipPicActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/clippic/ClipPicActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/CustomImageActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/CustomImageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/CustomImageView.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/CustomImageView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/CustomPargressBarActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/CustomPargressBarActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/CustomTitleView$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/CustomTitleView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/CustomTitleView.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/CustomTitleView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/CustomViewActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/CustomViewActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/CustomViewActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/CustomViewActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/EventBusActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/EventBusActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/FirstFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/FirstFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/FirstFragment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/FirstFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/FlowLayoutActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/FlowLayoutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/FourFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/FourFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/FourFragment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/FourFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/handle_runtime_change/FragmentRetainDataActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/handle_runtime_change/FragmentRetainDataActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/Game2048Activity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/Game2048Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/GamePintuActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/GamePintuActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/GestureLockActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/GestureLockActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/handle_runtime_change/HandRuntimeChangeActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/handle_runtime_change/HandRuntimeChangeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/HorizontalProgressBarWithNumber.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/HorizontalProgressBarWithNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/HorizontalProgressBarWithNumber.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/HorizontalProgressBarWithNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/adapter/HorizontalScrollViewAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/adapter/HorizontalScrollViewAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/adapter/HorizontalScrollViewAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/adapter/HorizontalScrollViewAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/ImageLoaderActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/ImageLoaderActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/ImageLoaderActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/ImageLoaderActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/eventbus/Item.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/eventbus/Item.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/eventbus/Item.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/eventbus/Item.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/eventbus/ItemDetailFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/eventbus/ItemDetailFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/eventbus/ItemDetailFragment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/eventbus/ItemDetailFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/eventbus/ItemListFragment$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/eventbus/ItemListFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/eventbus/ItemListFragment$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/eventbus/ItemListFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/eventbus/ItemListFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/eventbus/ItemListFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/JazzyVewPagerActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/JazzyVewPagerActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/LeftMenuFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/LeftMenuFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/LeftMenuFragment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/LeftMenuFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/imageloader/ListImageDirPopupWindow$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/imageloader/ListImageDirPopupWindow$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/imageloader/ListImageDirPopupWindow$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/imageloader/ListImageDirPopupWindow$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/imageloader/ListImageDirPopupWindow.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/imageloader/ListImageDirPopupWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/imageloader/ListImageDirPopupWindow.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/imageloader/ListImageDirPopupWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/networkimageloader/ListImgsFragment$ListImgItemAdaper.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/networkimageloader/ListImgsFragment$ListImgItemAdaper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/networkimageloader/ListImgsFragment$ListImgItemAdaper.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/networkimageloader/ListImgsFragment$ListImgItemAdaper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/networkimageloader/ListImgsFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/networkimageloader/ListImgsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/networkimageloader/ListImgsFragment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/networkimageloader/ListImgsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/ListViewItemSlideDeleteActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/ListViewItemSlideDeleteActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/ListViewItemSlideDeleteView.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/ListViewItemSlideDeleteView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/ListViewItemSlideDeleteView.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/ListViewItemSlideDeleteView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/handle_runtime_change/LoadingDialog.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/handle_runtime_change/LoadingDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/handle_runtime_change/LoadingDialog.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/handle_runtime_change/LoadingDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/LuckyPanView.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/LuckyPanView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/LuckyPanView.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/LuckyPanView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/MainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/imageloader/MyAdapter$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/imageloader/MyAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/imageloader/MyAdapter$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/imageloader/MyAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/imageloader/MyAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/imageloader/MyAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/imageloader/MyAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/imageloader/MyAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/MyHorizontalScrollViewActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/MyHorizontalScrollViewActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/MyHorizontalScrollViewActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/MyHorizontalScrollViewActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/NetworkingImageLoaderActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/NetworkingImageLoaderActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/OutlineContainer$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/OutlineContainer$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/OutlineContainer.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/OutlineContainer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/OutlineContainer.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/OutlineContainer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$attr.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$color.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$color.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$dimen.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$dimen.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$drawable.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$drawable.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$layout.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$menu.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$menu.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$string.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$style.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$style.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/R$styleable.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$styleable.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/RolateAnimActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/RolateAnimActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/RoundImageView.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/RoundImageView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/RoundProgressBarWidthNumber.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/RoundProgressBarWidthNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/RoundProgressBarWidthNumber.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/view/RoundProgressBarWidthNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/ScaleGestureDetectorActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/ScaleGestureDetectorActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/ScaleGestureDetectorActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/ScaleGestureDetectorActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/SecondActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/SecondActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/SecondActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/SecondActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/SecondFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/SecondFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/SecondFragment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/SecondFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/clippic/ShowImageActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/clippic/ShowImageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/clippic/ShowImageActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/clippic/ShowImageActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/SimpleViewPagerIndicator$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/SimpleViewPagerIndicator$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/view/SimpleViewPagerIndicator.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/view/SimpleViewPagerIndicator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/SlidingMenuActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/SlidingMenuActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/SlidingMenuActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/SlidingMenuActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/SlidingPanelLayoutActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/SlidingPanelLayoutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/SlidingPanelLayoutActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/SlidingPanelLayoutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/StickyNavLayoutActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/StickyNavLayoutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/StickyNavLayoutActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/StickyNavLayoutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/StickyNavTabFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/StickyNavTabFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/StickyNavTabFragment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/StickyNavTabFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/SwipeRefreshActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/SwipeRefreshActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/SwipeRefreshActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/SwipeRefreshActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/ThirdFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/fragment/ThirdFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/ThirdFragment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/fragment/ThirdFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/utils/Util.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/utils/Util.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/utils/Util.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/utils/Util.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/zhy/VerticalLinearLayoutActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/zhy/VerticalLinearLayoutActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/VerticalLinearLayoutActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/zhy/VerticalLinearLayoutActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/eventbus-3b78e70347a430aa4c6c3464df9d725af7c8c284.jar" afterPath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/eventbus-3b78e70347a430aa4c6c3464df9d725af7c8c284.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/imooc_zhy-debug-unaligned.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/imooc_zhy-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/imooc_zhy-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/imooc_zhy-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-573e8b50f25f09c84edc1656d22a50211624f315.jar" afterPath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-573e8b50f25f09c84edc1656d22a50211624f315.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/volley-54e6ca46d629b896b320a870c02657f8dbbd449e.jar" afterPath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/volley-54e6ca46d629b896b320a870c02657f8dbbd449e.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/bin/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/flowlayout/CategoryActivity.java" afterPath="$PROJECT_DIR$/src/com/zhy/flowlayout/CategoryActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/flowlayout/EventTestFragment.java" afterPath="$PROJECT_DIR$/src/com/zhy/flowlayout/EventTestFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/fragment/FourFragment.java" afterPath="$PROJECT_DIR$/src/com/zhy/fragment/FourFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/view/HorizontalProgressBarWithNumber.java" afterPath="$PROJECT_DIR$/src/com/zhy/view/HorizontalProgressBarWithNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/ImageLoaderActivity.java" afterPath="$PROJECT_DIR$/src/com/zhy/ImageLoaderActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/eventbus/Item.java" afterPath="$PROJECT_DIR$/src/com/zhy/eventbus/Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/eventbus/ItemListFragment.java" afterPath="$PROJECT_DIR$/src/com/zhy/eventbus/ItemListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/fragment/LeftMenuFragment.java" afterPath="$PROJECT_DIR$/src/com/zhy/fragment/LeftMenuFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/flowlayout/LimitSelectedFragment.java" afterPath="$PROJECT_DIR$/src/com/zhy/flowlayout/LimitSelectedFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/com/zhy/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/com/zhy/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/zhy/R.java" afterPath="$PROJECT_DIR$/gen/com/zhy/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/view/RoundProgressBarWidthNumber.java" afterPath="$PROJECT_DIR$/src/com/zhy/view/RoundProgressBarWidthNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/flowlayout/ScrollViewTestFragment.java" afterPath="$PROJECT_DIR$/src/com/zhy/flowlayout/ScrollViewTestFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/flowlayout/SimpleFragment.java" afterPath="$PROJECT_DIR$/src/com/zhy/flowlayout/SimpleFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/flowlayout/SingleChooseFragment.java" afterPath="$PROJECT_DIR$/src/com/zhy/flowlayout/SingleChooseFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhy/utils/Util.java" afterPath="$PROJECT_DIR$/src/com/zhy/utils/Util.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_category.xml" afterPath="$PROJECT_DIR$/res/layout/activity_category.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/color.xml" afterPath="$PROJECT_DIR$/res/values/color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/fragment_four.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/fragment_four.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_four.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_four.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imooc_zhy.iml" afterPath="$PROJECT_DIR$/imooc_zhy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeResourcesdebug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="imooc_zhy.iws" />
@@ -205,8 +47,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.625">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -1031,7 +873,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/activity_category.xml" />
         <option value="$PROJECT_DIR$/src/com/zhy/utils/Util.java" />
         <option value="$PROJECT_DIR$/src/com/zhy/view/HorizontalProgressBarWithNumber.java" />
         <option value="$PROJECT_DIR$/res/values/color.xml" />
@@ -1043,6 +884,7 @@
         <option value="$PROJECT_DIR$/src/com/zhy/recyclerview/DividerItemDecoration.java" />
         <option value="$PROJECT_DIR$/src/com/zhy/recyclerview/RecyclerViewAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/zhy/recyclerview/StaggeredHomeAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_category.xml" />
       </list>
     </option>
   </component>
@@ -1112,24 +954,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc_zhy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imooc_zhy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1391,7 +1215,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43342775" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0694051" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0694051" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1554,8 +1378,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.625">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
           <folding />
         </state>
       </provider>
