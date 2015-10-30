@@ -3,3 +3,6 @@
 /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/hmz.dll
 /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build
 /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/local.properties
+imooc_zhy/build/*
+imooc_zhy/.idea/*
+imooc_zhy/.gradle/*
