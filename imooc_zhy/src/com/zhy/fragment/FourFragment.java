@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import com.zhy.R;
+import com.zhy.XUtilsTestActivity;
 import com.zhy.recyclerview.RecyclerViewActivity;
 
 public class FourFragment extends Fragment implements OnClickListener{
@@ -17,6 +18,7 @@ public class FourFragment extends Fragment implements OnClickListener{
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_four, container, false);
 		view.findViewById(R.id.btn_RecyclerView).setOnClickListener(this);
+		view.findViewById(R.id.btn_xUtils).setOnClickListener(this);
 		return view;
 
 	}
@@ -35,6 +37,10 @@ public class FourFragment extends Fragment implements OnClickListener{
 			intent=new Intent(getActivity(), RecyclerViewActivity.class);
 			break;
 
+		case R.id.btn_xUtils:
+			intent=new Intent(getActivity(), XUtilsTestActivity.class);
+			break;
+			
 		default:
 			break;
 		}

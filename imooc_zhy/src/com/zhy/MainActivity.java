@@ -49,9 +49,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 			//log中查看
 			// ActivityManager﹕ Displayed com.zhy/.MainActivity: +329ms
 			//需要UPDATE_DEVICE_STATS权限
-			reportFullyDrawn();//测量Activity的启动时间
+//			reportFullyDrawn();//测量Activity的启动时间
 
 		}catch(SecurityException e){
+			
 		}
 	}
 

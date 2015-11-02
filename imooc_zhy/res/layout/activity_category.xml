@@ -9,11 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        app:tabGravity="fill"
-        app:tabIndicatorColor="#0ddcff"
-        app:tabMode="fixed"
-        app:tabSelectedTextColor="#0ddcff"
-        app:tabTextColor="#000000"
+        
          />
    <!--  app:tabGravity="fill"
         app:tabIndicatorColor="#0ddcff"

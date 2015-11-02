@@ -10,4 +10,8 @@
         style="@style/btn_style"
         android:text="RecyclerView" />
 
+    <Button
+        android:id="@+id/btn_xUtils"
+        style="@style/btn_style"
+        android:text="xUtils" />
 </LinearLayout>
