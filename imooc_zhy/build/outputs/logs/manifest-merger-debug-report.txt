@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:2:1-182:12
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:2:1-183:12
 	xmlns:android
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:2:11-69
 	package
@@ -29,285 +29,289 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:12:5-67
 	android:name
 		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:12:22-64
+uses-permission#android.permission.UPDATE_DEVICE_STATS
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:13:5-78
+	android:name
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:13:22-75
 application
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:14:5-180:19
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:15:5-181:19
 MERGED from [com.android.support:design:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/design/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:17:9-41
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:18:9-41
 	android:allowBackup
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:15:9-35
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:16:9-35
 	android:icon
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:16:9-37
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:17:9-37
 	android:theme
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:18:9-45
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:19:9-45
 activity#com.zhy.MainActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:19:9-29:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:20:9-30:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:23:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:24:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:21:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:22:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:20:13-48
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:21:13-48
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:22:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:23:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:24:13-28:29
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:25:17-69
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:25:25-66
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:27:17-77
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:27:27-74
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:28:27-74
 activity#com.zhy.RolateAnimActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:30:9-35:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:31:9-36:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:34:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:35:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:32:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:33:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:31:13-54
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:32:13-54
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:33:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:34:13-43
 activity#com.zhy.CustomViewActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:36:9-41:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:37:9-42:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:40:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:41:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:38:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:39:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:37:13-54
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:38:13-54
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:39:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:40:13-43
 activity#com.zhy.CustomImageActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:42:9-47:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:43:9-48:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:46:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:47:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:44:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:45:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:43:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:44:13-55
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:45:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:46:13-43
 activity#com.zhy.ChouJiangActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:48:9-53:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:49:9-54:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:52:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:53:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:50:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:51:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:49:13-53
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:50:13-53
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:51:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:52:13-43
 activity#com.zhy.CircleMenuActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:54:9-59:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:55:9-60:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:58:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:59:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:56:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:57:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:55:13-54
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:56:13-54
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:57:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:58:13-43
 activity#com.zhy.SlidingMenuActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:60:9-65:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:61:9-66:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:64:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:65:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:62:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:63:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:61:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:62:13-55
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:63:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:64:13-43
 activity#com.zhy.CustomPargressBarActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:66:9-71:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:67:9-72:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:70:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:71:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:68:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:69:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:67:13-61
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:68:13-61
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:69:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:70:13-43
 activity#com.zhy.GestureLockActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:72:9-77:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:73:9-78:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:76:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:77:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:74:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:75:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:73:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:74:13-55
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:75:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:76:13-43
 activity#com.zhy.SlidingPanelLayoutActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:78:9-83:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:79:9-84:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:82:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:83:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:80:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:81:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:79:13-62
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:80:13-62
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:81:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:82:13-43
 activity#com.zhy.VerticalLinearLayoutActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:84:9-89:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:85:9-90:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:88:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:89:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:86:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:87:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:85:13-64
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:86:13-64
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:87:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:88:13-43
 activity#com.zhy.ListViewItemSlideDeleteActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:90:9-95:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:91:9-96:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:94:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:95:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:92:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:93:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:91:13-67
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:92:13-67
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:93:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:94:13-43
 activity#com.zhy.EventBusActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:96:9-101:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:97:9-102:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:100:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:101:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:98:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:99:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:97:13-52
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:98:13-52
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:99:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:100:13-43
 activity#com.zhy.SwipeRefreshActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:102:9-107:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:103:9-108:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:106:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:107:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:104:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:105:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:103:13-56
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:104:13-56
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:105:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:106:13-43
 activity#com.zhy.ImageLoaderActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:108:9-113:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:109:9-114:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:112:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:113:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:110:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:111:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:109:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:110:13-55
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:111:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:112:13-43
 activity#com.zhy.NetworkingImageLoaderActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:114:9-119:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:115:9-120:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:118:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:119:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:116:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:117:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:115:13-65
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:116:13-65
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:117:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:118:13-43
 activity#com.zhy.SecondActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:120:9-125:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:121:9-126:20
 	android:windowSoftInputMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:124:13-55
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:125:13-55
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:122:13-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:123:13-90
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:121:13-50
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:122:13-50
 	android:launchMode
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:123:13-43
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:124:13-43
 activity#com.zhy.BounceScrollViewActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:126:9-128:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:127:9-129:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:127:13-60
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:128:13-60
 activity#com.zhy.GamePintuActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:129:9-131:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:130:9-132:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:130:13-53
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:131:13-53
 activity#com.zhy.Game2048Activity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:132:9-134:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:133:9-135:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:133:13-52
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:134:13-52
 activity#com.zhy.handle_runtime_change.HandRuntimeChangeActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:135:9-138:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:136:9-139:20
 	android:label
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:137:13-45
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:138:13-45
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:136:13-83
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:137:13-83
 activity#com.zhy.handle_runtime_change.SavedInstanceStateUsingActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:139:9-140:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:140:9-141:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:139:19-95
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:140:19-95
 activity#com.zhy.handle_runtime_change.FragmentRetainDataActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:141:9-142:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:142:9-143:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:141:19-90
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:142:19-90
 activity#com.zhy.handle_runtime_change.ConfigChangesTestActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:143:9-146:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:144:9-147:20
 	android:configChanges
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:145:13-59
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:146:13-59
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:144:13-83
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:145:13-83
 activity#com.zhy.handle_runtime_change.FixProblemsActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:147:9-148:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:148:9-149:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:147:19-83
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:148:19-83
 activity#com.zhy.ScaleGestureDetectorActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:149:9-151:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:150:9-152:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:150:13-64
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:151:13-64
 activity#com.zhy.clippic.ClipPicActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:152:9-155:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:153:9-156:20
 	android:label
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:154:13-45
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:155:13-45
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:153:13-59
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:154:13-59
 activity#com.zhy.clippic.ShowImageActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:156:9-157:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:157:9-158:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:156:19-67
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:157:19-67
 activity#com.zhy.StickyNavLayoutActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:158:9-159:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:159:9-160:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:158:19-65
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:159:19-65
 activity#com.zhy.MyHorizontalScrollViewActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:160:9-162:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:161:9-163:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:161:13-66
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:162:13-66
 activity#com.zhy.JazzyVewPagerActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:163:9-166:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:164:9-167:20
 	android:theme
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:165:13-44
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:166:13-44
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:164:13-57
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:165:13-57
 activity#com.zhy.FlowLayoutActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:167:9-169:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:168:9-170:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:168:13-54
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:169:13-54
 activity#com.zhy.LargeImageViewActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:170:9-172:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:171:9-173:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:171:13-58
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:172:13-58
 activity#com.zhy.flowlayout.CategoryActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:173:9-175:20
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:174:9-176:20
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:174:13-63
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:175:13-63
 activity#com.zhy.recyclerview.StaggeredGridLayoutActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:176:9-177:56
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:177:9-178:56
 	android:theme
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:177:13-44
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:178:13-44
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:176:19-82
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:177:19-82
 activity#com.zhy.recyclerview.RecyclerViewActivity
-ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:178:9-179:56
+ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:179:9-180:56
 	android:theme
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:179:13-44
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:180:13-44
 	android:name
-		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:178:19-75
+		ADDED from /Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/imooc_zhy/AndroidManifest.xml:179:19-75

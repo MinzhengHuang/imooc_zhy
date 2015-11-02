@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -46,7 +45,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		initDatas();
 		mViewPager.setAdapter(mAdapter);
 		initEvent();
-		Log.i("main", "将项目导入到android studio ");
+		try{
+			reportFullyDrawn();//测量Activity的启动时间
+		}catch(SecurityException e){
+		}
 	}
 
 	/**
