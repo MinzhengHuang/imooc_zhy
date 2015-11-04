@@ -116,12 +116,8 @@
 
         <Button
             android:id="@+id/btn_customimg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="自定义图片控件"
-            android:padding="5dp"
-            android:textSize="20sp"
-            android:textColor="#ffffff"
+            style="@style/btn_style"
              />
     </LinearLayout>
 
