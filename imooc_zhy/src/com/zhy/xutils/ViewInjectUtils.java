@@ -1,13 +1,12 @@
 package com.zhy.xutils;
 
+import android.app.Activity;
+import android.view.View;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-
-import android.app.Activity;
-import android.util.Log;
-import android.view.View;
 
 public class ViewInjectUtils {
 	private static final String METHOD_SET_CONTENTVIEW = "setContentView";
@@ -120,8 +119,7 @@ public class ViewInjectUtils {
 		Class<? extends Activity> clazz = activity.getClass();
 		// 查询类上是否存在ContentView注解
 		ContentView contentView = clazz.getAnnotation(ContentView.class);
-		if (contentView != null)// 存在
-		{
+		if (contentView != null){// 存在
 			int contentViewLayoutId = contentView.value();
 			try {
 				Method method = clazz.getMethod(METHOD_SET_CONTENTVIEW,
