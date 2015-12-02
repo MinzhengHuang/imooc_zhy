@@ -15,8 +15,8 @@ import com.zhy.MyHorizontalScrollViewActivity;
 import com.zhy.R;
 import com.zhy.ScaleGestureDetectorActivity;
 import com.zhy.StickyNavLayoutActivity;
+import com.zhy.ViewPagerIndicatorActivity;
 import com.zhy.clippic.ClipPicActivity;
-import com.zhy.flowlayout.CategoryActivity;
 import com.zhy.handle_runtime_change.HandRuntimeChangeActivity;
 
 public class ThirdFragment extends Fragment implements OnClickListener {
@@ -35,6 +35,7 @@ public class ThirdFragment extends Fragment implements OnClickListener {
         view.findViewById(R.id.btn_FlowLayout).setOnClickListener(this);
         view.findViewById(R.id.btn_LargeImageView).setOnClickListener(this);
         view.findViewById(R.id.btn_FlowLayout2).setOnClickListener(this);
+        view.findViewById(R.id.btn_ViewPagerIndicator).setOnClickListener(this);
         return view;
 
     }
@@ -74,7 +75,10 @@ public class ThirdFragment extends Fragment implements OnClickListener {
                 intent = new Intent(getActivity(), LargeImageViewActivity.class);
                 break;
             case R.id.btn_FlowLayout2:
-                intent = new Intent(getActivity(), CategoryActivity.class);
+//                intent = new Intent(getActivity(), CategoryActivity.class);
+                break;
+            case R.id.btn_ViewPagerIndicator:
+                intent = new Intent(getActivity(), ViewPagerIndicatorActivity.class);
                 break;
 
             default:
