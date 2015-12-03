@@ -1,9 +1,5 @@
 package com.zhy;
 
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -14,6 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.zhy.utils.HmzUtils;
 import com.zhy.view.CircleImageDrawable;
 import com.zhy.view.RoundImageDrawable;
 
@@ -30,7 +27,7 @@ public class CustomViewActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				mTitleText = randomText();//获得随机数
+				mTitleText = HmzUtils.randomNumStr(4);//获得随机数
 				tv.setText(mTitleText);
 			}
 		});
@@ -51,18 +48,5 @@ public class CustomViewActivity extends Activity {
 		});
     }
 
-	private String randomText() {
-		Random random = new Random();
-		Set<Integer> set = new HashSet<Integer>();
-		while (set.size() < 4) {
-			int randomInt = random.nextInt(10);
-			set.add(randomInt);
-		}
-		StringBuffer sb = new StringBuffer();
-		for (Integer i : set) {
-			sb.append("" + i);
-		}
 
-		return sb.toString();
-	}
 }
