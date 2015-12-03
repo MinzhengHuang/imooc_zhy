@@ -7,6 +7,12 @@ import android.widget.TextView;
 
 import com.zhy.R;
 
+/**
+ * ViewDragHelper实战 自己打造Drawerlayout
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/47396187
+ *
+ */
 public class LeftDrawerLayoutActivity extends FragmentActivity {
 
     private LeftMenuFragment mMenuFragment;

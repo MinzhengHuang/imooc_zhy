@@ -34,7 +34,7 @@ public class LeftMenuAdapter extends ArrayAdapter<MenuItem> {
 
 
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.item_left_menu, parent, false);
+            convertView = mInflater.inflate(R.layout.item_left_menu_vdh, parent, false);
         }
 
         ImageView iv = (ImageView) convertView.findViewById(R.id.id_item_icon);

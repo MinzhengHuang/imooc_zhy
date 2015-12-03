@@ -50,4 +50,9 @@
         style="@style/btn_style"
         android:text="ViewDragHelper" />
 
+    <Button
+        android:id="@+id/btn_Drawerlayout"
+        style="@style/btn_style"
+        android:text="Drawerlayout" />
+
 </LinearLayout>

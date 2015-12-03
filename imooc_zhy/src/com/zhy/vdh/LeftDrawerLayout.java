@@ -9,6 +9,10 @@ import android.view.ViewGroup;
 
 /**
  * Created by zhy on 15/5/29.
+ *
+ * ViewDragHelper实战 自己打造Drawerlayout
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/47396187
  */
 public class LeftDrawerLayout extends ViewGroup {
     private static final int MIN_DRAWER_MARGIN = 64; // dp
