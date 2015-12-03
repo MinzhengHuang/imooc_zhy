@@ -7,6 +7,12 @@ import android.widget.Toast;
 import com.zhy.view.VerticalLinearLayout;
 import com.zhy.view.VerticalLinearLayout.OnPageChangeListener;
 
+/**
+ * Andoird 自定义ViewGroup实现竖向引导界面
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/23692439
+ *
+ */
 public class VerticalLinearLayoutActivity extends Activity {
 	private VerticalLinearLayout mMianLayout;
 	
