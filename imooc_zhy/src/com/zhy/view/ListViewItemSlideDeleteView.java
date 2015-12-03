@@ -17,64 +17,21 @@ import com.zhy.R;
 public class ListViewItemSlideDeleteView extends ListView{
 
 	private static final String TAG = "ListViewItemSlideDeleteView";
-
-	// private static final int VELOCITY_SANP = 200;
-	// private VelocityTracker mVelocityTracker;
-	/**
-	 * 用户滑动的最小距离
-	 */
-	private int touchSlop;
-
-	/**
-	 * 是否响应滑动
-	 */
-	private boolean isSliding;
-
-	/**
-	 * 手指按下时的x坐标
-	 */
-	private int xDown;
-	/**
-	 * 手指按下时的y坐标
-	 */
-	private int yDown;
-	/**
-	 * 手指移动时的x坐标
-	 */
-	private int xMove;
-	/**
-	 * 手指移动时的y坐标
-	 */
-	private int yMove;
-
+	private int touchSlop;//用户滑动的最小距离
+	private boolean isSliding;//是否响应滑动
+	private int xDown;//手指按下时的x坐标
+	private int yDown;//手指按下时的y坐标
+	private int xMove;//手指移动时的x坐标
+	private int yMove;//手指移动时的y坐标
 	private LayoutInflater mInflater;
-
 	private PopupWindow mPopupWindow;
 	private int mPopupWindowHeight;
 	private int mPopupWindowWidth;
-
 	private Button mDelBtn;
-	/**
-	 * 为删除按钮提供一个回调接口
-	 */
-	private DelButtonClickListener mListener;
+	private DelButtonClickListener mListener;//为删除按钮提供一个回调接口
+	private View mCurrentView;//当前手指触摸的View
+	private int mCurrentViewPos;//当前手指触摸的位置
 
-	/**
-	 * 当前手指触摸的View
-	 */
-	private View mCurrentView;
-
-	/**
-	 * 当前手指触摸的位置
-	 */
-	private int mCurrentViewPos;
-
-	/**
-	 * 必要的一些初始化
-	 * 
-	 * @param context
-	 * @param attrs
-	 */
 	public ListViewItemSlideDeleteView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 
@@ -195,6 +152,6 @@ public class ListViewItemSlideDeleteView extends ListView{
 	}
 
 	public interface DelButtonClickListener {
-		public void clickHappend(int position);
+		void clickHappend(int position);
 	}
 }

@@ -1,9 +1,5 @@
 package com.zhy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +11,16 @@ import android.widget.Toast;
 import com.zhy.view.ListViewItemSlideDeleteView;
 import com.zhy.view.ListViewItemSlideDeleteView.DelButtonClickListener;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * ListView滑动删除 ，仿腾讯QQ
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/22961279
+ *
+ */
 public class ListViewItemSlideDeleteActivity extends Activity {
 	private ListViewItemSlideDeleteView mListView;
 	private ArrayAdapter<String> mAdapter;
@@ -38,7 +44,7 @@ public class ListViewItemSlideDeleteActivity extends Activity {
 			@Override
 			public void clickHappend(int position) {
 				Toast.makeText(ListViewItemSlideDeleteActivity.this,
-						position + " : " + mAdapter.getItem(position), 1)
+						position + " : " + mAdapter.getItem(position), Toast.LENGTH_SHORT)
 						.show();
 				mAdapter.remove(mAdapter.getItem(position));
 			}
@@ -49,7 +55,7 @@ public class ListViewItemSlideDeleteActivity extends Activity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				Toast.makeText(ListViewItemSlideDeleteActivity.this,
-						position + " : " + mAdapter.getItem(position), 1)
+						position + " : " + mAdapter.getItem(position), Toast.LENGTH_SHORT)
 						.show();
 			}
 		});
