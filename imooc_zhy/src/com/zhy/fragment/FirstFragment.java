@@ -17,6 +17,7 @@ import com.zhy.R;
 import com.zhy.RolateAnimActivity;
 import com.zhy.SlidingMenuActivity;
 import com.zhy.SlidingPanelLayoutActivity;
+import com.zhy.vdh.VDHBlogActivity;
 
 public class FirstFragment extends Fragment implements OnClickListener{
 
@@ -32,6 +33,7 @@ public class FirstFragment extends Fragment implements OnClickListener{
 		view.findViewById(R.id.btn_CustomPargressBar).setOnClickListener(this);
 		view.findViewById(R.id.btn_GestureLock).setOnClickListener(this);
 		view.findViewById(R.id.btn_SlidingPanelLayout).setOnClickListener(this);
+		view.findViewById(R.id.btn_ViewDragHelper).setOnClickListener(this);
 		return view;
 
 	}
@@ -69,6 +71,9 @@ public class FirstFragment extends Fragment implements OnClickListener{
 			break;
 		case R.id.btn_SlidingPanelLayout:
 			intent=new Intent(getActivity(), SlidingPanelLayoutActivity.class);
+			break;
+		case R.id.btn_ViewDragHelper:
+			intent=new Intent(getActivity(), VDHBlogActivity.class);
 			break;
 
 		default:

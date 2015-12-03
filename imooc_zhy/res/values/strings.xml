@@ -29,4 +29,10 @@
         <item>Accordion</item>
     </string-array>
 
+    <string-array name="array_left_menu">
+        <item>立即欣赏</item>
+        <item>我的乐库</item>
+        <item>播放列表</item>
+    </string-array>
+
 </resources>

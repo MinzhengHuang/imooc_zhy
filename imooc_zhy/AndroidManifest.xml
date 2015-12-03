@@ -180,6 +180,8 @@
             android:theme="@style/AppTheme"></activity>
         <activity android:name="com.zhy.XUtilsTestActivity"></activity>
         <activity android:name="com.zhy.ViewPagerIndicatorActivity"></activity>
+        <activity android:name=".vdh.VDHBlogActivity" ></activity>
+        <activity android:name=".vdh.LeftDrawerLayoutActivity" ></activity>
     </application>
 
 </manifest>

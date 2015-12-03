@@ -23,6 +23,8 @@ import com.zhy.R;
  * http://blog.csdn.net/lmj623565791/article/details/24529807
  *
  * 自定义属性总结:
+ * http://blog.csdn.net/lmj623565791/article/details/45022631
+ *
  * 1.attrs.xml里面的declare-styleable以及item，android会根据其在R.java中生成一些常量方便我们使用(aapt干的)，
  * 	本质上，我们可以不声明declare-styleable仅仅声明所需的属性即可。
  * 2.我们在View的构造方法中，可以通过AttributeSet去获得自定义属性的值，但是比较麻烦，而TypedArray可以很方便的便于我们去获取。
