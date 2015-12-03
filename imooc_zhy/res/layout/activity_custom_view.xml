@@ -37,16 +37,6 @@
                 custom:titleTextSize="40sp"
                 android:background="#0f0"/>
 
-            <com.zhy.view.CustomImageView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
-                custom:image="@drawable/ic_launcher"
-                custom:imageScaleType="center"
-                custom:titleText="helloworldwelcome"
-                custom:titleTextColor="#00ff00"
-                custom:titleTextSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -95,6 +85,17 @@
                 custom:borderRadius="20dp"
                 custom:src="@drawable/icon"
                 custom:type="round" />
+
+            <com.zhy.view.CustomImageView
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                custom:image="@drawable/ic_launcher"
+                custom:imageScaleType="center"
+                custom:titleText="helloworldwelcome"
+                custom:titleTextColor="#00ff00"
+                custom:titleTextSize="20sp" />
         </LinearLayout>
 
         <LinearLayout

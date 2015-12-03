@@ -1,19 +1,28 @@
 package com.zhy.view;
 
-import com.zhy.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 
+import com.zhy.R;
+
+/**
+ * Android 自定义View (三) 圆环交替 等待效果
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/24500107
+ *
+ * 步骤:
+ * 1、自定义View的属性
+ * 2、在View的构造方法中获得我们自定义的属性
+ * [ 3、重写onMesure ]
+ * 4、重写onDraw
+ */
 public class CustomProgressBar extends View {
 	/**
 	 * 第一圈的颜色
@@ -99,7 +108,7 @@ public class CustomProgressBar extends View {
 							isNext = false;
 						}
 					}
-					postInvalidate();
+					postInvalidate();//非UI线程重绘
 					try {
 						Thread.sleep(mSpeed);
 					} catch (InterruptedException e) {

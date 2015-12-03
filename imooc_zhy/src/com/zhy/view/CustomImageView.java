@@ -18,6 +18,19 @@ import android.view.View;
 
 import com.zhy.R;
 
+/**
+ * Android 自定义View (二) 进阶
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/24300125
+ *
+ *
+ * 步骤:
+ *1、自定义View的属性
+ *2、在View的构造方法中获得我们自定义的属性
+ *[ 3、重写onMesure ]
+ *4、重写onDraw
+ *
+ */
 public class CustomImageView extends View {
 	/**
 	 * 控件的宽
@@ -109,6 +122,7 @@ public class CustomImageView extends View {
 			}
 		}
 		a.recycle();
+
 		rect = new Rect();
 		mPaint = new Paint();
 		mTextBound = new Rect();
@@ -129,7 +143,7 @@ public class CustomImageView extends View {
 		int specSize = MeasureSpec.getSize(widthMeasureSpec);
 
 		if (specMode == MeasureSpec.EXACTLY) {// match_parent , accurate
-			Log.e("xxx", "EXACTLY");
+			Log.e("main", "EXACTLY");
 			mWidth = specSize;
 		} else {
 			// 由图片决定的宽
@@ -142,7 +156,7 @@ public class CustomImageView extends View {
 			if (specMode == MeasureSpec.AT_MOST) {// wrap_content
 				int desire = Math.max(desireByImg, desireByTitle);
 				mWidth = Math.min(desire, specSize);
-				Log.e("xxx", "AT_MOST");
+				Log.e("main", "AT_MOST");
 			}
 		}
 

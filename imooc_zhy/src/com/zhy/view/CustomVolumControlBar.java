@@ -1,8 +1,6 @@
 package com.zhy.view;
 
 
-import com.zhy.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -17,6 +15,20 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.zhy.R;
+
+/**
+ * Android 自定义View (四) 视频音量调控
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/24529807
+ *
+ * 自定义属性总结:
+ * 1.attrs.xml里面的declare-styleable以及item，android会根据其在R.java中生成一些常量方便我们使用(aapt干的)，
+ * 	本质上，我们可以不声明declare-styleable仅仅声明所需的属性即可。
+ * 2.我们在View的构造方法中，可以通过AttributeSet去获得自定义属性的值，但是比较麻烦，而TypedArray可以很方便的便于我们去获取。
+ * 3.我们在自定义View的时候，可以使用系统已经定义的属性。
+ *
+ */
 public class CustomVolumControlBar extends View {
 	/**
 	 * 第一圈的颜色
