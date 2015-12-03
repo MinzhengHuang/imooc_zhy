@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 /**
  * Created by zhy on 15/6/3.
  *
- * /**
+ *
  * Android ViewDragHelper完全解析 自定义ViewGroup神器
  *
  * http://blog.csdn.net/lmj623565791/article/details/46858663
@@ -28,7 +28,13 @@ public class VDHLayout extends LinearLayout {
 
     public VDHLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
+        /**
+         * tryCaptureView如果返回ture则表示可以捕获该view，你可以根据传入的第一个view参数决定哪些可以捕获
+         * clampViewPositionHorizontal,clampViewPositionVertical可以在该方法中对child移动的边界进行控制，
+         * left , top 分别为即将移动到的位置，
+         */
         mDragger = ViewDragHelper.create(this, 1.0f, new ViewDragHelper.Callback() {
+
             @Override
             public boolean tryCaptureView(View child, int pointerId) {
                 //mEdgeTrackerView禁止直接移动
