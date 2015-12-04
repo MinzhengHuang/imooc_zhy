@@ -1,9 +1,5 @@
 package com.zhy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,6 +12,16 @@ import com.zhy.view.MyHorizontalScrollView;
 import com.zhy.view.MyHorizontalScrollView.CurrentImageChangeListener;
 import com.zhy.view.MyHorizontalScrollView.OnItemClickListener;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * Android 自定义 HorizontalScrollView 打造再多图片（控件）也不怕 OOM 的横向滑动效果
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/38140505
+ *
+ */
 public class MyHorizontalScrollViewActivity extends Activity {
 
 	private MyHorizontalScrollView mHorizontalScrollView;

@@ -1,8 +1,5 @@
 package com.zhy.view;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
@@ -17,14 +14,20 @@ import android.widget.LinearLayout;
 
 import com.zhy.adapter.HorizontalScrollViewAdapter;
 
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 思想：
+ 1、首先根据屏幕的大小和Item的大小，计算可以一个屏幕最多可以加载多少个Item，然后加载该数量Item。
+ 2、当用户右滑（从右向左），滑动到一定距离时，加载下一张，删除第一张
+ 3、当用户左滑（从左向右），滑动到一定距离时，加载上一张，删除最后一张
+ */
 public class MyHorizontalScrollView extends HorizontalScrollView implements
 		OnClickListener {
 
 	/**
 	 * 图片滚动时的回调接口
-	 * 
-	 * @author zhy
-	 * 
 	 */
 	public interface CurrentImageChangeListener {
 		void onCurrentImgChanged(int position, View viewIndicator);
@@ -32,62 +35,24 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 
 	/**
 	 * 条目点击时的回调
-	 * 
-	 * @author zhy
-	 * 
 	 */
 	public interface OnItemClickListener {
 		void onClick(View view, int pos);
 	}
 
 	private CurrentImageChangeListener mListener;
-
 	private OnItemClickListener mOnClickListener;
-
 	private static final String TAG = "MyHorizontalScrollView";
-
-	/**
-	 * HorizontalListView中的LinearLayout
-	 */
-	private LinearLayout mContainer;
-
-	/**
-	 * 子元素的宽度
-	 */
-	private int mChildWidth;
-	/**
-	 * 子元素的高度
-	 */
-	private int mChildHeight;
-	/**
-	 * 当前最后一张图片的index
-	 */
-	private int mCurrentIndex;
-	/**
-	 * 当前第一张图片的下标
-	 */
-	private int mFristIndex;
-	/**
-	 * 当前第一个View
-	 */
-	private View mFirstView;
-	/**
-	 * 数据适配器
-	 */
-	private HorizontalScrollViewAdapter mAdapter;
-	/**
-	 * 每屏幕最多显示的个数
-	 */
-	private int mCountOneScreen;
-	/**
-	 * 屏幕的宽度
-	 */
-	private int mScreenWitdh;
-
-	/**
-	 * 保存View与位置的键值对
-	 */
-	private Map<View, Integer> mViewPos = new HashMap<View, Integer>();
+	private LinearLayout mContainer;//HorizontalListView中的LinearLayout
+	private int mChildWidth;//子元素的宽度
+	private int mChildHeight;//子元素的高度
+	private int mCurrentIndex;//当前最后一张图片的index
+	private int mFristIndex;//当前第一张图片的下标
+	private View mFirstView;//当前第一个View
+	private HorizontalScrollViewAdapter mAdapter;//数据适配器
+	private int mCountOneScreen;//每屏幕最多显示的个数
+	private int mScreenWitdh;//屏幕的宽度
+	private Map<View, Integer> mViewPos = new HashMap<View, Integer>();//保存View与位置的键值对
 
 	public MyHorizontalScrollView(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -97,6 +62,15 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 		DisplayMetrics outMetrics = new DisplayMetrics();
 		wm.getDefaultDisplay().getMetrics(outMetrics);
 		mScreenWitdh = outMetrics.widthPixels;
+	}
+
+	public void setOnItemClickListener(OnItemClickListener mOnClickListener) {
+		this.mOnClickListener = mOnClickListener;
+	}
+
+	public void setCurrentImageChangeListener(
+			CurrentImageChangeListener mListener) {
+		this.mListener = mListener;
 	}
 
 	@Override
@@ -267,15 +241,6 @@ public class MyHorizontalScrollView extends HorizontalScrollView implements
 			}
 			mOnClickListener.onClick(v, mViewPos.get(v));
 		}
-	}
-
-	public void setOnItemClickListener(OnItemClickListener mOnClickListener) {
-		this.mOnClickListener = mOnClickListener;
-	}
-
-	public void setCurrentImageChangeListener(
-			CurrentImageChangeListener mListener) {
-		this.mListener = mListener;
 	}
 
 }

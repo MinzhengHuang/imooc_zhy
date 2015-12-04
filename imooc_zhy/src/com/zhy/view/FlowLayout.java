@@ -1,13 +1,20 @@
 package com.zhy.view;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Android 自定义ViewGroup 实战篇 -> 实现FlowLayout
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/38352503
+ *
+ */
 
 public class FlowLayout extends ViewGroup {
 
@@ -51,14 +58,8 @@ public class FlowLayout extends ViewGroup {
 		// 如果是warp_content情况下，记录宽和高
 		int width = 0;
 		int height = 0;
-		/**
-		 * 记录每一行的宽度，width不断取最大宽度
-		 */
-		int lineWidth = 0;
-		/**
-		 * 每一行的高度，累加至height
-		 */
-		int lineHeight = 0;
+		int lineWidth = 0;//记录每一行的宽度，width不断取最大宽度
+		int lineHeight = 0;//每一行的高度，累加至height
 
 		int cCount = getChildCount();
 
@@ -82,13 +83,9 @@ public class FlowLayout extends ViewGroup {
 			if (lineWidth + childWidth > sizeWidth) {
 				width = Math.max(lineWidth, childWidth);// 取最大的
 				lineWidth = childWidth; // 重新开启新行，开始记录
-				// 叠加当前高度，
-				height += lineHeight;
-				// 开启记录下一行的高度
-				lineHeight = childHeight;
-			} else
-			// 否则累加值lineWidth,lineHeight取最大高度
-			{
+				height += lineHeight;// 叠加当前高度，
+				lineHeight = childHeight;// 开启记录下一行的高度
+			} else {// 否则累加值lineWidth,lineHeight取最大高度
 				lineWidth += childWidth;
 				lineHeight = Math.max(lineHeight, childHeight);
 			}
@@ -105,14 +102,8 @@ public class FlowLayout extends ViewGroup {
 
 	}
 
-	/**
-	 * 存储所有的View，按行记录
-	 */
-	private List<List<View>> mAllViews = new ArrayList<List<View>>();
-	/**
-	 * 记录每一行的最大高度
-	 */
-	private List<Integer> mLineHeight = new ArrayList<Integer>();
+	private List<List<View>> mAllViews = new ArrayList<List<View>>();//存储所有的View，按行记录
+	private List<Integer> mLineHeight = new ArrayList<Integer>();//记录每一行的最大高度
 
 	@Override
 	protected void onLayout(boolean changed, int l, int t, int r, int b) {
@@ -160,10 +151,8 @@ public class FlowLayout extends ViewGroup {
 		// 得到总行数
 		int lineNums = mAllViews.size();
 		for (int i = 0; i < lineNums; i++) {
-			// 每一行的所有的views
-			lineViews = mAllViews.get(i);
-			// 当前行的最大高度
-			lineHeight = mLineHeight.get(i);
+			lineViews = mAllViews.get(i);// 每一行的所有的views
+			lineHeight = mLineHeight.get(i);// 当前行的最大高度
 
 			Log.e(TAG, "第" + i + "行 ：" + lineViews.size() + " , " + lineViews);
 			Log.e(TAG, "第" + i + "行， ：" + lineHeight);
@@ -187,7 +176,6 @@ public class FlowLayout extends ViewGroup {
 						+ rc + " , b = " + bc);
 
 				child.layout(lc, tc, rc, bc);
-
 				left += child.getMeasuredWidth() + lp.rightMargin
 						+ lp.leftMargin;
 			}
