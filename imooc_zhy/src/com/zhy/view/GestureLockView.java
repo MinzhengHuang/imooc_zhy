@@ -10,53 +10,27 @@ import android.view.View;
 public class GestureLockView extends View {
 	private static final String TAG = "GestureLockView";
 
-	/**
-	 * GestureLockView的三种状态
-	 */
 	enum Mode {
-		STATUS_NO_FINGER, STATUS_FINGER_ON, STATUS_FINGER_UP;
+		STATUS_NO_FINGER, STATUS_FINGER_ON, STATUS_FINGER_UP;//GestureLockView的三种状态
 	}
-
-	/**
-	 * GestureLockView的当前状态
-	 */
 	private Mode mCurrentStatus = Mode.STATUS_NO_FINGER;
-
-	/**
-	 * 宽度
-	 */
-	private int mWidth;
-	/**
-	 * 高度
-	 */
-	private int mHeight;
-	/**
-	 * 外圆半径
-	 */
-	private int mRadius;
-	/**
-	 * 画笔的宽度
-	 */
-	private int mStrokeWidth = 2;
-
+	private int mWidth;//宽度
+	private int mHeight;//高度
+	private int mRadius;//外圆半径
+	private int mStrokeWidth = 2;//画笔的宽度
 	/**
 	 * 圆心坐标
 	 */
 	private int mCenterX;
 	private int mCenterY;
 	private Paint mPaint;
-
 	/**
 	 * 箭头（小三角最长边的一半长度 = mArrawRate * mWidth / 2 ）
 	 */
 	private float mArrowRate = 0.333f;
 	private int mArrowDegree = -1;
 	private Path mArrowPath;
-	/**
-	 * 内圆的半径 = mInnerCircleRadiusRate * mRadus
-	 * 
-	 */
-	private float mInnerCircleRadiusRate = 0.3F;
+	private float mInnerCircleRadiusRate = 0.3F;//内圆的半径 = mInnerCircleRadiusRate * mRadus
 
 	/**
 	 * 四个颜色，可由用户自定义，初始化时由GestureLockViewGroup传入
