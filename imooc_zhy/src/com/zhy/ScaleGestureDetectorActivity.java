@@ -10,6 +10,13 @@ import android.widget.ImageView;
 
 import com.zhy.view.ZoomImageView;
 
+/**
+ * Android 手势检测实战 打造支持缩放平移的图片预览效果
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/39474553
+ * http://blog.csdn.net/lmj623565791/article/details/39480503
+ *
+ */
 public class ScaleGestureDetectorActivity extends Activity {
 	private ViewPager mViewPager;
 	private int[] mImgs = new int[] { R.drawable.tbug, R.drawable.a,

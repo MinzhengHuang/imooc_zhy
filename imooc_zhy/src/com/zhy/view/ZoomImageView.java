@@ -18,6 +18,13 @@ import android.view.View.OnTouchListener;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 
+/**
+ * Android 手势检测实战 打造支持缩放平移的图片预览效果
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/39474553
+ * http://blog.csdn.net/lmj623565791/article/details/39480503
+ *
+ */
 public class ZoomImageView extends ImageView implements OnScaleGestureListener,
 		OnTouchListener, ViewTreeObserver.OnGlobalLayoutListener {
 	private static final String TAG = ZoomImageView.class.getSimpleName();
