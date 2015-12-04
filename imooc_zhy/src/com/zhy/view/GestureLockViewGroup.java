@@ -1,8 +1,5 @@
 package com.zhy.view;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -18,6 +15,9 @@ import android.widget.RelativeLayout;
 import com.zhy.R;
 import com.zhy.view.GestureLockView.Mode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 整体包含n*n个GestureLockView,每个GestureLockView间间隔mMarginBetweenLockView，
  * 最外层的GestureLockView与容器存在mMarginBetweenLockView的外边距
@@ -27,85 +27,41 @@ import com.zhy.view.GestureLockView.Mode;
  * * mCount + 1 ) 注：mMarginBetweenLockView = mGestureLockViewWidth * 0.25 ;
  * 
  * @author zhy
- * 
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/36236113
+ *
+ * 整体思路:
+ * a、自定义了一个RelativeLayout(GestureLockViewGroup)在里面会根据传入的每行的个数，生成多个GestureLockView
+ * （就是上面一个个小圈圈），然后会自动进行布局，里面的宽度，间距，内圆的直径，箭头的大小神马的都是百分比实现的，
+ * 所以大胆的设置你喜欢的个数，只要你没有密集恐惧症~
+ * b、GestureLockView有三个状态，没有手指触碰、手指触碰、和手指抬起，会根据这三个状态绘制不同的效果，以及抬起时的
+ * 小箭头需要旋转的角度，会根据用户选择的GestureLockView，进行计算，在GestureLockViewGroup为每个GestureLockView设置
+ * c、GestureLockViewGroup主要就是判断用户ACTION_MOVE，ACTION_DOWN ， ACTION_UP时改变选中的GestureLockView的状态，
+ * 并且记录下来，提供一定的回调。
+ *
  */
 public class GestureLockViewGroup extends RelativeLayout {
 
 	private static final String TAG = "GestureLockViewGroup";
-	/**
-	 * 保存所有的GestureLockView
-	 */
-	private GestureLockView[] mGestureLockViews;
-	/**
-	 * 每个边上的GestureLockView的个数
-	 */
-	private int mCount = 4;
-	/**
-	 * 存储答案
-	 */
-	private int[] mAnswer = { 0, 1, 2, 5, 8 };
-	/**
-	 * 保存用户选中的GestureLockView的id
-	 */
-	private List<Integer> mChoose = new ArrayList<Integer>();
-
+	private GestureLockView[] mGestureLockViews;//保存所有的GestureLockView
+	private int mCount = 4;//每个边上的GestureLockView的个数
+	private int[] mAnswer = { 0, 1, 2, 5, 8 };//存储答案
+	private List<Integer> mChoose = new ArrayList<Integer>();//保存用户选中的GestureLockView的id
 	private Paint mPaint;
-	/**
-	 * 每个GestureLockView中间的间距 设置为：mGestureLockViewWidth * 25%
-	 */
-	private int mMarginBetweenLockView = 30;
-	/**
-	 * GestureLockView的边长 4 * mWidth / ( 5 * mCount + 1 )
-	 */
-	private int mGestureLockViewWidth;
-
-	/**
-	 * GestureLockView无手指触摸的状态下内圆的颜色
-	 */
-	private int mNoFingerInnerCircleColor = 0xFF939090;
-	/**
-	 * GestureLockView无手指触摸的状态下外圆的颜色
-	 */
-	private int mNoFingerOuterCircleColor = 0xFFE0DBDB;
-	/**
-	 * GestureLockView手指触摸的状态下内圆和外圆的颜色
-	 */
-	private int mFingerOnColor = 0xFF378FC9;
-	/**
-	 * GestureLockView手指抬起的状态下内圆和外圆的颜色
-	 */
-	private int mFingerUpColor = 0xFFFF0000;
-
-	/**
-	 * 宽度
-	 */
-	private int mWidth;
-	/**
-	 * 高度
-	 */
-	private int mHeight;
-
+	private int mMarginBetweenLockView = 30;//每个GestureLockView中间的间距 设置为：mGestureLockViewWidth * 25%
+	private int mGestureLockViewWidth;//GestureLockView的边长 4 * mWidth / ( 5 * mCount + 1 )
+	private int mNoFingerInnerCircleColor = 0xFF939090;//GestureLockView无手指触摸的状态下内圆的颜色
+	private int mNoFingerOuterCircleColor = 0xFFE0DBDB;//GestureLockView无手指触摸的状态下外圆的颜色
+	private int mFingerOnColor = 0xFF378FC9;//GestureLockView手指触摸的状态下内圆和外圆的颜色
+	private int mFingerUpColor = 0xFFFF0000;//GestureLockView手指抬起的状态下内圆和外圆的颜色
+	private int mWidth;//宽度
+	private int mHeight;//高度
 	private Path mPath;
-	/**
-	 * 指引线的开始位置x
-	 */
-	private int mLastPathX;
-	/**
-	 * 指引线的开始位置y
-	 */
-	private int mLastPathY;
-	/**
-	 * 指引下的结束位置
-	 */
-	private Point mTmpTarget = new Point();
-	/**
-	 * 最大尝试次数
-	 */
-	private int mTryTimes = 4;
-	/**
-	 * 回调接口
-	 */
-	private OnGestureLockViewListener mOnGestureLockViewListener;
+	private int mLastPathX;//指引线的开始位置x
+	private int mLastPathY;//指引线的开始位置y
+	private Point mTmpTarget = new Point();//指引下的结束位置
+	private int mTryTimes = 4;//最大尝试次数
+	private OnGestureLockViewListener mOnGestureLockViewListener;//回调接口
 
 	public GestureLockViewGroup(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
@@ -437,14 +393,12 @@ public class GestureLockViewGroup extends RelativeLayout {
 	public interface OnGestureLockViewListener {
 		/**
 		 * 单独选中元素的Id
-		 * 
-		 * @param position
+		 * @param cId
 		 */
 		public void onBlockSelected(int cId);
 
 		/**
 		 * 是否匹配
-		 * 
 		 * @param matched
 		 */
 		public void onGestureEvent(boolean matched);

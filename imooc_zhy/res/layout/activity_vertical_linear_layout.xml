@@ -11,10 +11,10 @@
         android:layout_height="fill_parent"
         android:background="@drawable/w02" >
 
-        <!--<Button-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="hello" />-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -22,12 +22,12 @@
         android:layout_height="fill_parent"
         android:background="@drawable/w03" >
 
-        <!--<Button-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:background="#fff"-->
-            <!--android:text="hello" />-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#fff"
+            android:text="hello" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -35,11 +35,11 @@
         android:layout_height="fill_parent"
         android:background="@drawable/w04" >
 
-        <!--<Button-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:text="hello" />-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="hello" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -56,7 +56,8 @@
             android:textSize="20sp"
             android:gravity="center"
             android:background="#f00"
-            android:textColor="#fff"/>
+            android:textColor="#fff"
+            android:visibility="visible"/>
     </RelativeLayout>
 
 </com.zhy.view.VerticalLinearLayout>

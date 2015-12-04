@@ -7,6 +7,13 @@ import android.widget.Toast;
 import com.zhy.view.GestureLockViewGroup;
 import com.zhy.view.GestureLockViewGroup.OnGestureLockViewListener;
 
+/**
+ * Android 手势锁的实现 让自己的应用更加安全吧
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/36236113
+ *
+ *
+ */
 public class GestureLockActivity extends Activity {
 	private GestureLockViewGroup mGestureLockViewGroup;
 

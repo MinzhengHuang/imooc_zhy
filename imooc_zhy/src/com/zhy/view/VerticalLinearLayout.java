@@ -169,7 +169,7 @@ public class VerticalLinearLayout extends ViewGroup {
      */
     private boolean shouldScrollToPre() {
         return -mScrollEnd + mScrollStart > mScreenHeight / 2
-                || Math.abs(getVelocity()) > 600;
+                || Math.abs(getVelocity()) > 600;//600表示加速度的一个比较值
     }
 
     /**
