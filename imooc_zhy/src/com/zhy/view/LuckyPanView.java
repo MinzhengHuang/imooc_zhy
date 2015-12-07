@@ -20,19 +20,9 @@ import com.zhy.R;
 public class LuckyPanView extends SurfaceView implements Callback, Runnable {
 
 	private SurfaceHolder mHolder;
-	/**
-	 * 与SurfaceHolder绑定的Canvas
-	 */
-	private Canvas mCanvas;
-	/**
-	 * 用于绘制的线程
-	 */
-	private Thread t;
-	/**
-	 * 线程的控制开关
-	 */
-	private boolean isRunning;
-
+	private Canvas mCanvas;//与SurfaceHolder绑定的Canvas
+	private Thread t;//用于绘制的线程
+	private boolean isRunning;//线程的控制开关
 	/**
 	 * 抽奖的文字
 	 */
@@ -50,52 +40,17 @@ public class LuckyPanView extends SurfaceView implements Callback, Runnable {
 			R.drawable.f040, R.drawable.iphone, R.drawable.meizi,
 			R.drawable.f040 };
 
-	/**
-	 * 与文字对应图片的bitmap数组
-	 */
-	private Bitmap[] mImgsBitmap;
-	/**
-	 * 盘块的个数
-	 */
-	private int mItemCount = 6;
-
-	/**
-	 * 绘制盘块的范围
-	 */
-	private RectF mRange = new RectF();
-	/**
-	 * 圆的直径
-	 */
-	private int mRadius;
-	/**
-	 * 绘制盘快的画笔
-	 */
-	private Paint mArcPaint;
-
-	/**
-	 * 绘制文字的画笔
-	 */
-	private Paint mTextPaint;
-
-	/**
-	 * 滚动的速度
-	 */
-	private double mSpeed;
+	private Bitmap[] mImgsBitmap;//与文字对应图片的bitmap数组
+	private int mItemCount = 6;//盘块的个数
+	private RectF mRange = new RectF();//绘制盘块的范围
+	private int mRadius;//圆的直径
+	private Paint mArcPaint;//绘制盘快的画笔
+	private Paint mTextPaint;//绘制文字的画笔
+	private double mSpeed;//滚动的速度
 	private volatile float mStartAngle = 0;
-	/**
-	 * 是否点击了停止
-	 */
-	private boolean isShouldEnd;
-
-	/**
-	 * 控件的中心位置
-	 */
-	private int mCenter;
-	/**
-	 * 控件的padding，这里我们认为4个padding的值一致，以paddingleft为标准
-	 */
-	private int mPadding;
-
+	private boolean isShouldEnd;//是否点击了停止
+	private int mCenter;// 控件的中心位置
+	private int mPadding;//控件的padding，这里我们认为4个padding的值一致，以paddingleft为标准
 	/**
 	 * 背景图的bitmap
 	 */
@@ -287,7 +242,6 @@ public class LuckyPanView extends SurfaceView implements Callback, Runnable {
 	 * 绘制图片
 	 * 
 	 * @param startAngle
-	 * @param sweepAngle
 	 * @param i
 	 */
 	private void drawIcon(float startAngle, int i) {
@@ -310,7 +264,6 @@ public class LuckyPanView extends SurfaceView implements Callback, Runnable {
 	/**
 	 * 绘制文本
 	 * 
-	 * @param rect
 	 * @param startAngle
 	 * @param sweepAngle
 	 * @param string

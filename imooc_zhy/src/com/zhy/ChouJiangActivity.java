@@ -8,6 +8,12 @@ import android.widget.ImageView;
 
 import com.zhy.view.LuckyPanView;
 
+/**
+ * Android SurfaceView实战 打造抽奖转盘
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/41722441
+ *
+ */
 public class ChouJiangActivity extends Activity {
 
 	private LuckyPanView mLuckyPanView;
