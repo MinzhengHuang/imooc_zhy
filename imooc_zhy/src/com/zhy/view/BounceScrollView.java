@@ -3,12 +3,13 @@ package com.zhy.view;
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ScrollView;
+
+import com.zhy.utils.DLog;
 
 /**
  * 支持上下反弹效果的ScrollView
@@ -41,7 +42,7 @@ public class BounceScrollView extends ScrollView {
 
 	@Override
 	public boolean onTouchEvent(MotionEvent ev) {
-		Log.d("main","onTouchEvent");
+		DLog.d("onTouchEvent");
 		if (mView != null) {
 			commonOnTouch(ev);
 		}
@@ -52,22 +53,22 @@ public class BounceScrollView extends ScrollView {
 	private void commonOnTouch(MotionEvent ev) {
 		int action = ev.getAction();
 		int cy = (int) ev.getY();
-		Log.i("main","cy="+cy);
+		DLog.i("cy="+cy);
 		switch (action) {
 		case MotionEvent.ACTION_DOWN:
-			Log.d("main","ACTION_DOWN");
+			DLog.d("ACTION_DOWN");
 			break;
 		case MotionEvent.ACTION_MOVE://跟随手指移动
-			Log.d("main", "ACTION_MOVE");
+			DLog.d("ACTION_MOVE");
 			int dy = cy - y;
-			Log.i("main","dy="+dy);
-			Log.e("main","isFirst="+isFirst);
+			DLog.i("dy="+dy);
+			DLog.e("isFirst="+isFirst);
 			if (isFirst) {
 				dy = 0;
 				isFirst = false;
 			}
 			y = cy;
-			Log.e("main","isNeedMove="+isNeedMove());
+			DLog.e("isNeedMove="+isNeedMove());
 			if (isNeedMove()) {
 				if (mRect.isEmpty()) {
 				//记录移动前的位置
@@ -77,11 +78,11 @@ public class BounceScrollView extends ScrollView {
 
 				mView.layout(mView.getLeft(), mView.getTop() + 2 * dy / 3,
 						mView.getRight(), mView.getBottom() + 2 * dy / 3);
-				Log.e("main", "shouldCallBack=" + shouldCallBack(dy));
+				DLog.e("shouldCallBack=" + shouldCallBack(dy));
 				if (shouldCallBack(dy)) {
 					if (mCallback != null) {
 						if (!isCalled) {
-							Log.e("main", "isCalled=" + isCalled);
+							DLog.e("isCalled=" + isCalled);
 							isCalled = true;
 							resetPosition();
 							mCallback.callback();
@@ -93,7 +94,7 @@ public class BounceScrollView extends ScrollView {
 
 			break;
 		case MotionEvent.ACTION_UP://反弹回去
-			Log.d("main","ACTION_UP");
+			DLog.d("ACTION_UP");
 			if (!mRect.isEmpty()) {
 				resetPosition();
 			}
@@ -135,10 +136,10 @@ public class BounceScrollView extends ScrollView {
 	 * @return
 	 */
 	public boolean isNeedMove() {
-		Log.i("main","mView.getMeasuredHeight="+mView.getMeasuredHeight()+",getHeight="+getHeight());
+		DLog.i("mView.getMeasuredHeight="+mView.getMeasuredHeight()+",getHeight="+getHeight());
 		int offset = mView.getMeasuredHeight() - getHeight();
 		int scrollY = getScrollY();
-		Log.i("main","offset="+offset+",scrollY="+scrollY);
+		DLog.i("offset="+offset+",scrollY="+scrollY);
 		// 0是顶部，后面那个是底部
 		if (scrollY == 0 || scrollY == offset) {
 			return true;
