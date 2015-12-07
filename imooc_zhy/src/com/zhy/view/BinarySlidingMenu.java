@@ -13,7 +13,7 @@ import com.zhy.R;
 import com.zhy.utils.ScreenUtils;
 
 /**
- * http://blog.csdn.net/lmj623565791
+ * http://blog.csdn.net/lmj623565791/article/details/39670935
  * 
  * @author zhy
  * 
@@ -24,25 +24,18 @@ public class BinarySlidingMenu extends HorizontalScrollView {
 	 */
 	private int mMenuWidth;
 	private int mHalfMenuWidth;
-
 	private boolean isOperateRight;
 	private boolean isOperateLeft;
-
 	private boolean once;
-
 	private ViewGroup mLeftMenu;
 	private ViewGroup mContent;
 	private ViewGroup mRightMenu;
 	private ViewGroup mWrapper;
-
 	private boolean isLeftMenuOpen;
 	private boolean isRightMenuOpen;
 
 	/**
 	 * 回调的接口
-	 * 
-	 * @author zhy
-	 * 
 	 */
 	public interface OnMenuOpenListener {
 		/**
@@ -65,16 +58,8 @@ public class BinarySlidingMenu extends HorizontalScrollView {
 		this(context, attrs, 0);
 
 	}
-
-	/**
-	 * 屏幕宽度
-	 */
-	private int mScreenWidth;
-
-	/**
-	 * dp 菜单距离屏幕的右边距
-	 */
-	private int mMenuRightPadding;
+	private int mScreenWidth;//屏幕宽度
+	private int mMenuRightPadding;//dp 菜单距离屏幕的右边距
 
 	public BinarySlidingMenu(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
@@ -155,9 +140,7 @@ public class BinarySlidingMenu extends HorizontalScrollView {
 					}
 					isLeftMenuOpen = false;
 
-				} else
-				// 关闭左侧菜单
-				{
+				} else { // 关闭左侧菜单
 					this.smoothScrollTo(0, 0);
 					// 如果当前左侧菜单是关闭状态，且mOnMenuOpenListener不为空，则回调打开菜单
 					if (!isLeftMenuOpen && mOnMenuOpenListener != null) {
@@ -172,9 +155,7 @@ public class BinarySlidingMenu extends HorizontalScrollView {
 				// 打开右侧侧滑菜单
 				if (scrollX > mHalfMenuWidth + mMenuWidth) {
 					this.smoothScrollTo(mMenuWidth + mMenuWidth, 0);
-				} else
-				// 关闭右侧侧滑菜单
-				{
+				} else { // 关闭右侧侧滑菜单
 					this.smoothScrollTo(mMenuWidth, 0);
 				}
 			}

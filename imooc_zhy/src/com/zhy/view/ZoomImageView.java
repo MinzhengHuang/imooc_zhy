@@ -56,7 +56,7 @@ public class ZoomImageView extends ImageView implements OnScaleGestureListener,
 	private float mLastX;
 	private float mLastY;
 
-	private boolean isCanDrag;
+	private boolean isCanDrag;//是否是推动行为
 	private int lastPointerCount;
 
 	private boolean isCheckTopAndBottom = true;

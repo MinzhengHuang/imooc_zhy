@@ -1,8 +1,5 @@
 package com.zhy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -11,6 +8,16 @@ import android.widget.Toast;
 import com.zhy.view.BinarySlidingMenu;
 import com.zhy.view.BinarySlidingMenu.OnMenuOpenListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Android 实现形态各异的双向侧滑菜单 自定义控件来袭
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/39670935
+ *
+ *
+ */
 public class SlidingMenuActivity extends ListActivity {
 	private BinarySlidingMenu mMenu;
 	private List<String> mDatas = new ArrayList<String>();
