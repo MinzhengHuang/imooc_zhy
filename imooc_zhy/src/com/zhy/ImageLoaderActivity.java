@@ -34,43 +34,33 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
+/**
+ * Android 超高仿微信图片选择器 图片该这么加载
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/39943731
+ *
+ */
 public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 
 	private ProgressDialog mProgressDialog;
-
-	/**
-	 * 存储文件夹中的图片数量
-	 */
-	private int mPicsSize;
-	/**
-	 * 图片数量最多的文件夹
-	 */
-	private File mImgDir;
-	/**
-	 * 所有的图片
-	 */
-	private List<String> mImgs;
-
+	private int mPicsSize;//存储文件夹中的图片数量
+	private File mImgDir;//图片数量最多的文件夹
+	private List<String> mImgs;//所有的图片
 	private GridView mGirdView;
 	private MyAdapter mAdapter;
 	/**
 	 * 临时的辅助类，用于防止同一个文件夹的多次扫描
 	 */
 	private HashSet<String> mDirPaths = new HashSet<String>();
-
 	/**
 	 * 扫描拿到所有的图片文件夹
 	 */
 	private List<ImageFloder> mImageFloders = new ArrayList<ImageFloder>();
-
 	private RelativeLayout mBottomLy;
-
 	private TextView mChooseDir;
 	private TextView mImageCount;
 	int totalCount = 0;
-
 	private int mScreenHeight;
-
 	private ListImageDirPopupWindow mListImageDirPopupWindow;
 
 	private Handler mHandler = new Handler() {
@@ -178,12 +168,14 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 
 					Log.e("TAG", path);
 					// 拿到第一张图片的路径
-					if (firstImage == null)
+					if (firstImage == null){
 						firstImage = path;
+					}
 					// 获取该图片的父路径名
 					File parentFile = new File(path).getParentFile();
-					if (parentFile == null)
+					if (parentFile == null){
 						continue;
+					}
 					String dirPath = parentFile.getAbsolutePath();
 					ImageFloder imageFloder = null;
 					// 利用一个HashSet防止多次扫描同一个文件夹（不加这个判断，图片多起来还是相当恐怖的~~）
@@ -196,14 +188,17 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 						imageFloder.setDir(dirPath);
 						imageFloder.setFirstImagePath(path);
 					}
-
+					if(parentFile.list()==null){
+						continue;
+					}
 					int picSize = parentFile.list(new FilenameFilter() {
 						@Override
 						public boolean accept(File dir, String filename) {
 							if (filename.endsWith(".jpg")
 									|| filename.endsWith(".png")
-									|| filename.endsWith(".jpeg"))
+									|| filename.endsWith(".jpeg")){
 								return true;
+							}
 							return false;
 						}
 					}).length;
@@ -237,9 +232,7 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 		mGirdView = (GridView) findViewById(R.id.id_gridView);
 		mChooseDir = (TextView) findViewById(R.id.id_choose_dir);
 		mImageCount = (TextView) findViewById(R.id.id_total_count);
-
 		mBottomLy = (RelativeLayout) findViewById(R.id.id_bottom_ly);
-
 	}
 
 	private void initEvent() {
@@ -263,14 +256,14 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 
 	@Override
 	public void selected(ImageFloder floder) {
-
 		mImgDir = new File(floder.getDir());
 		mImgs = Arrays.asList(mImgDir.list(new FilenameFilter() {
 			@Override
 			public boolean accept(File dir, String filename) {
 				if (filename.endsWith(".jpg") || filename.endsWith(".png")
-						|| filename.endsWith(".jpeg"))
+						|| filename.endsWith(".jpeg")){
 					return true;
+				}
 				return false;
 			}
 		}));

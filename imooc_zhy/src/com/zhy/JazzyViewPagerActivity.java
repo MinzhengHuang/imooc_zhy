@@ -16,7 +16,13 @@ import com.zhy.adapter.JazzyViewPager;
 import com.zhy.adapter.JazzyViewPager.TransitionEffect;
 import com.zhy.view.OutlineContainer;
 
-public class JazzyVewPagerActivity extends Activity {
+/**
+ * Android 自定义 ViewPager 打造千变万化的图片切换效果
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/38026503
+ *
+ */
+public class JazzyViewPagerActivity extends Activity {
 
 	private JazzyViewPager mJazzy;
 
@@ -32,8 +38,9 @@ public class JazzyVewPagerActivity extends Activity {
 		menu.add("Toggle Fade");
 		String[] effects = this.getResources().getStringArray(
 				R.array.jazzy_effects);
-		for (String effect : effects)
+		for (String effect : effects){
 			menu.add(effect);
+		}
 		return true;
 	}
 
@@ -60,7 +67,7 @@ public class JazzyVewPagerActivity extends Activity {
 	private class MainAdapter extends PagerAdapter {
 		@Override
 		public Object instantiateItem(ViewGroup container, final int position) {
-			TextView text = new TextView(JazzyVewPagerActivity.this);
+			TextView text = new TextView(JazzyViewPagerActivity.this);
 			text.setGravity(Gravity.CENTER);
 			text.setTextSize(30);
 			text.setTextColor(Color.WHITE);

@@ -162,7 +162,7 @@
             android:name="com.zhy.MyHorizontalScrollViewActivity" >
         </activity>
         <activity
-            android:name="com.zhy.JazzyVewPagerActivity"
+            android:name=".JazzyViewPagerActivity"
             android:theme="@style/AppTheme" >
         </activity>
         <activity

@@ -1,8 +1,5 @@
 package com.zhy.adapter;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -21,6 +18,15 @@ import com.nineoldandroids.view.ViewHelper;
 import com.zhy.R;
 import com.zhy.view.OutlineContainer;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+/**
+ * Android 自定义 ViewPager 打造千变万化的图片切换效果
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/38026503
+ *
+ */
 public class JazzyViewPager extends ViewPager {
 
 	public static final String TAG = "JazzyViewPager";
@@ -56,7 +62,6 @@ public class JazzyViewPager extends ViewPager {
 	 * @param context
 	 * @param attrs
 	 */
-	@SuppressWarnings("incomplete-switch")
 	public JazzyViewPager(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		setClipChildren(false);

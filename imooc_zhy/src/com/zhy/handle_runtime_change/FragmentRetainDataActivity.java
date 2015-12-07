@@ -6,7 +6,6 @@ import android.app.FragmentManager;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ImageView;
 
 import com.android.volley.RequestQueue;
@@ -14,6 +13,7 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.Volley;
 import com.zhy.R;
+import com.zhy.utils.DLog;
 
 public class FragmentRetainDataActivity extends Activity {
 
@@ -27,7 +27,7 @@ public class FragmentRetainDataActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_retain_data);
-		Log.e(TAG, "onCreate");
+		DLog.e(TAG, "onCreate");
 
 		// find the retained fragment on activity restarts
 		FragmentManager fm = getFragmentManager();
@@ -75,7 +75,7 @@ public class FragmentRetainDataActivity extends Activity {
 
 	@Override
 	public void onDestroy() {
-		Log.e(TAG, "onDestroy");
+		DLog.e(TAG, "onDestroy");
 		super.onDestroy();
 		// store the data in the fragment
 		dataFragment.setData(mBitmap);

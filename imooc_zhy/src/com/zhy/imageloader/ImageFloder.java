@@ -1,26 +1,10 @@
 package com.zhy.imageloader;
 
 public class ImageFloder {
-	/**
-	 * 图片的文件夹路径
-	 */
-	private String dir;
-
-	/**
-	 * 第一张图片的路径
-	 */
-	private String firstImagePath;
-
-	/**
-	 * 文件夹的名称
-	 */
-	private String name;
-
-	/**
-	 * 图片的数量
-	 */
-	private int count;
-
+	private String dir;//图片的文件夹路径
+	private String firstImagePath;//第一张图片的路径
+	private String name;//文件夹的名称
+	private int count;//图片的数量
 	public String getDir() {
 		return dir;
 	}

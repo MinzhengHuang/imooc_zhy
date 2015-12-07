@@ -9,7 +9,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
 import com.zhy.FlowLayoutActivity;
-import com.zhy.JazzyVewPagerActivity;
+import com.zhy.JazzyViewPagerActivity;
 import com.zhy.LargeImageViewActivity;
 import com.zhy.MyHorizontalScrollViewActivity;
 import com.zhy.R;
@@ -66,7 +66,7 @@ public class ThirdFragment extends Fragment implements OnClickListener {
                 intent = new Intent(getActivity(), MyHorizontalScrollViewActivity.class);
                 break;
             case R.id.btn_JazzyViewPager:
-                intent = new Intent(getActivity(), JazzyVewPagerActivity.class);
+                intent = new Intent(getActivity(), JazzyViewPagerActivity.class);
                 break;
             case R.id.btn_FlowLayout:
                 intent = new Intent(getActivity(), FlowLayoutActivity.class);
@@ -84,6 +84,9 @@ public class ThirdFragment extends Fragment implements OnClickListener {
             default:
                 break;
         }
-        startActivity(intent);
+        if(intent!=null){
+            startActivity(intent);
+        }
+
     }
 }

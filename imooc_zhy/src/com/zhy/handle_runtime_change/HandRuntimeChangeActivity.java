@@ -7,6 +7,12 @@ import android.view.View;
 
 import com.zhy.R;
 
+/**
+ * Android 屏幕旋转 处理 AsyncTask 和 ProgressDialog 的最佳方案
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/37936275
+ *
+ */
 public class HandRuntimeChangeActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
