@@ -8,6 +8,12 @@ import android.os.Handler;
 import com.zhy.view.HorizontalProgressBarWithNumber;
 import com.zhy.view.RoundProgressBarWidthNumber;
 
+/**
+ * Android 打造形形色色的进度条 实现可以如此简单
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/43371299
+ *
+ */
 public class CustomPargressBarActivity extends Activity {
 
 	private RoundProgressBarWidthNumber mRoundProgressBar;

@@ -201,8 +201,10 @@ public class LuckyPanView extends SurfaceView implements Callback, Runnable {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			if (mCanvas != null)
+			if (mCanvas != null){
 				mHolder.unlockCanvasAndPost(mCanvas);
+			}
+
 		}
 
 	}
