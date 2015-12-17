@@ -1,9 +1,5 @@
 package com.zhy.game;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -21,6 +17,10 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.zhy.R;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * 2048的游戏面板，加入布局文件即可开始游戏
@@ -64,8 +64,17 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
 	 * 存放切完以后的图片bean
 	 */
 	private List<PintuImagePiece> mItemBitmaps;
-
 	private boolean once;
+	private ImageView mFirst;
+	private ImageView mSecond;
+	/**
+	 * 动画运行的标志位
+	 */
+	private boolean isAniming;
+	/**
+	 * 动画层
+	 */
+	private RelativeLayout mAnimLayout;
 
 	public PintuLayout(Context context) {
 		this(context, null);
@@ -77,7 +86,6 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
 
 	public PintuLayout(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
-
 		mMargin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
 				mMargin, getResources().getDisplayMetrics());
 		// 设置Layout的内边距，四边一致，设置为四内边距中的最小值
@@ -184,9 +192,6 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
 		return min;
 	}
 
-	private ImageView mFirst;
-	private ImageView mSecond;
-
 	@Override
 	public void onClick(View v) {
 		// 如果正在执行动画，则屏蔽
@@ -204,23 +209,12 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
 		if (mFirst == null) {
 			mFirst = (ImageView) v;
 			mFirst.setColorFilter(Color.parseColor("#55FF0000"));
-		} else
-		// 点击第二个Item
-		{
+		} else { // 点击第二个Item
 			mSecond = (ImageView) v;
 			exchangeView();
 		}
 
 	}
-
-	/**
-	 * 动画运行的标志位
-	 */
-	private boolean isAniming;
-	/**
-	 * 动画层
-	 */
-	private RelativeLayout mAnimLayout;
 
 	/**
 	 * 交换两个Item的图片
@@ -287,10 +281,8 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
 						.parseInt(secondParams[0])).bitmap);
 				mSecond.setImageBitmap(mItemBitmaps.get(Integer
 						.parseInt(firstParams[0])).bitmap);
-
 				mFirst.setTag(secondTag);
 				mSecond.setTag(firstTag);
-
 				mFirst.setVisibility(VISIBLE);
 				mSecond.setVisibility(VISIBLE);
 				mFirst = mSecond = null;
@@ -352,7 +344,6 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
 	 */
 	private void setUpAnimLayout() {
 		if (mAnimLayout == null){
-			//
 			mAnimLayout = new RelativeLayout(getContext());
 			addView(mAnimLayout);
 		}
