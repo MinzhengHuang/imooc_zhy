@@ -54,6 +54,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		}catch(SecurityException e){
 			
 		}
+
 	}
 
 	/**

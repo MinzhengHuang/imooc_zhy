@@ -1,13 +1,13 @@
 package com.zhy.imageloader;
 
-import java.util.List;
-
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.zhy.R;
+
+import java.util.List;
 
 public class ListImageDirPopupWindow extends
 		BasePopupWindowForListView<ImageFloder> {
@@ -59,13 +59,13 @@ public class ListImageDirPopupWindow extends
 
 	@Override
 	public void init() {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	protected void beforeInitWeNeedSomeParams(Object... params) {
-		// TODO Auto-generated method stub
+
 	}
+
 
 }

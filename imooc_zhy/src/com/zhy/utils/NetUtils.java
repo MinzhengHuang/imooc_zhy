@@ -49,8 +49,9 @@ public class NetUtils {
 		ConnectivityManager cm = (ConnectivityManager) context
 				.getSystemService(Context.CONNECTIVITY_SERVICE);
 
-		if (cm == null)
+		if (cm == null){
 			return false;
+		}
 		return cm.getActiveNetworkInfo().getType() == ConnectivityManager.TYPE_WIFI;
 
 	}

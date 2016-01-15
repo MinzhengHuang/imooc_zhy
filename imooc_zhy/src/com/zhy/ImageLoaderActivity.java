@@ -25,7 +25,7 @@ import android.widget.Toast;
 import com.zhy.imageloader.ImageFloder;
 import com.zhy.imageloader.ListImageDirPopupWindow;
 import com.zhy.imageloader.ListImageDirPopupWindow.OnImageDirSelected;
-import com.zhy.imageloader.MyAdapter;
+import com.zhy.imageloader.ImageAdapter;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -47,14 +47,12 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 	private File mImgDir;//图片数量最多的文件夹
 	private List<String> mImgs;//所有的图片
 	private GridView mGirdView;
-	private MyAdapter mAdapter;
-	/**
-	 * 临时的辅助类，用于防止同一个文件夹的多次扫描
-	 */
+	private ImageAdapter mAdapter;
+
+	/** 临时的辅助类，用于防止同一个文件夹的多次扫描 */
 	private HashSet<String> mDirPaths = new HashSet<String>();
-	/**
-	 * 扫描拿到所有的图片文件夹
-	 */
+
+	/** 扫描拿到所有的图片文件夹 */
 	private List<ImageFloder> mImageFloders = new ArrayList<ImageFloder>();
 	private RelativeLayout mBottomLy;
 	private TextView mChooseDir;
@@ -87,7 +85,7 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 		/**
 		 * 可以看到文件夹的路径和图片的路径分开保存，极大的减少了内存的消耗；
 		 */
-		mAdapter = new MyAdapter(getApplicationContext(), mImgs,
+		mAdapter = new ImageAdapter(getApplicationContext(), mImgs,
 				R.layout.grid_item, mImgDir.getAbsolutePath());
 		mGirdView.setAdapter(mAdapter);
 		mImageCount.setText(totalCount + "张");
@@ -106,7 +104,7 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 
 			@Override
 			public void onDismiss() {
-				// 设置背景颜色变暗
+				// 设置背景颜色变亮
 				WindowManager.LayoutParams lp = getWindow().getAttributes();
 				lp.alpha = 1.0f;
 				getWindow().setAttributes(lp);
@@ -132,6 +130,16 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 	}
 
 	/**
+	 * 初始化View
+	 */
+	private void initView() {
+		mGirdView = (GridView) findViewById(R.id.id_gridView);
+		mChooseDir = (TextView) findViewById(R.id.id_choose_dir);
+		mImageCount = (TextView) findViewById(R.id.id_total_count);
+		mBottomLy = (RelativeLayout) findViewById(R.id.id_bottom_ly);
+	}
+
+	/**
 	 * 利用ContentProvider扫描手机中的图片，此方法在运行在子线程中 完成图片的扫描，最终获得jpg最多的那个文件夹
 	 */
 	private void getImages() {
@@ -144,11 +152,10 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 		mProgressDialog = ProgressDialog.show(this, null, "正在加载...");
 
 		new Thread(new Runnable() {
+
 			@Override
 			public void run() {
-
 				String firstImage = null;
-
 				Uri mImageUri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
 				ContentResolver mContentResolver = ImageLoaderActivity.this
 						.getContentResolver();
@@ -192,6 +199,7 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 						continue;
 					}
 					int picSize = parentFile.list(new FilenameFilter() {
+
 						@Override
 						public boolean accept(File dir, String filename) {
 							if (filename.endsWith(".jpg")
@@ -223,16 +231,6 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 			}
 		}).start();
 
-	}
-
-	/**
-	 * 初始化View
-	 */
-	private void initView() {
-		mGirdView = (GridView) findViewById(R.id.id_gridView);
-		mChooseDir = (TextView) findViewById(R.id.id_choose_dir);
-		mImageCount = (TextView) findViewById(R.id.id_total_count);
-		mBottomLy = (RelativeLayout) findViewById(R.id.id_bottom_ly);
 	}
 
 	private void initEvent() {
@@ -270,7 +268,7 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 		/**
 		 * 可以看到文件夹的路径和图片的路径分开保存，极大的减少了内存的消耗；
 		 */
-		mAdapter = new MyAdapter(getApplicationContext(), mImgs,
+		mAdapter = new ImageAdapter(getApplicationContext(), mImgs,
 				R.layout.grid_item, mImgDir.getAbsolutePath());
 		mGirdView.setAdapter(mAdapter);
 		// mAdapter.notifyDataSetChanged();
