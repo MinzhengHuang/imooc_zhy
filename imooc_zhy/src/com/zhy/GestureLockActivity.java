@@ -12,7 +12,6 @@ import com.zhy.view.GestureLockViewGroup.OnGestureLockViewListener;
  *
  * http://blog.csdn.net/lmj623565791/article/details/36236113
  *
- *
  */
 public class GestureLockActivity extends Activity {
 	private GestureLockViewGroup mGestureLockViewGroup;

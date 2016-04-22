@@ -1,5 +1,6 @@
 package com.zhy.changeskin.base;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.util.ArrayMap;
@@ -28,6 +29,7 @@ import java.util.Map;
 /**
  * Created by zhy on 15/9/22.
  */
+@SuppressLint("Registered")
 public class BaseSkinActivity extends AppCompatActivity implements ISkinChangedListener, LayoutInflaterFactory {
     static final Class<?>[] sConstructorSignature = new Class[]{
             Context.class, AttributeSet.class};

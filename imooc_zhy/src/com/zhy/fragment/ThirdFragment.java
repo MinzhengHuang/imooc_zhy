@@ -41,12 +41,6 @@ public class ThirdFragment extends Fragment implements OnClickListener {
     }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-        super.onActivityCreated(savedInstanceState);
-    }
-
-    @Override
     public void onClick(View v) {
         Intent intent = null;
         switch (v.getId()) {

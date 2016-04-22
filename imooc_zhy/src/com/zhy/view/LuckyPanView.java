@@ -71,10 +71,8 @@ public class LuckyPanView extends SurfaceView implements Callback, Runnable {
 
 		mHolder = getHolder();
 		mHolder.addCallback(this);
-
 		// setZOrderOnTop(true);// 设置画布 背景透明
 		// mHolder.setFormat(PixelFormat.TRANSLUCENT);
-
 		setFocusable(true);
 		setFocusableInTouchMode(true);
 		this.setKeepScreenOn(true);
@@ -128,7 +126,6 @@ public class LuckyPanView extends SurfaceView implements Callback, Runnable {
 	@Override
 	public void surfaceChanged(SurfaceHolder holder, int format, int width,
 			int height) {
-		// TODO Auto-generated method stub
 
 	}
 

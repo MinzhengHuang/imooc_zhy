@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="text" format="string"></attr>
+    <attr name="text" format="string"/>
     <attr name="text_size" format="dimension"></attr>
 
     <declare-styleable name="ChangeColorIconWithText">
@@ -58,7 +58,7 @@
         <enum name="circle" value="0" />
         <enum name="round" value="1" />
     </attr>
-    <attr name="src" format="reference"></attr>
+    <attr name="src" format="reference"/>
 
     <declare-styleable name="CustomImageView">
         <attr name="titleText" />
@@ -122,7 +122,7 @@
     </declare-styleable>
 
     <declare-styleable name="TagFlowLayout">
-        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="auto_select_effect" format="boolean"/>
         <attr name="max_select" format="integer"></attr>
     </declare-styleable>
 

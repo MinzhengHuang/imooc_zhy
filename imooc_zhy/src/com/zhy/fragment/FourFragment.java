@@ -27,12 +27,6 @@ public class FourFragment extends Fragment implements OnClickListener {
     }
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-        super.onActivityCreated(savedInstanceState);
-    }
-
-    @Override
     public void onClick(View v) {
         Intent intent = null;
         switch (v.getId()) {
@@ -43,6 +37,7 @@ public class FourFragment extends Fragment implements OnClickListener {
             case R.id.btn_xUtils:
                 intent = new Intent(getActivity(), XUtilsTestActivity.class);
                 break;
+
             case R.id.btn_ChangeSkin:
                 intent = new Intent(getActivity(), ChangeSkinActivity.class);
                 break;

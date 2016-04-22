@@ -1,11 +1,10 @@
 <com.zhy.view.BinarySlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:zhy="http://schemas.android.com/apk/res/com.zhy"
     android:id="@+id/id_menu"
     android:layout_width="wrap_content"
     android:layout_height="fill_parent"
     android:scrollbars="none"
-    zhy:rightPadding="100dp" >
+    zhy:rightPadding="100dp">
 
     <LinearLayout
         android:layout_width="wrap_content"

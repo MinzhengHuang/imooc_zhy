@@ -39,8 +39,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		setOverflowButtonAlways();
-//		getActionBar().setDisplayShowHomeEnabled(false);
 
+//		getActionBar().setDisplayShowHomeEnabled(false);
 		initView();
 		initDatas();
 		mViewPager.setAdapter(mAdapter);
@@ -82,7 +82,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 		mTabs.add(thirdFragment);
 		FourFragment fourFragment = new FourFragment();
 		mTabs.add(fourFragment);
-
 		mAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
 
 			@Override
@@ -95,6 +94,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 				return mTabs.get(position);
 			}
 		};
+
 	}
 
 	private void initView() {
@@ -217,13 +217,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 
 	@Override
 	public void onPageSelected(int position) {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void onPageScrollStateChanged(int state) {
-		// TODO Auto-generated method stub
 
 	}
 

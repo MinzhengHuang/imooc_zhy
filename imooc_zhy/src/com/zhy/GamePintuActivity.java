@@ -13,6 +13,7 @@ public class GamePintuActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_pintu);
         mGameView = (PintuLayout) findViewById(R.id.id_gameview);
+
     }
 
 }

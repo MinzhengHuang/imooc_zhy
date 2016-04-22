@@ -38,7 +38,6 @@ public class FoldSlidingPanelLayout extends SlidingPaneLayout {
 
 				@Override
 				public void onPanelOpened(View arg0) {
-					// TODO Auto-generated method stub
 
 				}
 

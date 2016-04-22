@@ -22,10 +22,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.zhy.imageloader.ImageAdapter;
 import com.zhy.imageloader.ImageFloder;
 import com.zhy.imageloader.ListImageDirPopupWindow;
 import com.zhy.imageloader.ListImageDirPopupWindow.OnImageDirSelected;
-import com.zhy.imageloader.ImageAdapter;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -44,8 +44,8 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 
 	private ProgressDialog mProgressDialog;
 	private int mPicsSize;//存储文件夹中的图片数量
-	private File mImgDir;//图片数量最多的文件夹
 	private List<String> mImgs;//所有的图片
+	private File mImgDir;//图片数量最多的文件夹
 	private GridView mGirdView;
 	private ImageAdapter mAdapter;
 
@@ -122,11 +122,9 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 		DisplayMetrics outMetrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(outMetrics);
 		mScreenHeight = outMetrics.heightPixels;
-
 		initView();
 		getImages();
 		initEvent();
-
 	}
 
 	/**

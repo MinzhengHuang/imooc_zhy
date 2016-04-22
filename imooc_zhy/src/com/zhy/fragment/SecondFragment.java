@@ -1,29 +1,23 @@
 package com.zhy.fragment;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.zhy.BounceScrollViewActivity;
 import com.zhy.EventBusActivity;
 import com.zhy.Game2048Activity;
 import com.zhy.GamePintuActivity;
-import com.zhy.GestureLockActivity;
 import com.zhy.ImageLoaderActivity;
 import com.zhy.ListViewItemSlideDeleteActivity;
 import com.zhy.NetworkingImageLoaderActivity;
 import com.zhy.R;
-import com.zhy.SlidingPanelLayoutActivity;
 import com.zhy.SwipeRefreshActivity;
 import com.zhy.VerticalLinearLayoutActivity;
-import com.zhy.view.ListViewItemSlideDeleteView;
 
 public class SecondFragment extends Fragment implements OnClickListener{
 
@@ -44,12 +38,6 @@ public class SecondFragment extends Fragment implements OnClickListener{
 
 	}
 	
-	@Override
-	public void onActivityCreated(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
-		super.onActivityCreated(savedInstanceState);
-	}
-
 	@Override
 	public void onClick(View v) {
 		Intent intent=null;

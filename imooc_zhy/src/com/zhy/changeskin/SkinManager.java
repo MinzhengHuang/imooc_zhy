@@ -58,10 +58,13 @@ public class SkinManager {
         String skinPluginPath = mPrefUtils.getPluginPath();
         String skinPluginPkg = mPrefUtils.getPluginPkgName();
         mSuffix = mPrefUtils.getSuffix();
-        if (TextUtils.isEmpty(skinPluginPath))
+        if (TextUtils.isEmpty(skinPluginPath)){
             return;
+        }
         File file = new File(skinPluginPath);
-        if (!file.exists()) return;
+        if (!file.exists()){
+            return;
+        }
         try {
             loadPlugin(skinPluginPath, skinPluginPkg, mSuffix);
             mCurPluginPath = skinPluginPath;
@@ -162,8 +165,9 @@ public class SkinManager {
      * @param callback
      */
     public void changeSkin(final String skinPluginPath, final String pkgName, final String suffix, ISkinChangingCallback callback) {
-        if (callback == null)
+        if (callback == null){
             callback = ISkinChangingCallback.DEFAULT_SKIN_CHANGING_CALLBACK;
+        }
         final ISkinChangingCallback skinChangingCallback = callback;
 
         skinChangingCallback.onStart();
@@ -182,7 +186,6 @@ public class SkinManager {
                     e.printStackTrace();
                     skinChangingCallback.onError(e);
                 }
-
                 return null;
             }
 
@@ -214,7 +217,9 @@ public class SkinManager {
     public void apply(ISkinChangedListener listener) {
         List<SkinView> skinViews = getSkinViews(listener);
 
-        if (skinViews == null) return;
+        if (skinViews == null){
+            return;
+        }
         for (SkinView skinView : skinViews) {
             skinView.apply();
         }

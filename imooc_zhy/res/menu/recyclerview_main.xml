@@ -24,7 +24,8 @@
         android:id="@+id/id_action_listview"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="ListView"/>
+        android:title="ListView"
+        tools:ignore="AppCompatResource" />
     <item
         android:id="@+id/id_action_horizontalGridView"
         android:orderInCategory="100"
