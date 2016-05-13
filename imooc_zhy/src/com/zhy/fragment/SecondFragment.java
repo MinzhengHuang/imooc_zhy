@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-import com.zhy.BounceScrollViewActivity;
 import com.zhy.EventBusActivity;
 import com.zhy.Game2048Activity;
 import com.zhy.GamePintuActivity;
@@ -18,6 +17,7 @@ import com.zhy.NetworkingImageLoaderActivity;
 import com.zhy.R;
 import com.zhy.SwipeRefreshActivity;
 import com.zhy.VerticalLinearLayoutActivity;
+import com.zhy.activity.BounceScrollViewActivity;
 
 public class SecondFragment extends Fragment implements OnClickListener{
 

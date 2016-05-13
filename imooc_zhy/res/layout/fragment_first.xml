@@ -28,7 +28,7 @@
     <Button
         android:id="@+id/btn_SlidingMenu"
         style="@style/btn_style"
-        android:text="SlidingMenu" />
+        android:text="BinarySlidingMenu" />
 
     <Button
         android:id="@+id/btn_CustomPargressBar"

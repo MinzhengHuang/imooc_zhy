@@ -64,6 +64,10 @@ public class RoundImageView extends ImageView {
 	private int mWidth;
 	private RectF mRoundRect;
 
+	private static final String STATE_INSTANCE = "state_instance";
+	private static final String STATE_TYPE = "state_type";
+	private static final String STATE_BORDER_RADIUS = "state_border_radius";
+
 	public RoundImageView(Context context, AttributeSet attrs) {
 
 		super(context, attrs);
@@ -71,8 +75,7 @@ public class RoundImageView extends ImageView {
 		mBitmapPaint = new Paint();
 		mBitmapPaint.setAntiAlias(true);
 
-		TypedArray a = context.obtainStyledAttributes(attrs,
-				R.styleable.RoundImageView);
+		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.RoundImageView);
 
 		mBorderRadius = a.getDimensionPixelSize(
 				R.styleable.RoundImageView_borderRadius, (int) TypedValue
@@ -80,7 +83,6 @@ public class RoundImageView extends ImageView {
 								BODER_RADIUS_DEFAULT, getResources()
 										.getDisplayMetrics()));// 默认为10dp
 		type = a.getInt(R.styleable.RoundImageView_type, TYPE_CIRCLE);// 默认为Circle
-
 		a.recycle();
 	}
 
@@ -91,7 +93,6 @@ public class RoundImageView extends ImageView {
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
 		/**
 		 * 如果类型是圆形，则强制改变view的宽高一致，以小值为准
 		 */
@@ -122,9 +123,7 @@ public class RoundImageView extends ImageView {
 			scale = mWidth * 1.0f / bSize;
 
 		} else if (type == TYPE_ROUND) {
-			Log.e("TAG",
-					"b'w = " + bmp.getWidth() + " , " + "b'h = "
-							+ bmp.getHeight());
+			Log.e("main","b'w = " + bmp.getWidth() + " , " + "b'h = "+ bmp.getHeight());
 			if (!(bmp.getWidth() == getWidth() && bmp.getHeight() == getHeight())) {
 				// 如果图片的宽或者高与view的宽高不匹配，计算出需要缩放的比例；缩放后的图片的宽高，一定要大于我们view的宽高；所以我们这里取大值；
 				scale = Math.max(getWidth() * 1.0f / bmp.getWidth(),
@@ -142,15 +141,14 @@ public class RoundImageView extends ImageView {
 
 	@Override
 	protected void onDraw(Canvas canvas) {
-		Log.e("TAG", "onDraw");
+		Log.e("main", "onDraw");
 		if (getDrawable() == null) {
 			return;
 		}
 		setUpShader();
 
 		if (type == TYPE_ROUND) {
-			canvas.drawRoundRect(mRoundRect, mBorderRadius, mBorderRadius,
-					mBitmapPaint);
+			canvas.drawRoundRect(mRoundRect, mBorderRadius, mBorderRadius, mBitmapPaint);
 		} else {
 			canvas.drawCircle(mRadius, mRadius, mRadius, mBitmapPaint);
 			// drawSomeThing(canvas);
@@ -187,9 +185,7 @@ public class RoundImageView extends ImageView {
 		return bitmap;
 	}
 
-	private static final String STATE_INSTANCE = "state_instance";
-	private static final String STATE_TYPE = "state_type";
-	private static final String STATE_BORDER_RADIUS = "state_border_radius";
+
 
 	@Override
 	protected Parcelable onSaveInstanceState() {

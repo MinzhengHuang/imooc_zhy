@@ -18,34 +18,35 @@ public class CustomViewActivity extends Activity {
 
     protected String mTitleText;
 
-	@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_view);
         final TextView tv = (TextView) findViewById(R.id.tv);
-		tv.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				mTitleText = HmzUtils.randomNumStr(4);//获得随机数
-				tv.setText(mTitleText);
-			}
-		});
-		Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
-				R.drawable.mv);
-		ImageView iv1 = (ImageView) findViewById(R.id.id_one);
-		iv1.setImageDrawable(new CircleImageDrawable(bitmap));
-		ImageView iv2 = (ImageView) findViewById(R.id.id_two);
-		iv2.setImageDrawable(new RoundImageDrawable(bitmap));
-		
-		findViewById(R.id.btn_customimg).setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent intent=new Intent(CustomViewActivity.this, CustomImageActivity.class);
-				startActivity(intent);
-			}
-		});
+        tv.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                mTitleText = HmzUtils.randomNumStr(4);//获得随机数
+                tv.setText(mTitleText);
+            }
+        });
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
+                R.drawable.meinv);
+        ImageView iv1 = (ImageView) findViewById(R.id.id_one);
+        iv1.setImageDrawable(new CircleImageDrawable(bitmap));
+
+        ImageView iv2 = (ImageView) findViewById(R.id.id_two);
+        iv2.setImageDrawable(new RoundImageDrawable(bitmap));
+
+        findViewById(R.id.btn_customimg).setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CustomViewActivity.this, CustomImageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

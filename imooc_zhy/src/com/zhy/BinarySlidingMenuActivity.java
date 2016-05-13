@@ -18,7 +18,7 @@ import java.util.List;
  *
  *
  */
-public class SlidingMenuActivity extends ListActivity {
+public class BinarySlidingMenuActivity extends ListActivity {
 	private BinarySlidingMenu mMenu;
 	private List<String> mDatas = new ArrayList<String>();
 	

@@ -50,8 +50,7 @@ public class ViewInjectUtils {
 						Method aMethod = annotationType
 								.getDeclaredMethod("value");
 						// 取出所有的viewId
-						int[] viewIds = (int[]) aMethod
-								.invoke(annotation, null);
+						int[] viewIds = (int[]) aMethod.invoke(annotation, null);
 						// 通过InvocationHandler设置代理
 						DynamicHandler handler = new DynamicHandler(activity);
 						// 往map添加方法

@@ -1,4 +1,4 @@
-package com.zhy;
+package com.zhy.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.zhy.R;
+import com.zhy.SecondActivity;
 import com.zhy.view.BounceScrollView;
 import com.zhy.view.BounceScrollView.Callback;
 

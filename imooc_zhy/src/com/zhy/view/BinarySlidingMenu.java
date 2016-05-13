@@ -33,6 +33,8 @@ public class BinarySlidingMenu extends HorizontalScrollView {
 	private ViewGroup mWrapper;
 	private boolean isLeftMenuOpen;
 	private boolean isRightMenuOpen;
+	private int mScreenWidth;//屏幕宽度
+	private int mMenuRightPadding;//dp 菜单距离屏幕的右边距
 
 	/**
 	 * 回调的接口
@@ -54,12 +56,13 @@ public class BinarySlidingMenu extends HorizontalScrollView {
 		this.mOnMenuOpenListener = mOnMenuOpenListener;
 	}
 
+	public BinarySlidingMenu(Context context) {
+		this(context, null, 0);
+	}
+
 	public BinarySlidingMenu(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
-
 	}
-	private int mScreenWidth;//屏幕宽度
-	private int mMenuRightPadding;//dp 菜单距离屏幕的右边距
 
 	public BinarySlidingMenu(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
@@ -83,17 +86,12 @@ public class BinarySlidingMenu extends HorizontalScrollView {
 		a.recycle();
 	}
 
-	public BinarySlidingMenu(Context context) {
-		this(context, null, 0);
-	}
-
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 		/**
 		 * 显示的设置一个宽度
 		 */
 		if (!once) {
-
 			mWrapper = (LinearLayout) getChildAt(0);
 			mLeftMenu = (ViewGroup) mWrapper.getChildAt(0);
 			mContent = (ViewGroup) mWrapper.getChildAt(1);
@@ -159,7 +157,6 @@ public class BinarySlidingMenu extends HorizontalScrollView {
 					this.smoothScrollTo(mMenuWidth, 0);
 				}
 			}
-
 			return true;
 		}
 		return super.onTouchEvent(ev);
@@ -168,11 +165,9 @@ public class BinarySlidingMenu extends HorizontalScrollView {
 	@Override
 	protected void onScrollChanged(int l, int t, int oldl, int oldt) {
 		super.onScrollChanged(l, t, oldl, oldt);
-
 		if (l > mMenuWidth) {
 			isOperateRight = true;
 			isOperateLeft = false;
-
 		} else {
 			isOperateRight = false;
 			isOperateLeft = true;

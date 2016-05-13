@@ -93,16 +93,12 @@ public class CustomImageView extends View {
 
 		TypedArray a = context.getTheme().obtainStyledAttributes(attrs,
 				R.styleable.CustomImageView, defStyle, 0);
-
 		int n = a.getIndexCount();
-
 		for (int i = 0; i < n; i++) {
 			int attr = a.getIndex(i);
-
 			switch (attr) {
 			case R.styleable.CustomImageView_image:
-				mImage = BitmapFactory.decodeResource(getResources(),
-						a.getResourceId(attr, 0));
+				mImage = BitmapFactory.decodeResource(getResources(), a.getResourceId(attr, 0));
 				break;
 			case R.styleable.CustomImageView_imageScaleType:
 				mImageScale = a.getInt(attr, 0);
@@ -121,7 +117,7 @@ public class CustomImageView extends View {
 
 			}
 		}
-		a.recycle();
+		a.recycle();//回收
 
 		rect = new Rect();
 		mPaint = new Paint();
@@ -134,8 +130,6 @@ public class CustomImageView extends View {
 
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-		// super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
 		/**
 		 * 设置宽度
 		 */
@@ -147,11 +141,9 @@ public class CustomImageView extends View {
 			mWidth = specSize;
 		} else {
 			// 由图片决定的宽
-			int desireByImg = getPaddingLeft() + getPaddingRight()
-					+ mImage.getWidth();
+			int desireByImg = getPaddingLeft() + getPaddingRight() + mImage.getWidth();
 			// 由字体决定的宽
-			int desireByTitle = getPaddingLeft() + getPaddingRight()
-					+ mTextBound.width();
+			int desireByTitle = getPaddingLeft() + getPaddingRight() + mTextBound.width();
 
 			if (specMode == MeasureSpec.AT_MOST) {// wrap_content
 				int desire = Math.max(desireByImg, desireByTitle);
@@ -163,7 +155,6 @@ public class CustomImageView extends View {
 		/***
 		 * 设置高度
 		 */
-
 		specMode = MeasureSpec.getMode(heightMeasureSpec);
 		specSize = MeasureSpec.getSize(heightMeasureSpec);
 		if (specMode == MeasureSpec.EXACTLY) {// match_parent , accurate
@@ -181,7 +172,6 @@ public class CustomImageView extends View {
 
 	@Override
 	protected void onDraw(Canvas canvas) {
-		// super.onDraw(canvas);
 		/**
 		 * 边框
 		 */
@@ -224,10 +214,8 @@ public class CustomImageView extends View {
 			// 计算居中的矩形范围
 			rect.left = mWidth / 2 - mImage.getWidth() / 2;
 			rect.right = mWidth / 2 + mImage.getWidth() / 2;
-			rect.top = (mHeight - mTextBound.height()) / 2 - mImage.getHeight()
-					/ 2;
-			rect.bottom = (mHeight - mTextBound.height()) / 2
-					+ mImage.getHeight() / 2;
+			rect.top = (mHeight - mTextBound.height()) / 2 - mImage.getHeight() / 2;
+			rect.bottom = (mHeight - mTextBound.height()) / 2 + mImage.getHeight() / 2;
 
 			canvas.drawBitmap(mImage, null, rect, mPaint);
 		}

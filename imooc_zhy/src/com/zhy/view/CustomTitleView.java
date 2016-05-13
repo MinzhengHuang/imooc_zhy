@@ -96,7 +96,6 @@ public class CustomTitleView extends View {
          */
         mPaint = new Paint();
         mPaint.setTextSize(mTitleTextSize);
-//		mPaint.setColor(mTitleTextColor);
         mBound = new Rect();
         mPaint.getTextBounds(mTitleText, 0, mTitleText.length(), mBound);
 
@@ -123,8 +122,6 @@ public class CustomTitleView extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        // super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
         int width = 0;
         int height = 0;
 
@@ -162,13 +159,12 @@ public class CustomTitleView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        mPaint.setColor(Color.YELLOW);
+        mPaint.setColor(Color.BLUE);
         canvas.drawRect(0, 0, getMeasuredWidth(), getMeasuredHeight(), mPaint);
 
         mPaint.setColor(mTitleTextColor);
         Log.i("main", "getWidth=" + getWidth() + ",mBound.width=" + mBound.width() + ",getHeight=" + getHeight() + ",mBound.height=" + mBound.height());
-        canvas.drawText(mTitleText, getWidth() / 2 - mBound.width() / 2,
-                getHeight() / 2 + mBound.height() / 2, mPaint);
+        canvas.drawText(mTitleText, getWidth() / 2 - mBound.width() / 2, getHeight() / 2 + mBound.height() / 2, mPaint);
     }
 }
 

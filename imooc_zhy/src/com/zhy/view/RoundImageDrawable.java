@@ -10,11 +10,12 @@ import android.graphics.RectF;
 import android.graphics.Shader.TileMode;
 import android.graphics.drawable.Drawable;
 
+/**
+ * 圆角图片
+ */
 public class RoundImageDrawable extends Drawable {
-
 	private Paint mPaint;
 	private Bitmap mBitmap;
-
 	private RectF rectF;
 
 	public RoundImageDrawable(Bitmap bitmap) {
@@ -34,7 +35,7 @@ public class RoundImageDrawable extends Drawable {
 
 	@Override
 	public void draw(Canvas canvas) {
-		canvas.drawRoundRect(rectF, 30, 30, mPaint);
+		canvas.drawRoundRect(rectF, 80, 80, mPaint);
 	}
 
 	@Override

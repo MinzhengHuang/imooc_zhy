@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="HorizontalProgressBarWithNumber">
+    <declare-styleable name="HorizontalPBWithNumber">
         <attr name="progress_unreached_color" format="color" />
         <attr name="progress_reached_color" format="color" />
         <attr name="progress_reached_bar_height" format="dimension" />
@@ -15,7 +15,7 @@
         </attr>
     </declare-styleable>
     
-    <declare-styleable name="RoundProgressBarWidthNumber">
+    <declare-styleable name="RoundPBWidthNumber">
         <attr name="radius" format="dimension" />
     </declare-styleable>
 

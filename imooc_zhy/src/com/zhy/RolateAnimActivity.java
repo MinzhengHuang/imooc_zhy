@@ -5,11 +5,10 @@ import android.content.Context;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.zhy.view.MyImageView;
+import com.zhy.view.RolateAnimImageView;
 
 public class RolateAnimActivity extends Activity {
-
-	MyImageView joke;
+	RolateAnimImageView joke;
 	private Context mContext;
 
 	@Override
@@ -21,11 +20,11 @@ public class RolateAnimActivity extends Activity {
 	}
 
 	private void initview() {
-		joke = (MyImageView) findViewById(R.id.c_joke);
-		joke.setOnClickIntent(new MyImageView.OnViewClickListener() {
+		joke = (RolateAnimImageView) findViewById(R.id.c_joke);
+		joke.setOnClickIntent(new RolateAnimImageView.OnViewClickListener() {
 
 			@Override
-			public void onViewClick(MyImageView view) {
+			public void onViewClick(RolateAnimImageView view) {
 				Toast.makeText(mContext, "Joke", Toast.LENGTH_SHORT).show();
 			}
 		});

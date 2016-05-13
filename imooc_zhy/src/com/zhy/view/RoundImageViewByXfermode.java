@@ -1,20 +1,13 @@
 package com.zhy.view;
 
-import java.lang.ref.WeakReference;
-
-import com.zhy.R;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
-import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.graphics.Path;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
@@ -24,6 +17,10 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
 import android.widget.ImageView;
+
+import com.zhy.R;
+
+import java.lang.ref.WeakReference;
 
 public class RoundImageViewByXfermode extends ImageView {
 
@@ -78,7 +75,6 @@ public class RoundImageViewByXfermode extends ImageView {
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
 		/**
 		 * 如果类型是圆形，则强制改变view的宽高一致，以小值为准
 		 */
@@ -114,16 +110,14 @@ public class RoundImageViewByXfermode extends ImageView {
 
 			if (drawable != null) {
 				// 创建bitmap
-				bitmap = Bitmap.createBitmap(getWidth(), getHeight(),
-						Config.ARGB_8888);
+				bitmap = Bitmap.createBitmap(getWidth(), getHeight(), Config.ARGB_8888);
 				float scale = 1.0f;
 				// 创建画布
 				Canvas drawCanvas = new Canvas(bitmap);
 				// 按照bitmap的宽高，以及view的宽高，计算缩放比例；因为设置的src宽高比例可能和imageview的宽高比例不同，这里我们不希望图片失真；
 				if (type == TYPE_ROUND) {
 					// 如果图片的宽或者高与view的宽高不匹配，计算出需要缩放的比例；缩放后的图片的宽高，一定要大于我们view的宽高；所以我们这里取大值；
-					scale = Math.max(getWidth() * 1.0f / dWidth, getHeight()
-							* 1.0f / dHeight);
+					scale = Math.max(getWidth() * 1.0f / dWidth, getHeight() * 1.0f / dHeight);
 				} else {
 					scale = getWidth() * 1.0F / Math.min(dWidth, dHeight);
 				}
@@ -172,10 +166,8 @@ public class RoundImageViewByXfermode extends ImageView {
 			canvas.drawRoundRect(new RectF(0, 0, getWidth(), getHeight()),
 					mBorderRadius, mBorderRadius, paint);
 		} else {
-			canvas.drawCircle(getWidth() / 2, getWidth() / 2, getWidth() / 2,
-					paint);
+			canvas.drawCircle(getWidth() / 2, getWidth() / 2, getWidth() / 2, paint);
 		}
-
 		return bitmap;
 	}
 }

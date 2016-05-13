@@ -1,5 +1,5 @@
 <com.zhy.view.BinarySlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:zhy="http://schemas.android.com/apk/res/com.zhy"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
     android:id="@+id/id_menu"
     android:layout_width="wrap_content"
     android:layout_height="fill_parent"

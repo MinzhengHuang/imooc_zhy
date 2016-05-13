@@ -27,15 +27,13 @@ public class GestureLockActivity extends Activity {
 
 					@Override
 					public void onUnmatchedExceedBoundary() {
-						Toast.makeText(GestureLockActivity.this, "错误5次...",
-								Toast.LENGTH_SHORT).show();
+						Toast.makeText(GestureLockActivity.this, "错误5次...", Toast.LENGTH_SHORT).show();
 						mGestureLockViewGroup.setUnMatchExceedBoundary(5);
 					}
 					
 					@Override
 					public void onGestureEvent(boolean matched) {
-						Toast.makeText(GestureLockActivity.this, matched + "",
-								Toast.LENGTH_SHORT).show();
+						Toast.makeText(GestureLockActivity.this, matched + "", Toast.LENGTH_SHORT).show();
 					}
 
 					@Override

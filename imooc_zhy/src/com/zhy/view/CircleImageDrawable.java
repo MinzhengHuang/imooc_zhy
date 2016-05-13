@@ -9,16 +9,17 @@ import android.graphics.PixelFormat;
 import android.graphics.Shader.TileMode;
 import android.graphics.drawable.Drawable;
 
+/**
+ * 圆形图片
+ */
 public class CircleImageDrawable extends Drawable {
-
 	private Paint mPaint;
 	private int mWidth;
 	private Bitmap mBitmap;
 
 	public CircleImageDrawable(Bitmap bitmap) {
 		mBitmap = bitmap;
-		BitmapShader bitmapShader = new BitmapShader(bitmap, TileMode.CLAMP,
-				TileMode.CLAMP);
+		BitmapShader bitmapShader = new BitmapShader(bitmap, TileMode.CLAMP, TileMode.CLAMP);
 		mPaint = new Paint();
 		mPaint.setAntiAlias(true);
 		mPaint.setShader(bitmapShader);

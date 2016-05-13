@@ -36,7 +36,6 @@ public class HmzUtils {
         for (Integer i : set) {
             sb.append("" + i);
         }
-
         return sb.toString();
     }
 

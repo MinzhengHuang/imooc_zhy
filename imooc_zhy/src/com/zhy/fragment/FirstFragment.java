@@ -15,7 +15,7 @@ import com.zhy.CustomViewActivity;
 import com.zhy.GestureLockActivity;
 import com.zhy.R;
 import com.zhy.RolateAnimActivity;
-import com.zhy.SlidingMenuActivity;
+import com.zhy.BinarySlidingMenuActivity;
 import com.zhy.SlidingPanelLayoutActivity;
 import com.zhy.vdh.LeftDrawerLayoutActivity;
 import com.zhy.vdh.VDHBlogActivity;
@@ -57,7 +57,7 @@ public class FirstFragment extends Fragment implements OnClickListener {
                 intent = new Intent(getActivity(), CircleMenuActivity.class);
                 break;
             case R.id.btn_SlidingMenu:
-                intent = new Intent(getActivity(), SlidingMenuActivity.class);
+                intent = new Intent(getActivity(), BinarySlidingMenuActivity.class);
                 break;
             case R.id.btn_CustomPargressBar:
                 intent = new Intent(getActivity(), CustomPargressBarActivity.class);
