@@ -11,6 +11,10 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
 
     <application
         android:name=".ZhyApplication"
@@ -70,6 +74,11 @@
         <activity android:name=".activity.LargeImageViewActivity"></activity>
         <activity android:name=".activity.ViewPagerIndicatorActivity"></activity>
         <activity android:name=".activity.XUtilsTestActivity"></activity>
+        <activity android:name=".activity.ColorTrackViewActivity" ></activity>
+        <activity android:name=".activity.ViewPagerUseActivity" ></activity>
+        <activity android:name=".activity.SimpleUseActivity" ></activity>
+        <activity android:name=".weixinrecorder.WeixinRecorderActivity" ></activity>
+
     </application>
 
 </manifest>

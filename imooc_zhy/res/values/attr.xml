@@ -27,7 +27,6 @@
     </attr>
 
 
-
     <attr name="firstColor" format="color" />
     <attr name="secondColor" format="color" />
     <attr name="circleWidth" format="dimension" />
@@ -129,5 +128,22 @@
     <attr name="item_count" format="integer"></attr>
     <declare-styleable name="ViewPagerIndicator">
         <attr name="item_count" />
+    </declare-styleable>
+
+    <attr name="text_origin_color" format="color|reference" />
+    <attr name="text_change_color" format="color|reference" />
+    <attr name="progress" format="float" />
+    <attr name="direction">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+
+    <declare-styleable name="ColorTrackView">
+        <attr name="text" />
+        <attr name="text_size" />
+        <attr name="text_origin_color" />
+        <attr name="text_change_color" />
+        <attr name="progress" />
+        <attr name="direction" />
     </declare-styleable>
 </resources>

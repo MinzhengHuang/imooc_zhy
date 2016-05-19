@@ -9,9 +9,11 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
 import com.zhy.R;
+import com.zhy.activity.ColorTrackViewActivity;
 import com.zhy.activity.XUtilsTestActivity;
 import com.zhy.changeskin.ChangeSkinActivity;
 import com.zhy.recyclerview.RecyclerViewActivity;
+import com.zhy.weixinrecorder.WeixinRecorderActivity;
 
 public class FourFragment extends Fragment implements OnClickListener {
 
@@ -22,6 +24,8 @@ public class FourFragment extends Fragment implements OnClickListener {
         view.findViewById(R.id.btn_RecyclerView).setOnClickListener(this);
         view.findViewById(R.id.btn_xUtils).setOnClickListener(this);
         view.findViewById(R.id.btn_ChangeSkin).setOnClickListener(this);
+        view.findViewById(R.id.btn_ColorTrackView).setOnClickListener(this);
+        view.findViewById(R.id.btn_WeixinRecorder).setOnClickListener(this);
         return view;
 
     }
@@ -40,6 +44,12 @@ public class FourFragment extends Fragment implements OnClickListener {
 
             case R.id.btn_ChangeSkin:
                 intent = new Intent(getActivity(), ChangeSkinActivity.class);
+                break;
+            case R.id.btn_ColorTrackView:
+                intent = new Intent(getActivity(), ColorTrackViewActivity.class);
+                break;
+            case R.id.btn_WeixinRecorder:
+                intent = new Intent(getActivity(), WeixinRecorderActivity.class);
                 break;
 
             default:

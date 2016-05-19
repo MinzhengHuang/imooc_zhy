@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class TabFragment extends Fragment {
 	private String mTitle = "Default";
 
@@ -24,8 +26,11 @@ public class TabFragment extends Fragment {
 		}
 
 		TextView tv = new TextView(getActivity());
-		tv.setTextSize(20);
-		tv.setBackgroundColor(Color.parseColor("#ffffffff"));
+		tv.setTextSize(60);
+		Random r = new Random();
+//		tv.setBackgroundColor(Color.parseColor("#ffffffff"));
+		tv.setBackgroundColor(Color.argb(r.nextInt(120), r.nextInt(255),
+				r.nextInt(255), r.nextInt(255)));
 		tv.setText(mTitle);
 		tv.setGravity(Gravity.CENTER);
 		tv.setOnClickListener(new OnClickListener() {
@@ -38,5 +43,12 @@ public class TabFragment extends Fragment {
 		return tv;
 
 	}
-	
+
+	public static TabFragment newInstance(String title) {
+		TabFragment tabFragment = new TabFragment();
+		Bundle bundle = new Bundle();
+		bundle.putString(TITLE, title);
+		tabFragment.setArguments(bundle);
+		return tabFragment;
+	}
 }
