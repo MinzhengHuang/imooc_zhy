@@ -8,14 +8,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-import com.zhy.FlowLayoutActivity;
-import com.zhy.JazzyViewPagerActivity;
-import com.zhy.LargeImageViewActivity;
-import com.zhy.MyHorizontalScrollViewActivity;
 import com.zhy.R;
-import com.zhy.ScaleGestureDetectorActivity;
-import com.zhy.StickyNavLayoutActivity;
-import com.zhy.ViewPagerIndicatorActivity;
+import com.zhy.activity.FlowLayoutActivity;
+import com.zhy.activity.JazzyViewPagerActivity;
+import com.zhy.activity.LargeImageViewActivity;
+import com.zhy.activity.MyHorizontalScrollViewActivity;
+import com.zhy.activity.ScaleGestureDetectorActivity;
+import com.zhy.activity.StickyNavLayoutActivity;
+import com.zhy.activity.ViewPagerIndicatorActivity;
 import com.zhy.clippic.ClipPicActivity;
 import com.zhy.handle_runtime_change.HandRuntimeChangeActivity;
 

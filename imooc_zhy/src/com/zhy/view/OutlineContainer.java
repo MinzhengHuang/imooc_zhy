@@ -12,7 +12,6 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 
 import com.zhy.R;
-import com.zhy.adapter.JazzyViewPager;
 import com.zhy.utils.Util;
 
 public class OutlineContainer extends FrameLayout implements Animatable {

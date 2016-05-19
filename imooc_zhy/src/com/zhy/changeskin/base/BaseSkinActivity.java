@@ -41,7 +41,6 @@ public class BaseSkinActivity extends AppCompatActivity implements ISkinChangedL
 
     @Override
     public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
-
         LayoutInflater layoutInflater = getLayoutInflater();
         AppCompatDelegate delegate = getDelegate();
         View view = null;

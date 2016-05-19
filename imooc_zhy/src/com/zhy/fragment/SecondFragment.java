@@ -8,16 +8,16 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-import com.zhy.EventBusActivity;
-import com.zhy.Game2048Activity;
-import com.zhy.GamePintuActivity;
-import com.zhy.ImageLoaderActivity;
-import com.zhy.ListViewItemSlideDeleteActivity;
-import com.zhy.NetworkingImageLoaderActivity;
 import com.zhy.R;
-import com.zhy.SwipeRefreshActivity;
-import com.zhy.VerticalLinearLayoutActivity;
 import com.zhy.activity.BounceScrollViewActivity;
+import com.zhy.activity.EventBusActivity;
+import com.zhy.activity.Game2048Activity;
+import com.zhy.activity.GamePintuActivity;
+import com.zhy.activity.ImageLoaderActivity;
+import com.zhy.activity.ListViewItemSlideDeleteActivity;
+import com.zhy.activity.NetworkingImageLoaderActivity;
+import com.zhy.activity.SwipeRefreshActivity;
+import com.zhy.activity.VerticalLinearLayoutActivity;
 
 public class SecondFragment extends Fragment implements OnClickListener{
 

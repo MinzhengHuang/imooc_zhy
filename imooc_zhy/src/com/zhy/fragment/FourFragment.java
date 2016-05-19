@@ -9,7 +9,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
 import com.zhy.R;
-import com.zhy.XUtilsTestActivity;
+import com.zhy.activity.XUtilsTestActivity;
 import com.zhy.changeskin.ChangeSkinActivity;
 import com.zhy.recyclerview.RecyclerViewActivity;
 

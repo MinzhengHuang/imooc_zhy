@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/zhy_ColorTrackeView/app/src/main/res/values/attr.xml -->
+    <eat-comment/>
+    <attr name="direction">
+        <enum name="left" value="0"/>
+        <enum name="right" value="1"/>
+    </attr>
+    <attr format="float" name="progress"/>
+    <attr format="string" name="text"/>
+    <attr format="color|reference" name="text_change_color"/>
+    <attr format="color|reference" name="text_origin_color"/>
+    <attr format="dimension" name="text_size"/>
+    <declare-styleable name="ColorTrackView"><attr name="text"/><attr name="text_size"/><attr name="text_origin_color"/><attr name="text_change_color"/><attr name="progress"/><attr name="direction"/></declare-styleable>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/zhy_ColorTrackeView/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/zhy_ColorTrackeView/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">zhy_ColorTrackeView</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/Users/huangminzheng/learn_and_work/hmz_github/imooc_zhy/zhy_ColorTrackeView/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

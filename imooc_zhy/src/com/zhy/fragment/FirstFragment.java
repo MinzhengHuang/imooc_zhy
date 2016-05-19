@@ -8,17 +8,17 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-import com.zhy.ChouJiangActivity;
-import com.zhy.CircleMenuActivity;
-import com.zhy.CustomPargressBarActivity;
-import com.zhy.CustomViewActivity;
-import com.zhy.GestureLockActivity;
 import com.zhy.R;
-import com.zhy.RolateAnimActivity;
-import com.zhy.BinarySlidingMenuActivity;
-import com.zhy.SlidingPanelLayoutActivity;
-import com.zhy.vdh.LeftDrawerLayoutActivity;
-import com.zhy.vdh.VDHBlogActivity;
+import com.zhy.activity.BinarySlidingMenuActivity;
+import com.zhy.activity.ChouJiangActivity;
+import com.zhy.activity.CircleMenuActivity;
+import com.zhy.activity.CustomPargressBarActivity;
+import com.zhy.activity.CustomViewActivity;
+import com.zhy.activity.DrawerLayoutActivity;
+import com.zhy.activity.GestureLockActivity;
+import com.zhy.activity.RolateAnimActivity;
+import com.zhy.activity.SlidingPanelLayoutActivity;
+import com.zhy.activity.ViewDragHelperActivity;
 
 public class FirstFragment extends Fragment implements OnClickListener {
 
@@ -69,10 +69,10 @@ public class FirstFragment extends Fragment implements OnClickListener {
                 intent = new Intent(getActivity(), SlidingPanelLayoutActivity.class);
                 break;
             case R.id.btn_ViewDragHelper:
-                intent = new Intent(getActivity(), VDHBlogActivity.class);
+                intent = new Intent(getActivity(), ViewDragHelperActivity.class);
                 break;
             case R.id.btn_Drawerlayout:
-                intent = new Intent(getActivity(), LeftDrawerLayoutActivity.class);
+                intent = new Intent(getActivity(), DrawerLayoutActivity.class);
                 break;
             default:
                 break;
