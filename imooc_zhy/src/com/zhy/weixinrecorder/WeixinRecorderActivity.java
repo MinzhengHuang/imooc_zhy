@@ -33,7 +33,6 @@ public class WeixinRecorderActivity extends Activity {
 			
 			@Override
 			public void onFinish(float seconds, String filePath) {
-				// TODO Auto-generated method stub
 				Recorder recorder=new Recorder(seconds, filePath);
 				mDatas.add(recorder);
 				mAdapter.notifyDataSetChanged();
@@ -62,7 +61,6 @@ public class WeixinRecorderActivity extends Activity {
 					
 					@Override
 					public void onCompletion(MediaPlayer mp) {
-						// TODO Auto-generated method stub
 						mAnimView.setBackgroundResource(R.drawable.adj);
 					}
 				});
@@ -72,21 +70,18 @@ public class WeixinRecorderActivity extends Activity {
 	
 	@Override
 	protected void onPause() {
-		// TODO Auto-generated method stub
 		super.onPause();
 		MediaManager.pause();
 	}
 	
 	@Override
 	protected void onResume() {
-		// TODO Auto-generated method stub
 		super.onResume();
 		MediaManager.resume();
 	}
 	
 	@Override
 	protected void onDestroy() {
-		// TODO Auto-generated method stub
 		super.onDestroy();
 		MediaManager.release();
 	}

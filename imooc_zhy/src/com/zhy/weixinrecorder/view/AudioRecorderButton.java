@@ -152,8 +152,7 @@ public class AudioRecorderButton extends Button {
 				mDialogManager.dismissDialog();
 				mAudioManager.release();
 				if (mListener != null) {
-					mListener.onFinish(mTime,
-							mAudioManager.getCurrentFilePath());
+					mListener.onFinish(mTime, mAudioManager.getCurrentFilePath());
 				}
 			} else if (mCurState == STATE_WANT_TO_CANCLE) {
 				// cancle

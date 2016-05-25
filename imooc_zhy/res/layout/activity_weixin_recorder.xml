@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#ebebeb"
+        android:background="#adebb0"
         android:divider="@null"
         android:dividerHeight="10dp" />
 
