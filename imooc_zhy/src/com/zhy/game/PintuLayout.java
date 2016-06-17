@@ -4,6 +4,8 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.os.Handler;
+import android.os.Message;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
@@ -23,331 +25,384 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * 2048的游戏面板，加入布局文件即可开始游戏
- * 
+ * 拼图的游戏面板，加入布局文件即可开始游戏
+ *
  * @author zhy
- * 
  */
 public class PintuLayout extends RelativeLayout implements OnClickListener {
 
-	/**
-	 * 设置Item的数量n*n；默认为2
-	 */
-	private int mColumn = 3;
-	/**
-	 * 布局的宽度
-	 */
-	private int mWidth;
-	/**
-	 * 布局的padding
-	 */
-	private int mPadding;
-	/**
-	 * 存放所有的Item
-	 */
-	private ImageView[] mGamePintuItems;
-	/**
-	 * Item的宽度
-	 */
-	private int mItemWidth;
+    /**
+     * 设置Item的数量n*n；默认为2
+     */
+    private int mColumn = 3;
+    /**
+     * 布局的宽度
+     */
+    private int mWidth;
+    /**
+     * 布局的padding
+     */
+    private int mPadding;
+    /**
+     * 存放所有的Item
+     */
+    private ImageView[] mGamePintuItems;
+    /**
+     * Item的宽度
+     */
+    private int mItemWidth;
 
-	/**
-	 * Item横向与纵向的边距
-	 */
-	private int mMargin = 3;
+    /**
+     * Item横向与纵向的边距
+     */
+    private int mMargin = 3;
 
-	/**
-	 * 拼图的图片
-	 */
-	private Bitmap mBitmap;
-	/**
-	 * 存放切完以后的图片bean
-	 */
-	private List<PintuImagePiece> mItemBitmaps;
-	private boolean once;
-	private ImageView mFirst;
-	private ImageView mSecond;
-	/**
-	 * 动画运行的标志位
-	 */
-	private boolean isAniming;
-	/**
-	 * 动画层
-	 */
-	private RelativeLayout mAnimLayout;
+    /**
+     * 拼图的图片
+     */
+    private Bitmap mBitmap;
+    /**
+     * 存放切完以后的图片bean
+     */
+    private List<PintuImagePiece> mItemBitmaps;
+    private boolean once;
+    private ImageView mFirst;
+    private ImageView mSecond;
+    /**
+     * 动画运行的标志位
+     */
+    private boolean isAniming;
+    /**
+     * 动画层
+     */
+    private RelativeLayout mAnimLayout;
 
-	public PintuLayout(Context context) {
-		this(context, null);
-	}
+    private GamePintuListener mListener;
 
-	public PintuLayout(Context context, AttributeSet attrs) {
-		this(context, attrs, 0);
-	}
+    public PintuLayout(Context context) {
+        this(context, null);
+    }
 
-	public PintuLayout(Context context, AttributeSet attrs, int defStyle) {
-		super(context, attrs, defStyle);
-		mMargin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
-				mMargin, getResources().getDisplayMetrics());
-		// 设置Layout的内边距，四边一致，设置为四内边距中的最小值
-		mPadding = min(getPaddingLeft(), getPaddingTop(), getPaddingRight(),
-				getPaddingBottom());
-	}
+    public PintuLayout(Context context, AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
 
-	public void setBitmap(Bitmap mBitmap) {
-		this.mBitmap = mBitmap;
-	}
+    public PintuLayout(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+        mMargin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
+                mMargin, getResources().getDisplayMetrics());
+        // 设置Layout的内边距，四边一致，设置为四内边距中的最小值
+        mPadding = min(getPaddingLeft(), getPaddingTop(), getPaddingRight(),
+                getPaddingBottom());
+    }
 
-	@Override
-	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    public void setOnGamePintuListener(GamePintuListener mListener) {
+        this.mListener = mListener;
+    }
 
-		// 获得游戏布局的边长
-		mWidth = Math.min(getMeasuredHeight(), getMeasuredWidth());
+    public void setBitmap(Bitmap mBitmap) {
+        this.mBitmap = mBitmap;
+    }
 
-		if (!once) {
-			initBitmap();
-			initItem();
-		}
-		once = true;
-		setMeasuredDimension(mWidth, mWidth);
-	}
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
-	/**
-	 * 初始化图片
-	 */
-	private void initBitmap() {
-		if (mBitmap == null)
-			mBitmap = BitmapFactory.decodeResource(getResources(),
-					R.drawable.aa);
+        // 获得游戏布局的边长
+        mWidth = Math.min(getMeasuredHeight(), getMeasuredWidth());
 
-		/**
-		 * 将图片切成mColumn*mColumn份
-		 */
-		mItemBitmaps = PintuImageSplitter.split(mBitmap, mColumn);
+        if (!once) {
+            initBitmap();
+            initItem();
+        }
+        once = true;
+        setMeasuredDimension(mWidth, mWidth);
+    }
 
-		Collections.sort(mItemBitmaps, new Comparator<PintuImagePiece>() {
-			@Override
-			public int compare(PintuImagePiece lhs, PintuImagePiece rhs) {
-				return Math.random() > 0.5 ? 1 : -1;
-			}
-		});
-	}
+    /**
+     * 初始化图片
+     */
+    private void initBitmap() {
+        if (mBitmap == null)
+            mBitmap = BitmapFactory.decodeResource(getResources(),
+                    R.drawable.aa);
 
-	/**
-	 * 初始化Item
-	 */
-	private void initItem() {
-		// 获得Item的宽度
-		int childWidth = (mWidth - mPadding * 2 - mMargin * (mColumn - 1))
-				/ mColumn;
-		mItemWidth = childWidth;
-		mGamePintuItems = new ImageView[mColumn * mColumn];
-		// 放置Item
-		for (int i = 0; i < mGamePintuItems.length; i++) {
-			ImageView item = new ImageView(getContext());
+        /**
+         * 将图片切成mColumn*mColumn份
+         */
+        mItemBitmaps = PintuImageSplitter.split(mBitmap, mColumn);
 
-			item.setOnClickListener(this);
+        Collections.sort(mItemBitmaps, new Comparator<PintuImagePiece>() {
+            @Override
+            public int compare(PintuImagePiece lhs, PintuImagePiece rhs) {
+                return Math.random() > 0.5 ? 1 : -1;
+            }
+        });
+    }
 
-			item.setImageBitmap(mItemBitmaps.get(i).bitmap);
-			mGamePintuItems[i] = item;
+    /**
+     * 初始化Item
+     */
+    private void initItem() {
+        // 获得Item的宽度
+        int childWidth = (mWidth - mPadding * 2 - mMargin * (mColumn - 1))
+                / mColumn;
+        mItemWidth = childWidth;
+        mGamePintuItems = new ImageView[mColumn * mColumn];
+        // 放置Item
+        for (int i = 0; i < mGamePintuItems.length; i++) {
+            ImageView item = new ImageView(getContext());
 
-			item.setId(i + 1);
-			item.setTag(i + "_" + mItemBitmaps.get(i).index);
+            item.setOnClickListener(this);
 
-			RelativeLayout.LayoutParams lp = new LayoutParams(mItemWidth,
-					mItemWidth);
-			// 设置横向边距,不是最后一列
-			if ((i + 1) % mColumn != 0) {
-				lp.rightMargin = mMargin;
-			}
-			// 如果不是第一列
-			if (i % mColumn != 0) {
-				lp.addRule(RelativeLayout.RIGHT_OF,//
-						mGamePintuItems[i - 1].getId());
-			}
-			// 如果不是第一行，//设置纵向边距，非最后一行
-			if ((i + 1) > mColumn) {
-				lp.topMargin = mMargin;
-				lp.addRule(RelativeLayout.BELOW,//
-						mGamePintuItems[i - mColumn].getId());
-			}
-			addView(item, lp);
-		}
+            item.setImageBitmap(mItemBitmaps.get(i).bitmap);
+            mGamePintuItems[i] = item;
 
-	}
+            item.setId(i + 1);
+            item.setTag(i + "_" + mItemBitmaps.get(i).index);
 
-	/**
-	 * 得到多值中的最小值
-	 * 
-	 * @param params
-	 * @return
-	 */
-	private int min(int... params) {
-		int min = params[0];
-		for (int param : params) {
-			if (min > param) {
-				min = param;
-			}
-		}
-		return min;
-	}
+            RelativeLayout.LayoutParams lp = new LayoutParams(mItemWidth,
+                    mItemWidth);
+            // 设置横向边距,不是最后一列
+            if ((i + 1) % mColumn != 0) {
+                lp.rightMargin = mMargin;
+            }
+            // 如果不是第一列
+            if (i % mColumn != 0) {
+                lp.addRule(RelativeLayout.RIGHT_OF, mGamePintuItems[i - 1].getId());
+            }
+            // 如果不是第一行，//设置纵向边距，非最后一行
+            if ((i + 1) > mColumn) {
+                lp.topMargin = mMargin;
+                lp.addRule(RelativeLayout.BELOW, mGamePintuItems[i - mColumn].getId());
+            }
+            addView(item, lp);
+        }
 
-	@Override
-	public void onClick(View v) {
-		// 如果正在执行动画，则屏蔽
-		if (isAniming)
-			return;
-		/**
-		 * 如果两次点击是同一个
-		 */
-		if (mFirst == v) {
-			mFirst.setColorFilter(null);
-			mFirst = null;
-			return;
-		}
-		// 点击第一个Item
-		if (mFirst == null) {
-			mFirst = (ImageView) v;
-			mFirst.setColorFilter(Color.parseColor("#55FF0000"));
-		} else { // 点击第二个Item
-			mSecond = (ImageView) v;
-			exchangeView();
-		}
+    }
 
-	}
+    /**
+     * 得到多值中的最小值
+     *
+     * @param params
+     * @return
+     */
+    private int min(int... params) {
+        int min = params[0];
+        for (int param : params) {
+            if (min > param) {
+                min = param;
+            }
+        }
+        return min;
+    }
 
-	/**
-	 * 交换两个Item的图片
-	 */
-	private void exchangeView() {
-		mFirst.setColorFilter(null);
-		setUpAnimLayout();
-		// 添加FirstView
-		ImageView first = new ImageView(getContext());
-		first.setImageBitmap(mItemBitmaps
-				.get(getImageIndexByTag((String) mFirst.getTag())).bitmap);
-		LayoutParams lp = new LayoutParams(mItemWidth, mItemWidth);
-		lp.leftMargin = mFirst.getLeft() - mPadding;
-		lp.topMargin = mFirst.getTop() - mPadding;
-		first.setLayoutParams(lp);
-		mAnimLayout.addView(first);
-		// 添加SecondView
-		ImageView second = new ImageView(getContext());
-		second.setImageBitmap(mItemBitmaps
-				.get(getImageIndexByTag((String) mSecond.getTag())).bitmap);
-		LayoutParams lp2 = new LayoutParams(mItemWidth, mItemWidth);
-		lp2.leftMargin = mSecond.getLeft() - mPadding;
-		lp2.topMargin = mSecond.getTop() - mPadding;
-		second.setLayoutParams(lp2);
-		mAnimLayout.addView(second);
+    @Override
+    public void onClick(View v) {
+        // 如果正在执行动画，则屏蔽
+        if (isAniming) {
+            return;
+        }
+        /**
+         * 如果两次点击是同一个
+         */
+        if (mFirst == v) {
+            mFirst.setColorFilter(null);
+            mFirst = null;
+            return;
+        }
+        // 点击第一个Item
+        if (mFirst == null) {
+            mFirst = (ImageView) v;
+            mFirst.setColorFilter(Color.parseColor("#55FF0000"));
+        } else { // 点击第二个Item
+            mSecond = (ImageView) v;
+            exchangeView();
+        }
 
-		// 设置动画
-		TranslateAnimation anim = new TranslateAnimation(0, mSecond.getLeft()
-				- mFirst.getLeft(), 0, mSecond.getTop() - mFirst.getTop());
-		anim.setDuration(300);
-		anim.setFillAfter(true);
-		first.startAnimation(anim);
+    }
 
-		TranslateAnimation animSecond = new TranslateAnimation(0,
-				mFirst.getLeft() - mSecond.getLeft(), 0, mFirst.getTop()
-						- mSecond.getTop());
-		animSecond.setDuration(300);
-		animSecond.setFillAfter(true);
-		second.startAnimation(animSecond);
-		// 添加动画监听
-		anim.setAnimationListener(new AnimationListener() {
+    /**
+     * 交换两个Item的图片
+     */
+    private void exchangeView() {
+        mFirst.setColorFilter(null);
+        setUpAnimLayout();
 
-			@Override
-			public void onAnimationStart(Animation animation) {
-				isAniming = true;
-				mFirst.setVisibility(INVISIBLE);
-				mSecond.setVisibility(INVISIBLE);
-			}
+        // 添加FirstView
+        ImageView first = new ImageView(getContext());
+        first.setImageBitmap(mItemBitmaps
+                .get(getImageIndexByTag((String) mFirst.getTag())).bitmap);
+        LayoutParams lp = new LayoutParams(mItemWidth, mItemWidth);
+        lp.leftMargin = mFirst.getLeft() - mPadding;
+        lp.topMargin = mFirst.getTop() - mPadding;
+        first.setLayoutParams(lp);
+        mAnimLayout.addView(first);
 
-			@Override
-			public void onAnimationRepeat(Animation animation) {
+        // 添加SecondView
+        ImageView second = new ImageView(getContext());
+        second.setImageBitmap(mItemBitmaps
+                .get(getImageIndexByTag((String) mSecond.getTag())).bitmap);
+        LayoutParams lp2 = new LayoutParams(mItemWidth, mItemWidth);
+        lp2.leftMargin = mSecond.getLeft() - mPadding;
+        lp2.topMargin = mSecond.getTop() - mPadding;
+        second.setLayoutParams(lp2);
+        mAnimLayout.addView(second);
 
-			}
+        // 设置动画
+        TranslateAnimation anim = new TranslateAnimation(0, mSecond.getLeft()
+                - mFirst.getLeft(), 0, mSecond.getTop() - mFirst.getTop());
+        anim.setDuration(300);
+        anim.setFillAfter(true);
+        first.startAnimation(anim);
 
-			@Override
-			public void onAnimationEnd(Animation animation) {
-				String firstTag = (String) mFirst.getTag();
-				String secondTag = (String) mSecond.getTag();
+        TranslateAnimation animSecond = new TranslateAnimation(0,
+                mFirst.getLeft() - mSecond.getLeft(), 0, mFirst.getTop()
+                - mSecond.getTop());
+        animSecond.setDuration(300);
+        animSecond.setFillAfter(true);
+        second.startAnimation(animSecond);
+        // 添加动画监听
+        anim.setAnimationListener(new AnimationListener() {
 
-				String[] firstParams = firstTag.split("_");
-				String[] secondParams = secondTag.split("_");
+            @Override
+            public void onAnimationStart(Animation animation) {
+                isAniming = true;
+                mFirst.setVisibility(INVISIBLE);
+                mSecond.setVisibility(INVISIBLE);
+            }
 
-				mFirst.setImageBitmap(mItemBitmaps.get(Integer
-						.parseInt(secondParams[0])).bitmap);
-				mSecond.setImageBitmap(mItemBitmaps.get(Integer
-						.parseInt(firstParams[0])).bitmap);
-				mFirst.setTag(secondTag);
-				mSecond.setTag(firstTag);
-				mFirst.setVisibility(VISIBLE);
-				mSecond.setVisibility(VISIBLE);
-				mFirst = mSecond = null;
-				mAnimLayout.removeAllViews();
-				checkSuccess();
-				isAniming = false;
-			}
-		});
+            @Override
+            public void onAnimationRepeat(Animation animation) {
 
-	}
+            }
 
-	/**
-	 * 判断游戏是否成功
-	 */
-	private void checkSuccess() {
-		boolean isSuccess = true;
-		for (int i = 0; i < mGamePintuItems.length; i++) {
-			ImageView first = mGamePintuItems[i];
-			Log.e("TAG", getIndexByTag((String) first.getTag()) + "");
-			if (getIndexByTag((String) first.getTag()) != i) {
-				isSuccess = false;
-			}
-		}
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                String firstTag = (String) mFirst.getTag();
+                String secondTag = (String) mSecond.getTag();
 
-		if (isSuccess) {
-			Toast.makeText(getContext(), "Success , Level Up !",
-					Toast.LENGTH_LONG).show();
-			nextLevel();
-		}
-	}
+                String[] firstParams = firstTag.split("_");
+                String[] secondParams = secondTag.split("_");
 
-	public void nextLevel() {
-		this.removeAllViews();
-		mAnimLayout = null;
-		mColumn++;
-		initBitmap();
-		initItem();
-	}
+                mFirst.setImageBitmap(mItemBitmaps.get(Integer
+                        .parseInt(secondParams[0])).bitmap);
+                mSecond.setImageBitmap(mItemBitmaps.get(Integer
+                        .parseInt(firstParams[0])).bitmap);
+                mFirst.setTag(secondTag);
+                mSecond.setTag(firstTag);
+                mFirst.setVisibility(VISIBLE);
+                mSecond.setVisibility(VISIBLE);
+                mFirst = mSecond = null;
+                mAnimLayout.removeAllViews();
+                checkSuccess();
+                isAniming = false;
+            }
+        });
 
-	/**
-	 * 获得图片的真正索引
-	 * 
-	 * @param tag
-	 * @return
-	 */
-	private int getIndexByTag(String tag) {
-		String[] split = tag.split("_");
-		return Integer.parseInt(split[1]);
-	}
+    }
 
-	private int getImageIndexByTag(String tag) {
-		String[] split = tag.split("_");
-		return Integer.parseInt(split[0]);
-		//
-	}
+    /**
+     * 判断游戏是否成功
+     */
+    private void checkSuccess() {
+        boolean isSuccess = true;
+        for (int i = 0; i < mGamePintuItems.length; i++) {
+            ImageView first = mGamePintuItems[i];
+            Log.e("TAG", getIndexByTag((String) first.getTag()) + "");
+            if (getIndexByTag((String) first.getTag()) != i) {
+                isSuccess = false;
+            }
+        }
 
-	/**
-	 * 创建动画层
-	 */
-	private void setUpAnimLayout() {
-		if (mAnimLayout == null){
-			mAnimLayout = new RelativeLayout(getContext());
-			addView(mAnimLayout);
-		}
+        if (isSuccess) {
+            Toast.makeText(getContext(), "Success , Level Up !",
+                    Toast.LENGTH_LONG).show();
+            mHandler.sendEmptyMessage(NEXT_LEVEL);
+        }
+    }
 
-	}
+    public void nextLevel() {
+        this.removeAllViews();
+        mAnimLayout = null;
+        mColumn++;
+        isGameSuccess = false;
+        initBitmap();
+        initItem();
+    }
+
+    /**
+     * 获得图片的真正索引
+     *
+     * @param tag
+     * @return
+     */
+    private int getIndexByTag(String tag) {
+        String[] split = tag.split("_");
+        return Integer.parseInt(split[1]);
+    }
+
+    private int getImageIndexByTag(String tag) {
+        String[] split = tag.split("_");
+        return Integer.parseInt(split[0]);
+    }
+
+    /**
+     * 创建动画层
+     */
+    private void setUpAnimLayout() {
+        if (mAnimLayout == null) {
+            mAnimLayout = new RelativeLayout(getContext());
+            addView(mAnimLayout);
+        }
+
+    }
+
+
+    public interface GamePintuListener {
+        void nextLevel(int level);
+
+        void timeChanged(int currentTime);
+
+        void gameOver();
+    }
+
+    public static final int TIME_CHANGED = 0x110;
+    public static final int NEXT_LEVEL = 0x111;
+//	public static final int TIME_CHANGED=0x110;
+
+    private boolean isTimeEnabled = false;
+    private boolean isGameSuccess = false;
+    private int level = 1;
+
+    /**
+     * 设置是否开启时间
+     *
+     * @param isTimeEnabled
+     */
+    public void setTimeEnabled(boolean isTimeEnabled) {
+        this.isTimeEnabled = isTimeEnabled;
+    }
+
+    private Handler mHandler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+            switch (msg.what) {
+                case TIME_CHANGED:
+                    break;
+                case NEXT_LEVEL:
+                    level = level + 1;
+                    if (mListener != null) {
+                        mListener.nextLevel(level);
+                    } else {
+                        nextLevel();
+                    }
+                    break;
+                default:
+                    break;
+            }
+            return false;
+        }
+    });
 
 }

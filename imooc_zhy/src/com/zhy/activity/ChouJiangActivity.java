@@ -25,7 +25,7 @@ public class ChouJiangActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_chou_jiang);
 		mLuckyPanView = (LuckyPanView) findViewById(R.id.id_luckypan);
-		mStartBtn = (ImageView) findViewById(R.id.id_start_btn);
+		mStartBtn = (ImageView) findViewById(R.id.iv_start);
 
 		mStartBtn.setOnClickListener(new OnClickListener() {
 			@Override
