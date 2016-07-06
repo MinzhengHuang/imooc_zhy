@@ -2,3 +2,5 @@ imooc_zhy/build/*
 imooc_zhy/.idea/*
 imooc_zhy/.gradle/*
 imooc_zhy/bin/*
+imooc_zhy.jks
+imooc_zhy/imooc_zhy-release.apk
