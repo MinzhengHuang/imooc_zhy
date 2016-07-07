@@ -39,11 +39,9 @@ public class FourFragment extends Fragment implements OnClickListener {
             case R.id.btn_RecyclerView:
                 intent = new Intent(getActivity(), RecyclerViewActivity.class);
                 break;
-
             case R.id.btn_xUtils:
                 intent = new Intent(getActivity(), XUtilsTestActivity.class);
                 break;
-
             case R.id.btn_ChangeSkin:
                 intent = new Intent(getActivity(), ChangeSkinActivity.class);
                 break;

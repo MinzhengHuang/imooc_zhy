@@ -18,6 +18,12 @@ import com.zhy.transformer.RotateUpPageTransformer;
 import com.zhy.transformer.RotateYTransformer;
 import com.zhy.transformer.ScaleInTransformer;
 
+/**
+ * 巧用ViewPager 打造不一样的广告轮播切换效果
+ *
+ * http://blog.csdn.net/lmj623565791/article/details/51339751
+ *
+ */
 public class MagicViewPagerActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;

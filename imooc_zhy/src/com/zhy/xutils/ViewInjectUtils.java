@@ -118,8 +118,7 @@ public class ViewInjectUtils {
 		if (contentView != null){// 存在
 			int contentViewLayoutId = contentView.value();
 			try {
-				Method method = clazz.getMethod(METHOD_SET_CONTENTVIEW,
-						int.class);
+				Method method = clazz.getMethod(METHOD_SET_CONTENTVIEW, int.class);
 				method.setAccessible(true);
 				method.invoke(activity, contentViewLayoutId);
 			} catch (Exception e) {

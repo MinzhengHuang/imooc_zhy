@@ -18,19 +18,11 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyVie
 
     private List<String> mDatas;
     private LayoutInflater mInflater;
-
-    public interface OnItemClickLitener {
-        void onItemClick(View view, int position);
-
-        void onItemLongClick(View view, int position);
-    }
-
     private OnItemClickLitener mOnItemClickLitener;
 
     public void setOnItemClickLitener(OnItemClickLitener mOnItemClickLitener) {
         this.mOnItemClickLitener = mOnItemClickLitener;
     }
-
 
     public RecyclerViewAdapter(Context context, List<String> datas) {
         mInflater = LayoutInflater.from(context);
@@ -87,14 +79,16 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyVie
     }
 
     class MyViewHolder extends ViewHolder {
-
         TextView tv;
 
         public MyViewHolder(View view) {
             super(view);
             tv = (TextView) view.findViewById(R.id.id_num);
-
-
         }
+    }
+
+    public interface OnItemClickLitener {
+        void onItemClick(View view, int position);
+        void onItemLongClick(View view, int position);
     }
 }

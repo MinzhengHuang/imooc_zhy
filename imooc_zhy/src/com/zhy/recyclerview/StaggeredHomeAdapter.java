@@ -16,19 +16,11 @@ import com.zhy.R;
 import java.util.ArrayList;
 import java.util.List;
 
-class StaggeredHomeAdapter extends
-        RecyclerView.Adapter<StaggeredHomeAdapter.MyViewHolder> {
+class StaggeredHomeAdapter extends RecyclerView.Adapter<StaggeredHomeAdapter.MyViewHolder> {
 
     private List<String> mDatas;
     private LayoutInflater mInflater;
-
     private List<Integer> mHeights;
-
-    public interface OnItemClickLitener {
-        void onItemClick(View view, int position);
-
-        void onItemLongClick(View view, int position);
-    }
 
     private OnItemClickLitener mOnItemClickLitener;
 
@@ -100,7 +92,6 @@ class StaggeredHomeAdapter extends
     }
 
     class MyViewHolder extends ViewHolder {
-
         TextView tv;
 
         public MyViewHolder(View view) {
@@ -108,5 +99,10 @@ class StaggeredHomeAdapter extends
             tv = (TextView) view.findViewById(R.id.id_num);
 
         }
+    }
+
+    public interface OnItemClickLitener {
+        void onItemClick(View view, int position);
+        void onItemLongClick(View view, int position);
     }
 }

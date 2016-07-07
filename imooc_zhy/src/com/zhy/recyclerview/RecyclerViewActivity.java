@@ -1,14 +1,8 @@
 package com.zhy.recyclerview;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.zhy.R;
-import com.zhy.recyclerview.RecyclerViewAdapter.OnItemClickLitener;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,8 +13,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.zhy.R;
+import com.zhy.recyclerview.RecyclerViewAdapter.OnItemClickLitener;
 
-public class RecyclerViewActivity extends Activity {
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class RecyclerViewActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private List<String> mDatas;
@@ -48,6 +48,13 @@ public class RecyclerViewActivity extends Activity {
 
     }
 
+    protected void initData() {
+        mDatas = new ArrayList<String>();
+        for (int i = 'A'; i <= 'z'; i++) {
+            mDatas.add("" + (char) i);
+        }
+    }
+
     private void initEvent() {
         mAdapter.setOnItemClickLitener(new OnItemClickLitener() {
             @Override
@@ -62,13 +69,6 @@ public class RecyclerViewActivity extends Activity {
                         Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    protected void initData() {
-        mDatas = new ArrayList<String>();
-        for (int i = 'A'; i < 'z'; i++) {
-            mDatas.add("" + (char) i);
-        }
     }
 
     @Override

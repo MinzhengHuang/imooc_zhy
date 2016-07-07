@@ -42,8 +42,13 @@
         <activity android:name="com.zhy.clippic.ClipPicActivity"></activity>
         <activity android:name="com.zhy.clippic.ShowImageActivity"></activity>
         <activity android:name="com.zhy.flowlayout.CategoryActivity"></activity>
-        <activity android:name="com.zhy.recyclerview.StaggeredGridLayoutActivity"/>
-        <activity android:name="com.zhy.recyclerview.RecyclerViewActivity"></activity>
+        <activity
+            android:name="com.zhy.recyclerview.StaggeredGridLayoutActivity"
+            android:theme="@style/Theme.AppCompat"></activity>
+
+        <activity
+            android:name="com.zhy.recyclerview.RecyclerViewActivity"
+            android:theme="@style/Theme.AppCompat"></activity>
         <activity
             android:name=".changeskin.ChangeSkinActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
