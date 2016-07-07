@@ -127,8 +127,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener,
 	private void setOverflowButtonAlways() {
 		try {
 			ViewConfiguration config = ViewConfiguration.get(this);
-			Field menuKey = ViewConfiguration.class
-					.getDeclaredField("sHasPermanentMenuKey");
+			Field menuKey = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
 			menuKey.setAccessible(true);
 			menuKey.setBoolean(config, false);
 		} catch (Exception e) {

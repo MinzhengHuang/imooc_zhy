@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhy"
-    android:versionCode="1"
-    android:versionName="1.0">
+          package="com.zhy"
+          android:versionCode="1"
+          android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="19"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="19"/>
 
-    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -28,9 +28,9 @@
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name="com.zhy.SecondActivity"></activity>
@@ -42,9 +42,10 @@
         <activity android:name="com.zhy.clippic.ClipPicActivity"></activity>
         <activity android:name="com.zhy.clippic.ShowImageActivity"></activity>
         <activity android:name="com.zhy.flowlayout.CategoryActivity"></activity>
-        <activity android:name="com.zhy.recyclerview.StaggeredGridLayoutActivity" />
+        <activity android:name="com.zhy.recyclerview.StaggeredGridLayoutActivity"/>
         <activity android:name="com.zhy.recyclerview.RecyclerViewActivity"></activity>
-        <activity android:name=".changeskin.ChangeSkinActivity"
+        <activity
+            android:name=".changeskin.ChangeSkinActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity android:name=".activity.CustomViewActivity"></activity>
         <activity android:name=".activity.CustomImageActivity"></activity>
@@ -74,10 +75,13 @@
         <activity android:name=".activity.LargeImageViewActivity"></activity>
         <activity android:name=".activity.ViewPagerIndicatorActivity"></activity>
         <activity android:name=".activity.XUtilsTestActivity"></activity>
-        <activity android:name=".activity.ColorTrackViewActivity" ></activity>
-        <activity android:name=".activity.ViewPagerUseActivity" ></activity>
-        <activity android:name=".activity.SimpleUseActivity" ></activity>
-        <activity android:name=".weixinrecorder.WeixinRecorderActivity" ></activity>
+        <activity android:name=".activity.ColorTrackViewActivity"></activity>
+        <activity android:name=".activity.ViewPagerUseActivity"></activity>
+        <activity android:name=".activity.SimpleUseActivity"></activity>
+        <activity android:name=".weixinrecorder.WeixinRecorderActivity"></activity>
+        <activity
+            android:name=".activity.MagicViewPagerActivity"
+            android:theme="@style/Theme.AppCompat"></activity>
 
     </application>
 

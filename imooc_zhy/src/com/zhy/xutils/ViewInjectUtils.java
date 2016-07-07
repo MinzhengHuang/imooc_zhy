@@ -32,11 +32,9 @@ public class ViewInjectUtils {
 			Annotation[] annotations = method.getAnnotations();
 			// 拿到方法上的所有的注解
 			for (Annotation annotation : annotations) {
-				Class<? extends Annotation> annotationType = annotation
-						.annotationType();
+				Class<? extends Annotation> annotationType = annotation.annotationType();
 				// 拿到注解上的注解
-				EventBase eventBaseAnnotation = annotationType
-						.getAnnotation(EventBase.class);
+				EventBase eventBaseAnnotation = annotationType.getAnnotation(EventBase.class);
 				// 如果设置为EventBase
 				if (eventBaseAnnotation != null) {
 					// 取出设置监听器的名称，监听器的类型，调用的方法名
@@ -47,10 +45,9 @@ public class ViewInjectUtils {
 
 					try {
 						// 拿到Onclick注解中的value方法
-						Method aMethod = annotationType
-								.getDeclaredMethod("value");
+						Method aMethod = annotationType.getDeclaredMethod("value");
 						// 取出所有的viewId
-						int[] viewIds = (int[]) aMethod.invoke(annotation, null);
+						Object[] viewIds = (Object[]) aMethod.invoke(annotation, null);
 						// 通过InvocationHandler设置代理
 						DynamicHandler handler = new DynamicHandler(activity);
 						// 往map添加方法
@@ -59,8 +56,8 @@ public class ViewInjectUtils {
 								listenerType.getClassLoader(),
 								new Class<?>[] { listenerType }, handler);
 						// 遍历所有的View，设置事件
-						for (int viewId : viewIds) {
-							View view = activity.findViewById(viewId);
+						for (Object viewId : viewIds) {
+							View view = activity.findViewById((Integer) viewId);
 							Method setEventListenerMethod = view.getClass()
 									.getMethod(listenerSetter, listenerType);
 							setEventListenerMethod.invoke(view, listener);

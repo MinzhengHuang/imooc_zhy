@@ -20,7 +20,7 @@ import com.zhy.view.ZoomImageView;
  */
 public class ScaleGestureDetectorActivity extends Activity {
 	private ViewPager mViewPager;
-	private int[] mImgs = new int[] { R.drawable.tbug, R.drawable.a,
+	private int[] mImgs = new int[] { R.drawable.tbug, R.drawable.aaa,
 			R.drawable.xx };
 	private ImageView[] mImageViews = new ImageView[mImgs.length];
 	

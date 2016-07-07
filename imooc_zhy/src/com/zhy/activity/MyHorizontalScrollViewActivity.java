@@ -29,8 +29,8 @@ public class MyHorizontalScrollViewActivity extends Activity {
 	private HorizontalScrollViewAdapter mAdapter;
 	private ImageView mImg;
 	private List<Integer> mDatas = new ArrayList<Integer>(Arrays.asList(
-			R.drawable.a, R.drawable.b, R.drawable.c, R.drawable.d,
-			R.drawable.e, R.drawable.f, R.drawable.g, R.drawable.h,
+			R.drawable.aaa, R.drawable.bbb, R.drawable.ccc, R.drawable.dddd,
+			R.drawable.eeee, R.drawable.ffff, R.drawable.gggg, R.drawable.hhhh,
 			R.drawable.l));
 
 	@Override

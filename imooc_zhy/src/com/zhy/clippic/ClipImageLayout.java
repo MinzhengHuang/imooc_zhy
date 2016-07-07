@@ -38,7 +38,7 @@ public class ClipImageLayout extends RelativeLayout {
 		 * 这里测试，直接写死了图片，真正使用过程中，可以提取为自定义属性
 		 */
 		mZoomImageView.setImageDrawable(getResources()
-				.getDrawable(R.drawable.a));
+				.getDrawable(R.drawable.aaa));
 
 		this.addView(mZoomImageView, lp);
 		this.addView(mClipImageView, lp);
