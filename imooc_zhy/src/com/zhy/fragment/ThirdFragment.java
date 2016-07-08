@@ -24,8 +24,7 @@ public class ThirdFragment extends Fragment implements OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater
-                .inflate(R.layout.fragment_third, container, false);
+        View view = inflater.inflate(R.layout.fragment_third, container, false);
         view.findViewById(R.id.btn_HandRuntimeChange).setOnClickListener(this);
         view.findViewById(R.id.btn_ScaleGestureDetector).setOnClickListener(this);
         view.findViewById(R.id.btn_ClipPic).setOnClickListener(this);

@@ -13,9 +13,8 @@ import android.widget.Scroller;
 
 /**
  * Andoird 自定义ViewGroup实现竖向引导界面
- *
+ * <p/>
  * http://blog.csdn.net/lmj623565791/article/details/23692439
- *
  */
 public class VerticalLinearLayout extends ViewGroup {
     private int mScreenHeight;//屏幕的高度
@@ -72,14 +71,14 @@ public class VerticalLinearLayout extends ViewGroup {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         // 如果当前正在滚动，调用父类的onTouchEvent
-        if (isScrolling){
+        if (isScrolling) {
             return super.onTouchEvent(event);
         }
         int action = event.getAction();
         int y = (int) event.getY();
 
         obtainVelocity(event);//初始化加速度检测器
-        
+
         switch (action) {
             case MotionEvent.ACTION_DOWN:
                 mScrollStart = getScrollY();
@@ -138,8 +137,7 @@ public class VerticalLinearLayout extends ViewGroup {
      * @return
      */
     private boolean shouldScrollToNext() {
-        return mScrollEnd - mScrollStart > mScreenHeight / 2
-                || Math.abs(getVelocity()) > 600;
+        return mScrollEnd - mScrollStart > mScreenHeight / 2 || Math.abs(getVelocity()) > 600;
     }
 
     /**

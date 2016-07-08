@@ -90,8 +90,7 @@ public class ViewInjectUtils {
 				if (viewId != -1) {
 					// 初始化View
 					try {
-						Method method = clazz.getMethod(METHOD_FIND_VIEW_BY_ID,
-								Integer.class);
+						Method method = clazz.getMethod(METHOD_FIND_VIEW_BY_ID, Integer.class);
 						Object resView = method.invoke(clazz, viewId);
 						field.setAccessible(true);
 						field.set(clazz, resView);

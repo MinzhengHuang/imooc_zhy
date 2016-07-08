@@ -1,15 +1,15 @@
 package com.zhy.clippic;
 
-import java.io.ByteArrayOutputStream;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.zhy.R;
+
+import java.io.ByteArrayOutputStream;
 
 /**
  * http://blog.csdn.net/lmj623565791/article/details/39761281
@@ -17,7 +17,7 @@ import com.zhy.R;
  * @author zhy
  *
  */
-public class ClipPicActivity extends Activity {
+public class ClipPicActivity extends AppCompatActivity {
 	private ClipImageLayout mClipImageLayout;
 
 	@Override

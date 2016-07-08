@@ -39,7 +39,9 @@
         <activity android:name="com.zhy.handle_runtime_change.FragmentRetainDataActivity"></activity>
         <activity android:name="com.zhy.handle_runtime_change.ConfigChangesTestActivity"></activity>
         <activity android:name="com.zhy.handle_runtime_change.FixProblemsActivity"></activity>
-        <activity android:name="com.zhy.clippic.ClipPicActivity"></activity>
+        <activity
+            android:name="com.zhy.clippic.ClipPicActivity"
+            android:theme="@style/Theme.AppCompat"></activity>
         <activity android:name="com.zhy.clippic.ShowImageActivity"></activity>
         <activity android:name="com.zhy.flowlayout.CategoryActivity"></activity>
         <activity
