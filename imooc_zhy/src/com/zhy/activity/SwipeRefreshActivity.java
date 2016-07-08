@@ -6,14 +6,10 @@ import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
 import com.zhy.R;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-//import android.support.v4.widget.SwipeRefreshLayout;
 
 public class SwipeRefreshActivity extends Activity implements
 		SwipeRefreshLayout.OnRefreshListener {
@@ -35,7 +31,7 @@ public class SwipeRefreshActivity extends Activity implements
 				break;
 
 			}
-		};
+		}
 	};
 
 	@Override
@@ -47,7 +43,7 @@ public class SwipeRefreshActivity extends Activity implements
 
 		mSwipeLayout.setOnRefreshListener(this);
 		mSwipeLayout.setColorScheme(android.R.color.holo_green_dark,
-				android.R.color.holo_green_light,
+				android.R.color.holo_green_dark,
 				android.R.color.holo_orange_light,
 				android.R.color.holo_red_light);
 		mAdapter = new ArrayAdapter<String>(this,

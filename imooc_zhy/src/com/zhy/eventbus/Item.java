@@ -17,13 +17,13 @@ public class Item {
 		addItem(new Item("6", "Item 6"));
 	}
 
-	private static void addItem(Item item) {
-		ITEMS.add(item);
-	}
-
 	public Item(String id, String content) {
 		this.id = id;
 		this.content = content;
+	}
+
+	private static void addItem(Item item) {
+		ITEMS.add(item);
 	}
 
 	@Override

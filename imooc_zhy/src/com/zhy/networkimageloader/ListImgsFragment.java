@@ -15,6 +15,8 @@ import com.zhy.R;
 import com.zhy.networkimageloader.NetworkingImageLoader.Type;
 
 /**
+ * Android 框架练成 教你打造高效的图片加载框架
+ *
  * http://blog.csdn.net/lmj623565791/article/details/41874561
  * 
  * @author zhy
@@ -67,10 +69,9 @@ public class ListImgsFragment extends Fragment {
 				convertView = getActivity().getLayoutInflater().inflate(
 						R.layout.item_fragment_list_imgs, parent, false);
 			}
-			ImageView imageview = (ImageView) convertView
-					.findViewById(R.id.id_img);
-			imageview.setImageResource(R.drawable.pictures_no);
-			mImageLoader.loadImage(getItem(position), imageview, true);
+			ImageView iv = (ImageView) convertView.findViewById(R.id.id_img);
+			iv.setImageResource(R.drawable.pictures_no);
+			mImageLoader.loadImage(getItem(position), iv, true);
 			return convertView;
 		}
 

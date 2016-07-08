@@ -12,36 +12,37 @@ import com.zhy.R;
 import de.greenrobot.event.EventBus;
 
 public class ItemDetailFragment extends Fragment {
+    private TextView tvDetail;
 
-	private TextView tvDetail;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // register
+        EventBus.getDefault().register(this);
+    }
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		// register
-		EventBus.getDefault().register(this);
-	}
+    /**
+     * List点击时会发送些事件，接收到事件后更新详情
+     */
+    public void onEventMainThread(Item item) {
+        if (item != null) {
+            tvDetail.setText(item.content);
+        }
+    }
 
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-		// Unregister
-		EventBus.getDefault().unregister(this);
-	}
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_item_detail,
+                container, false);
+        tvDetail = (TextView) rootView.findViewById(R.id.item_detail);
+        return rootView;
+    }
 
-	/** List点击时会发送些事件，接收到事件后更新详情 */
-	public void onEventMainThread(Item item) {
-		if (item != null){
-			tvDetail.setText(item.content);
-		}
-	}
-
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_item_detail,
-				container, false);
-		tvDetail = (TextView) rootView.findViewById(R.id.item_detail);
-		return rootView;
-	}
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        // Unregister
+        EventBus.getDefault().unregister(this);
+    }
 }

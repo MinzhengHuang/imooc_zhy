@@ -14,9 +14,9 @@ import com.zhy.utils.DLog;
 /**
  * 支持上下反弹效果的ScrollView
  * 
- * @author zhy
  * http://blog.csdn.net/lmj623565791/article/details/28441197
- * 
+ *
+ * @author zhy
  */
 public class BounceScrollView extends ScrollView {
 	private boolean isCalled;
@@ -110,7 +110,6 @@ public class BounceScrollView extends ScrollView {
 	 */
 	private boolean shouldCallBack(int dy) {
 		if (dy > 0 && mView.getTop() > getHeight() / 2){
-			
 			return true;
 		}
 		return false;

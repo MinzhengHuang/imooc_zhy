@@ -32,8 +32,7 @@ public class VerticalLinearLayout extends ViewGroup {
         super(context, attrs);
 
         //获得屏幕的高度
-        WindowManager wm = (WindowManager) context
-                .getSystemService(Context.WINDOW_SERVICE);
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics outMetrics = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(outMetrics);
         mScreenHeight = outMetrics.heightPixels;
@@ -76,7 +75,6 @@ public class VerticalLinearLayout extends ViewGroup {
         // 如果当前正在滚动，调用父类的onTouchEvent
         if (isScrolling){
             return super.onTouchEvent(event);
-
         }
         int action = event.getAction();
         int y = (int) event.getY();
@@ -84,10 +82,10 @@ public class VerticalLinearLayout extends ViewGroup {
         obtainVelocity(event);
         switch (action) {
             case MotionEvent.ACTION_DOWN:
-
                 mScrollStart = getScrollY();
                 mLastY = y;
                 break;
+
             case MotionEvent.ACTION_MOVE:
 
                 if (!mScroller.isFinished()) {
@@ -112,13 +110,10 @@ public class VerticalLinearLayout extends ViewGroup {
             case MotionEvent.ACTION_UP:
 
                 mScrollEnd = getScrollY();
-
                 int dScrollY = mScrollEnd - mScrollStart;
-
                 if (wantScrollToNext()) {// 往上滑动
                     if (shouldScrollToNext()) {
-                        mScroller.startScroll(0, getScrollY(), 0, mScreenHeight
-                                - dScrollY);
+                        mScroller.startScroll(0, getScrollY(), 0, mScreenHeight - dScrollY);
                     } else {
                         mScroller.startScroll(0, getScrollY(), 0, -dScrollY);
                     }
@@ -127,8 +122,7 @@ public class VerticalLinearLayout extends ViewGroup {
 
                 if (wantScrollToPre()) {// 往下滑动
                     if (shouldScrollToPre()) {
-                        mScroller.startScroll(0, getScrollY(), 0, -mScreenHeight
-                                - dScrollY);
+                        mScroller.startScroll(0, getScrollY(), 0, -mScreenHeight - dScrollY);
 
                     } else {
                         mScroller.startScroll(0, getScrollY(), 0, -dScrollY);

@@ -7,6 +7,7 @@ import com.zhy.networkimageloader.AbsSingleFragmentActivity;
 import com.zhy.networkimageloader.ListImgsFragment;
 
 public class NetworkingImageLoaderActivity extends AbsSingleFragmentActivity {
+
 	@Override
 	protected Fragment createFragment() {
 		return new ListImgsFragment();

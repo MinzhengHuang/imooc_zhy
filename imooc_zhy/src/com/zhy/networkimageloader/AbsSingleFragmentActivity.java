@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentManager;
 import com.zhy.R;
 
 public abstract class AbsSingleFragmentActivity extends FragmentActivity {
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
