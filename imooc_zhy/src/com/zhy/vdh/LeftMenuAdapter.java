@@ -15,28 +15,20 @@ import com.zhy.R;
  * Created by zhy on 15/4/26.
  */
 public class LeftMenuAdapter extends ArrayAdapter<MenuItem> {
-
-
     private LayoutInflater mInflater;
-
     private int mSelected;
-
 
     public LeftMenuAdapter(Context context, MenuItem[] objects) {
         super(context, -1, objects);
-
         mInflater = LayoutInflater.from(context);
 
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
-
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.item_left_menu_vdh, parent, false);
         }
-
         ImageView iv = (ImageView) convertView.findViewById(R.id.id_item_icon);
         TextView title = (TextView) convertView.findViewById(R.id.id_item_title);
         title.setText(getItem(position).text);
@@ -55,7 +47,6 @@ public class LeftMenuAdapter extends ArrayAdapter<MenuItem> {
         this.mSelected = position;
         notifyDataSetChanged();
     }
-
 
 }
 

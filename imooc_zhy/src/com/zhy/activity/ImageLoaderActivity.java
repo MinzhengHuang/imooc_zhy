@@ -239,8 +239,7 @@ public class ImageLoaderActivity extends Activity implements OnImageDirSelected{
 		mBottomLy.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				mListImageDirPopupWindow
-						.setAnimationStyle(R.style.anim_popup_dir);
+				mListImageDirPopupWindow.setAnimationStyle(R.style.anim_popup_dir);
 				mListImageDirPopupWindow.showAsDropDown(mBottomLy, 0, 0);
 
 				// 设置背景颜色变暗

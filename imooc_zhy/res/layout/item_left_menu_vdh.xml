@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="48dp"
-    android:gravity="center_vertical"
-    android:paddingRight="16dp">
+             android:layout_width="match_parent"
+             android:layout_height="48dp"
+             android:gravity="center_vertical"
+             android:paddingRight="16dp">
 
     <ImageView
         android:id="@+id/id_item_icon"
@@ -12,9 +12,9 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="8dp"
-        android:src="@drawable/music_36px" />
+        android:src="@drawable/music_36px"/>
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    <TextView
         android:id="@+id/id_item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,6 +22,6 @@
         android:layout_marginLeft="72dp"
         android:text="hello_world"
         android:textColor="#64000000"
-        android:textSize="16sp" />
+        android:textSize="16sp"/>
 
 </FrameLayout>

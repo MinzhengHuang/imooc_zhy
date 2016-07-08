@@ -13,25 +13,21 @@ import com.zhy.R;
  * Created by zhy on 15/4/26.
  */
 public class LeftMenuFragment extends ListFragment {
-
     private static final int SIZE_MENU_ITEM = 3;
-
     private MenuItem[] mItems = new MenuItem[SIZE_MENU_ITEM];
-
     private LeftMenuAdapter mAdapter;
-
-
     private LayoutInflater mInflater;
+    private OnMenuItemSelectedListener mMenuItemSelectedListener;
 
     @Override
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         mInflater = LayoutInflater.from(getActivity());
 
         MenuItem menuItem = null;
         for (int i = 0; i < SIZE_MENU_ITEM; i++) {
-            menuItem = new MenuItem(getResources().getStringArray(R.array.array_left_menu)[i], false, R.drawable.music_36px, R.drawable.music_36px_light);
+            menuItem = new MenuItem(getResources().getStringArray(R.array.array_left_menu)[i],
+                    false, R.drawable.music_36px, R.drawable.music_36px_light);
             mItems[i] = menuItem;
         }
     }
@@ -49,6 +45,10 @@ public class LeftMenuFragment extends ListFragment {
 
     }
 
+    public void setOnMenuItemSelectedListener(OnMenuItemSelectedListener menuItemSelectedListener) {
+        this.mMenuItemSelectedListener = menuItemSelectedListener;
+    }
+
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
@@ -59,17 +59,9 @@ public class LeftMenuFragment extends ListFragment {
         mAdapter.setSelected(position);
     }
 
-
     //选择回调的接口
     public interface OnMenuItemSelectedListener {
         void menuItemSelected(String title);
     }
-
-    private OnMenuItemSelectedListener mMenuItemSelectedListener;
-
-    public void setOnMenuItemSelectedListener(OnMenuItemSelectedListener menuItemSelectedListener) {
-        this.mMenuItemSelectedListener = menuItemSelectedListener;
-    }
-
 
 }

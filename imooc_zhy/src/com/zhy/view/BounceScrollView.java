@@ -72,8 +72,7 @@ public class BounceScrollView extends ScrollView {
 			if (isNeedMove()) {
 				if (mRect.isEmpty()) {
 				//记录移动前的位置
-					mRect.set(mView.getLeft(), mView.getTop(),
-							mView.getRight(), mView.getBottom());
+					mRect.set(mView.getLeft(), mView.getTop(), mView.getRight(), mView.getBottom());
 				}
 
 				mView.layout(mView.getLeft(), mView.getTop() + 2 * dy / 3,
@@ -116,8 +115,7 @@ public class BounceScrollView extends ScrollView {
 	}
 
 	private void resetPosition() {
-		Animation animation = new TranslateAnimation(0, 0, mView.getTop(),
-				mRect.top);
+		Animation animation = new TranslateAnimation(0, 0, mView.getTop(), mRect.top);
 		animation.setDuration(200);
 		animation.setFillAfter(true);
 		mView.startAnimation(animation);

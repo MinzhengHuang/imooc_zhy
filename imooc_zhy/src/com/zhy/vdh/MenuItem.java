@@ -1,6 +1,10 @@
 package com.zhy.vdh;
 
 public class MenuItem {
+    boolean isSelected;
+    String text;
+    int icon;
+    int iconSelected;
 
     public MenuItem(String text, boolean isSelected, int icon, int iconSelected) {
         this.text = text;
@@ -9,8 +13,4 @@ public class MenuItem {
         this.iconSelected = iconSelected;
     }
 
-    boolean isSelected;
-    String text;
-    int icon;
-    int iconSelected;
 }

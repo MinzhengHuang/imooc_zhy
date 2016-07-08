@@ -38,12 +38,12 @@ public class ImageAdapter extends CommonAdapter<String> {
         // 设置图片
         helper.setImageByUrl(R.id.id_item_image, mDirPath + "/" + item);
 
-        final ImageView mImageView = helper.getView(R.id.id_item_image);
-        final ImageView mSelect = helper.getView(R.id.id_item_select);
+        final ImageView ivImg = helper.getView(R.id.id_item_image);
+        final ImageView ivSelect = helper.getView(R.id.id_item_select);
 
-        mImageView.setColorFilter(null);
+        ivImg.setColorFilter(null);
         // 设置ImageView的点击事件
-        mImageView.setOnClickListener(new OnClickListener() {
+        ivImg.setOnClickListener(new OnClickListener() {
             // 选择，则将图片变暗，反之则反之
             @Override
             public void onClick(View v) {
@@ -51,12 +51,12 @@ public class ImageAdapter extends CommonAdapter<String> {
                 // 已经选择过该图片
                 if (mSelectedImage.contains(mDirPath + "/" + item)) {
                     mSelectedImage.remove(mDirPath + "/" + item);
-                    mSelect.setImageResource(R.drawable.picture_unselected);
-                    mImageView.setColorFilter(null);
+                    ivSelect.setImageResource(R.drawable.picture_unselected);
+                    ivImg.setColorFilter(null);
                 } else {// 未选择该图片
                     mSelectedImage.add(mDirPath + "/" + item);
-                    mSelect.setImageResource(R.drawable.pictures_selected);
-                    mImageView.setColorFilter(Color.parseColor("#77000000"));
+                    ivSelect.setImageResource(R.drawable.pictures_selected);
+                    ivImg.setColorFilter(Color.parseColor("#77000000"));
                 }
 
             }
@@ -66,8 +66,8 @@ public class ImageAdapter extends CommonAdapter<String> {
          * 已经选择过的图片，显示出选择过的效果
          */
         if (mSelectedImage.contains(mDirPath + "/" + item)) {
-            mSelect.setImageResource(R.drawable.pictures_selected);
-            mImageView.setColorFilter(Color.parseColor("#77000000"));
+            ivSelect.setImageResource(R.drawable.pictures_selected);
+            ivImg.setColorFilter(Color.parseColor("#77000000"));
         }
 
     }
