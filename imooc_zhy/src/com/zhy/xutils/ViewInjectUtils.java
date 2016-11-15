@@ -83,8 +83,7 @@ public class ViewInjectUtils {
 		Field[] fields = clazz.getFields();
 		// 遍历所有成员变量
 		for (Field field : fields) {
-			ViewInject viewInjectAnnotation = field
-					.getAnnotation(ViewInject.class);
+			ViewInject viewInjectAnnotation = field.getAnnotation(ViewInject.class);
 			if (viewInjectAnnotation != null) {
 				int viewId = viewInjectAnnotation.value();
 				if (viewId != -1) {
