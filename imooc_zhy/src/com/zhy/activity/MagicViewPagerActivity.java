@@ -39,8 +39,8 @@ public class MagicViewPagerActivity extends AppCompatActivity {
 
         mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
 
-        mViewPager.setPageMargin(40);
-        mViewPager.setOffscreenPageLimit(3);
+        mViewPager.setPageMargin(40);//设置Page间间距
+        mViewPager.setOffscreenPageLimit(3);//设置缓存的页面数量
         mViewPager.setAdapter(mAdapter = new PagerAdapter() {
             @Override
             public Object instantiateItem(ViewGroup container, int position) {
@@ -72,7 +72,6 @@ public class MagicViewPagerActivity extends AppCompatActivity {
             }
         });
         mViewPager.setPageTransformer(true, new AlphaPageTransformer());
-
     }
 
     @Override

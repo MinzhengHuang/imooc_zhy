@@ -8,12 +8,14 @@
         android:id="@+id/id_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="clickBtnInvoked"
         android:text="Inject Me, I wanna have a clcik event !" />
 
     <Button
         android:id="@+id/id_btn02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="clickBtnInvoked"
         android:text="Inject Me, I wanna ... !" />
 
 </LinearLayout>

@@ -35,7 +35,6 @@ public class RotateDownPageTransformer extends BasePageTransformer {
             view.setPivotY(view.getHeight());
 
         } else if (position <= 1) { // [-1,1]
-
             if (position < 0)//[0，-1]
             {
                 view.setPivotX(view.getWidth() * (DEFAULT_CENTER + DEFAULT_CENTER * (-position)));

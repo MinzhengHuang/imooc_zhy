@@ -32,7 +32,6 @@ import java.lang.reflect.Method;
  * @author zhy
  */
 public class ChangeSkinActivity extends BaseSkinActivity {
-
     private DrawerLayout mDrawerLayout;
     private ListView mListView;
     private String mSkinPkgPath = Environment.getExternalStorageDirectory() + File.separator + "night_plugin.apk";
@@ -79,17 +78,13 @@ public class ChangeSkinActivity extends BaseSkinActivity {
                 float rightScale = 0.8f + scale * 0.2f;
 
                 if (drawerView.getTag().equals("LEFT")) {
-
                     float leftScale = 1 - 0.3f * scale;
-
                     ViewHelper.setScaleX(mMenu, leftScale);
                     ViewHelper.setScaleY(mMenu, leftScale);
                     ViewHelper.setAlpha(mMenu, 0.6f + 0.4f * (1 - scale));
-                    ViewHelper.setTranslationX(mContent,
-                            mMenu.getMeasuredWidth() * (1 - scale));
+                    ViewHelper.setTranslationX(mContent, mMenu.getMeasuredWidth() * (1 - scale));
                     ViewHelper.setPivotX(mContent, 0);
-                    ViewHelper.setPivotY(mContent,
-                            mContent.getMeasuredHeight() / 2);
+                    ViewHelper.setPivotY(mContent, mContent.getMeasuredHeight() / 2);
                     mContent.invalidate();
                     ViewHelper.setScaleX(mContent, rightScale);
                     ViewHelper.setScaleY(mContent, rightScale);
@@ -125,7 +120,6 @@ public class ChangeSkinActivity extends BaseSkinActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
         switch (id) {
             case R.id.id_action_plugin_skinchange:
                 com.zhy.changeskin.SkinManager.getInstance().changeSkin(mSkinPkgPath, "com.zhy.plugin", new com.zhy.changeskin.callback.ISkinChangingCallback() {
@@ -161,8 +155,6 @@ public class ChangeSkinActivity extends BaseSkinActivity {
 
                     int mainBgId = mResources.getIdentifier("skin_main_bg", "drawable", "com.zhy.plugin");
                     findViewById(R.id.id_drawerLayout).setBackgroundDrawable(mResources.getDrawable(mainBgId));
-
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

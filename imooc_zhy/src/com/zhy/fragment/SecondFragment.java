@@ -35,7 +35,6 @@ public class SecondFragment extends Fragment implements OnClickListener{
 		view.findViewById(R.id.btn_GamePintu).setOnClickListener(this);
 		view.findViewById(R.id.btn_Game2048).setOnClickListener(this);
 		return view;
-
 	}
 	
 	@Override

@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.0.0'
+        classpath 'com.android.tools.build:gradle:2.3.2'
     }
 }
 apply plugin: 'android'
@@ -26,7 +26,7 @@ android {
         }
     }
     compileSdkVersion 22
-    buildToolsVersion "20.0.0"
+    buildToolsVersion '25.0.0'
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'

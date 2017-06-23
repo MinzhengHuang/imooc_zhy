@@ -12,7 +12,7 @@ import com.zhy.game.PintuLayout;
  * http://www.imooc.com/learn/224
  */
 public class GamePintuActivity extends Activity {
-	PintuLayout mGameView;
+	private PintuLayout mGameView;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {

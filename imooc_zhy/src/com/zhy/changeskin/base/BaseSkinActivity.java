@@ -31,8 +31,7 @@ import java.util.Map;
  */
 @SuppressLint("Registered")
 public class BaseSkinActivity extends AppCompatActivity implements ISkinChangedListener, LayoutInflaterFactory {
-    static final Class<?>[] sConstructorSignature = new Class[]{
-            Context.class, AttributeSet.class};
+    static final Class<?>[] sConstructorSignature = new Class[]{Context.class, AttributeSet.class};
     private static final Map<String, Constructor<? extends View>> sConstructorMap
             = new ArrayMap<>();
     private final Object[] mConstructorArgs = new Object[2];

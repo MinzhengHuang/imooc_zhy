@@ -21,9 +21,8 @@ public class ColorTrackView extends View {
 
 	private int mTextStartX;
 	public enum Direction {
-		LEFT, RIGHT;
+		LEFT, RIGHT
 	}
-
 	private int mDirection = DIRECTION_LEFT;
 
 	private static final int DIRECTION_LEFT = 0;
@@ -53,25 +52,17 @@ public class ColorTrackView extends View {
 
 	public ColorTrackView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-
 		mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-		TypedArray ta = context.obtainStyledAttributes(attrs,
-				R.styleable.ColorTrackView);
+		TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.ColorTrackView);
 		mText = ta.getString(R.styleable.ColorTrackView_text);
-		mTextSize = ta.getDimensionPixelSize(
-				R.styleable.ColorTrackView_text_size, mTextSize);
-		mTextOriginColor = ta.getColor(
-				R.styleable.ColorTrackView_text_origin_color, mTextOriginColor);
-		mTextChangeColor = ta.getColor(
-				R.styleable.ColorTrackView_text_change_color, mTextChangeColor);
+		mTextSize = ta.getDimensionPixelSize(R.styleable.ColorTrackView_text_size, mTextSize);
+		mTextOriginColor = ta.getColor(R.styleable.ColorTrackView_text_origin_color, mTextOriginColor);
+		mTextChangeColor = ta.getColor(R.styleable.ColorTrackView_text_change_color, mTextChangeColor);
 		mProgress = ta.getFloat(R.styleable.ColorTrackView_progress, 0);
-
-		mDirection = ta
-				.getInt(R.styleable.ColorTrackView_direction, mDirection);
+		mDirection = ta.getInt(R.styleable.ColorTrackView_direction, mDirection);
 
 		ta.recycle();
-
 		mPaint.setTextSize(mTextSize);
 		measureText();
 

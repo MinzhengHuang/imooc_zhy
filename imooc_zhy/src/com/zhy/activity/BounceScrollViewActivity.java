@@ -34,10 +34,8 @@ public class BounceScrollViewActivity extends Activity {
 
             @Override
             public void callback() {
-                Toast.makeText(BounceScrollViewActivity.this,
-                        "you can do something!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(BounceScrollViewActivity.this,
-                        SecondActivity.class);
+                Toast.makeText(BounceScrollViewActivity.this, "you can do something!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(BounceScrollViewActivity.this, SecondActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }

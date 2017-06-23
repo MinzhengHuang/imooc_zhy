@@ -30,7 +30,6 @@ import java.util.List;
  * @author zhy
  */
 public class PintuLayout extends RelativeLayout implements OnClickListener {
-
     /**
      * 设置Item的数量n*n；默认为2
      */
@@ -92,8 +91,7 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
         mMargin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                 mMargin, getResources().getDisplayMetrics());
         // 设置Layout的内边距，四边一致，设置为四内边距中的最小值
-        mPadding = min(getPaddingLeft(), getPaddingTop(), getPaddingRight(),
-                getPaddingBottom());
+        mPadding = min(getPaddingLeft(), getPaddingTop(), getPaddingRight(), getPaddingBottom());
     }
 
     public void setOnGamePintuListener(GamePintuListener mListener) {
@@ -123,10 +121,9 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
      * 初始化图片
      */
     private void initBitmap() {
-        if (mBitmap == null)
-            mBitmap = BitmapFactory.decodeResource(getResources(),
-                    R.drawable.aa);
-
+        if (mBitmap == null){
+            mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.aa);
+        }
         /**
          * 将图片切成mColumn*mColumn份
          */
@@ -145,24 +142,20 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
      */
     private void initItem() {
         // 获得Item的宽度
-        int childWidth = (mWidth - mPadding * 2 - mMargin * (mColumn - 1))
-                / mColumn;
+        int childWidth = (mWidth - mPadding * 2 - mMargin * (mColumn - 1)) / mColumn;
         mItemWidth = childWidth;
         mGamePintuItems = new ImageView[mColumn * mColumn];
         // 放置Item
         for (int i = 0; i < mGamePintuItems.length; i++) {
             ImageView item = new ImageView(getContext());
-
             item.setOnClickListener(this);
-
             item.setImageBitmap(mItemBitmaps.get(i).bitmap);
             mGamePintuItems[i] = item;
 
             item.setId(i + 1);
             item.setTag(i + "_" + mItemBitmaps.get(i).index);
 
-            RelativeLayout.LayoutParams lp = new LayoutParams(mItemWidth,
-                    mItemWidth);
+            RelativeLayout.LayoutParams lp = new LayoutParams(mItemWidth, mItemWidth);
             // 设置横向边距,不是最后一列
             if ((i + 1) % mColumn != 0) {
                 lp.rightMargin = mMargin;
@@ -231,8 +224,7 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
 
         // 添加FirstView
         ImageView first = new ImageView(getContext());
-        first.setImageBitmap(mItemBitmaps
-                .get(getImageIndexByTag((String) mFirst.getTag())).bitmap);
+        first.setImageBitmap(mItemBitmaps.get(getImageIndexByTag((String) mFirst.getTag())).bitmap);
         LayoutParams lp = new LayoutParams(mItemWidth, mItemWidth);
         lp.leftMargin = mFirst.getLeft() - mPadding;
         lp.topMargin = mFirst.getTop() - mPadding;
@@ -285,10 +277,8 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
                 String[] firstParams = firstTag.split("_");
                 String[] secondParams = secondTag.split("_");
 
-                mFirst.setImageBitmap(mItemBitmaps.get(Integer
-                        .parseInt(secondParams[0])).bitmap);
-                mSecond.setImageBitmap(mItemBitmaps.get(Integer
-                        .parseInt(firstParams[0])).bitmap);
+                mFirst.setImageBitmap(mItemBitmaps.get(Integer.parseInt(secondParams[0])).bitmap);
+                mSecond.setImageBitmap(mItemBitmaps.get(Integer.parseInt(firstParams[0])).bitmap);
                 mFirst.setTag(secondTag);
                 mSecond.setTag(firstTag);
                 mFirst.setVisibility(VISIBLE);
@@ -316,8 +306,7 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
         }
 
         if (isSuccess) {
-            Toast.makeText(getContext(), "Success , Level Up !",
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(), "Success , Level Up !", Toast.LENGTH_LONG).show();
             mHandler.sendEmptyMessage(NEXT_LEVEL);
         }
     }
@@ -390,6 +379,7 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
             switch (msg.what) {
                 case TIME_CHANGED:
                     break;
+
                 case NEXT_LEVEL:
                     level = level + 1;
                     if (mListener != null) {
@@ -398,6 +388,7 @@ public class PintuLayout extends RelativeLayout implements OnClickListener {
                         nextLevel();
                     }
                     break;
+
                 default:
                     break;
             }

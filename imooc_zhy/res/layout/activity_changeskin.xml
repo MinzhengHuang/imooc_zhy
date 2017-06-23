@@ -18,8 +18,6 @@
         android:layout_gravity="left"
         android:tag="LEFT">
 
-
     </FrameLayout>
-
 
 </android.support.v4.widget.DrawerLayout>

@@ -15,9 +15,7 @@ public class ColorTrackViewActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getListView().setBackgroundColor(Color.parseColor("#cc00ff00"));
-        getListView().setAdapter(
-                new ArrayAdapter<String>(this,
-                        android.R.layout.simple_list_item_1, mStrs));
+        getListView().setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mStrs));
     }
 
     @Override
@@ -31,9 +29,10 @@ public class ColorTrackViewActivity extends ListActivity {
                 intent = new Intent(this, ViewPagerUseActivity.class);
                 break;
         }
-
-        if (intent != null)
+        if (intent != null){
             startActivity(intent);
+        }
+
     }
 
 }
